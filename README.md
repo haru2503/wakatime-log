@@ -13,7 +13,7 @@ A trustless system for logging WakaTime data with external verification to prove
 
 ## Folder Structure
 
-```
+```tree
 wakatime_logs/
 ├── 2025/
 │   ├── 01_January/
@@ -34,17 +34,20 @@ wakatime_logs/
 ## Installation
 
 1. Clone the repository:
+
 ```bash
 git clone <repository-url>
 cd wakatime-log
 ```
 
-2. Install dependencies:
+1. Install dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Set up your WakaTime API key:
+1. Set up your WakaTime API key:
+
 ```bash
 export WAKATIME_API_KEY='your_api_key_here'
 ```
@@ -54,6 +57,7 @@ export WAKATIME_API_KEY='your_api_key_here'
 ### Basic Usage
 
 Run the script to fetch yesterday's data:
+
 ```bash
 python wakatime_fetcher.py
 ```
@@ -61,6 +65,7 @@ python wakatime_fetcher.py
 ### Advanced Usage
 
 The script automatically:
+
 - Creates folders based on date structure
 - Generates week summaries on Sundays
 - Generates month summaries on the last Sunday of each month
@@ -102,6 +107,7 @@ This makes it impossible to fabricate data without controlling all external veri
 ## Weekly Summaries
 
 When the script runs on Sunday, it:
+
 1. Fetches data for all 7 days of the week
 2. Generates `week_N.json` with aggregated data
 3. Creates `week_N_summary.md` with detailed breakdown
@@ -116,6 +122,7 @@ When the script runs on Sunday, it:
 ## Monthly Summaries
 
 On the last Sunday of each month, the script also:
+
 1. Aggregates all weekly summaries for the month
 2. Generates `MM_Month.json` with monthly data
 3. Creates `MM_Month_summary.md` with monthly breakdown
@@ -136,6 +143,7 @@ On the last Sunday of each month, the script also:
 ## Data Structure
 
 Each daily JSON file contains:
+
 ```json
 {
   "wakatime_data": {
@@ -159,6 +167,7 @@ Each daily JSON file contains:
 ## Verification
 
 To verify the authenticity of any file:
+
 ```bash
 python wakatime_fetcher.py
 # The script will automatically verify the fetched data
@@ -167,6 +176,7 @@ python wakatime_fetcher.py
 ## Testing
 
 Run the test script to see the folder structure in action:
+
 ```bash
 python test_structure.py
 ```
