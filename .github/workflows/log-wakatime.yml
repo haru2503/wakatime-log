@@ -24,7 +24,10 @@ jobs:
     - name: Install dependencies
       run: |
         pip install requests cryptography
-        
+
+    - name: Check git remote
+      run: git remote -v
+
     - name: Fetch WakaTime data
       env:
         WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
