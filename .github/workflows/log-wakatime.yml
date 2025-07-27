@@ -38,14 +38,19 @@ jobs:
       env:
         PAT: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
       run: |
+        echo "Set git user"
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        
-        # Cập nhật remote url để dùng PAT cho authentication
+    
+        echo "Set remote URL with PAT"
         git remote set-url origin https://x-access-token:${PAT}@github.com/haru2503/wakatime-log.git
-        
+    
+        echo "Check remote"
+        git remote -v
+    
+        echo "Stage changes"
         git add wakatime_logs/
-        
+    
         if git diff --cached --quiet; then
           echo "No changes to commit"
         else
