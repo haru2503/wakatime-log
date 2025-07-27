@@ -32,15 +32,18 @@ jobs:
         python wakatime_fetcher.py
         
     - name: Commit and push
+      env:
+        PAT: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+        git remote set-url origin https://x-access-token:${PAT}@github.com/haru2503/wakatime-log.git
         git add wakatime_logs/
         if git diff --staged --quiet; then
           echo "No changes to commit"
         else
           git commit -m "Auto fetch WakaTime data $(date -u)"
-          git push
+          git push origin HEAD:main
         fi
 
     - name: Create verification report
