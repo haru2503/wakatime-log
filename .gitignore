@@ -1,0 +1,5 @@
+test_format.py
+test_structure.py
+test_wakatime_logs/2025
+.mypy_cache
+.qodo
