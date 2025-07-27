@@ -1,0 +1,1166 @@
+{
+  "week_dates": [
+    "2025-07-21",
+    "2025-07-22",
+    "2025-07-23",
+    "2025-07-24",
+    "2025-07-25",
+    "2025-07-26",
+    "2025-07-27"
+  ],
+  "total_coding_time": 167534.765384,
+  "daily_avg_coding_time": 23933.537912,
+  "daily_summaries": [
+    {
+      "date": "2025-07-21",
+      "total_coding_time": 27878.240427,
+      "categories": [
+        {
+          "name": "Coding",
+          "total_seconds": 27685.78627,
+          "digital": "7:41:25",
+          "decimal": "7.68",
+          "text": "7 hrs 41 mins",
+          "hours": 7,
+          "minutes": 41,
+          "seconds": 25,
+          "percent": 99.31
+        },
+        {
+          "name": "AI Coding",
+          "total_seconds": 192.454157,
+          "digital": "0:03:12",
+          "decimal": "0.05",
+          "text": "3 mins",
+          "hours": 0,
+          "minutes": 3,
+          "seconds": 12,
+          "percent": 0.69
+        }
+      ],
+      "languages": [
+        {
+          "name": "Python",
+          "total_seconds": 17368.646556,
+          "digital": "4:49:28",
+          "decimal": "4.82",
+          "text": "4 hrs 49 mins",
+          "hours": 4,
+          "minutes": 49,
+          "seconds": 28,
+          "percent": 62.3
+        },
+        {
+          "name": "YAML",
+          "total_seconds": 9217.741085,
+          "digital": "2:33:37",
+          "decimal": "2.55",
+          "text": "2 hrs 33 mins",
+          "hours": 2,
+          "minutes": 33,
+          "seconds": 37,
+          "percent": 33.06
+        },
+        {
+          "name": "Other",
+          "total_seconds": 408.025557,
+          "digital": "0:06:48",
+          "decimal": "0.10",
+          "text": "6 mins",
+          "hours": 0,
+          "minutes": 6,
+          "seconds": 48,
+          "percent": 1.46
+        },
+        {
+          "name": "Markdown",
+          "total_seconds": 347.72048,
+          "digital": "0:05:47",
+          "decimal": "0.08",
+          "text": "5 mins",
+          "hours": 0,
+          "minutes": 5,
+          "seconds": 47,
+          "percent": 1.25
+        },
+        {
+          "name": "Text",
+          "total_seconds": 262.295736,
+          "digital": "0:04:22",
+          "decimal": "0.07",
+          "text": "4 mins",
+          "hours": 0,
+          "minutes": 4,
+          "seconds": 22,
+          "percent": 0.94
+        },
+        {
+          "name": "HTML",
+          "total_seconds": 186.76183,
+          "digital": "0:03:06",
+          "decimal": "0.05",
+          "text": "3 mins",
+          "hours": 0,
+          "minutes": 3,
+          "seconds": 6,
+          "percent": 0.67
+        },
+        {
+          "name": "JSON",
+          "total_seconds": 87.049183,
+          "digital": "0:01:27",
+          "decimal": "0.02",
+          "text": "1 min",
+          "hours": 0,
+          "minutes": 1,
+          "seconds": 27,
+          "percent": 0.31
+        }
+      ],
+      "projects": [
+        {
+          "name": "poker",
+          "total_seconds": 27624.646337,
+          "color": null,
+          "digital": "7:40:24",
+          "decimal": "7.67",
+          "text": "7 hrs 40 mins",
+          "hours": 7,
+          "minutes": 40,
+          "seconds": 24,
+          "percent": 99.09
+        },
+        {
+          "name": "Unknown Project",
+          "total_seconds": 253.59409,
+          "color": null,
+          "digital": "0:04:13",
+          "decimal": "0.07",
+          "text": "4 mins",
+          "hours": 0,
+          "minutes": 4,
+          "seconds": 13,
+          "percent": 0.91
+        }
+      ],
+      "editors": [
+        {
+          "name": "VS Code",
+          "total_seconds": 27624.646337,
+          "digital": "7:40:24",
+          "decimal": "7.67",
+          "text": "7 hrs 40 mins",
+          "hours": 7,
+          "minutes": 40,
+          "seconds": 24,
+          "percent": 99.09
+        },
+        {
+          "name": "Cursor",
+          "total_seconds": 253.59409,
+          "digital": "0:04:13",
+          "decimal": "0.07",
+          "text": "4 mins",
+          "hours": 0,
+          "minutes": 4,
+          "seconds": 13,
+          "percent": 0.91
+        }
+      ],
+      "machines": [
+        {
+          "name": "haru",
+          "total_seconds": 27878.240427,
+          "machine_name_id": "41fa6a6b-dbca-403d-a51e-7cd433e9a8ff",
+          "digital": "7:44:38",
+          "decimal": "7.73",
+          "text": "7 hrs 44 mins",
+          "hours": 7,
+          "minutes": 44,
+          "seconds": 38,
+          "percent": 100.0
+        }
+      ],
+      "operating_systems": [
+        {
+          "name": "Linux",
+          "total_seconds": 27878.240427,
+          "digital": "7:44:38",
+          "decimal": "7.73",
+          "text": "7 hrs 44 mins",
+          "hours": 7,
+          "minutes": 44,
+          "seconds": 38,
+          "percent": 100.0
+        }
+      ]
+    },
+    {
+      "date": "2025-07-22",
+      "total_coding_time": 21956.376397,
+      "categories": [
+        {
+          "name": "Coding",
+          "total_seconds": 21341.719783,
+          "digital": "5:55:41",
+          "decimal": "5.92",
+          "text": "5 hrs 55 mins",
+          "hours": 5,
+          "minutes": 55,
+          "seconds": 41,
+          "percent": 97.2
+        },
+        {
+          "name": "Debugging",
+          "total_seconds": 614.656614,
+          "digital": "0:10:14",
+          "decimal": "0.17",
+          "text": "10 mins",
+          "hours": 0,
+          "minutes": 10,
+          "seconds": 14,
+          "percent": 2.8
+        }
+      ],
+      "languages": [
+        {
+          "name": "Python",
+          "total_seconds": 21590.313927,
+          "digital": "5:59:50",
+          "decimal": "5.98",
+          "text": "5 hrs 59 mins",
+          "hours": 5,
+          "minutes": 59,
+          "seconds": 50,
+          "percent": 98.33
+        },
+        {
+          "name": "Text",
+          "total_seconds": 288.744445,
+          "digital": "0:04:48",
+          "decimal": "0.07",
+          "text": "4 mins",
+          "hours": 0,
+          "minutes": 4,
+          "seconds": 48,
+          "percent": 1.32
+        },
+        {
+          "name": "Markdown",
+          "total_seconds": 77.318025,
+          "digital": "0:01:17",
+          "decimal": "0.02",
+          "text": "1 min",
+          "hours": 0,
+          "minutes": 1,
+          "seconds": 17,
+          "percent": 0.35
+        }
+      ],
+      "projects": [
+        {
+          "name": "poker",
+          "total_seconds": 21956.376397,
+          "color": null,
+          "digital": "6:05:56",
+          "decimal": "6.08",
+          "text": "6 hrs 5 mins",
+          "hours": 6,
+          "minutes": 5,
+          "seconds": 56,
+          "percent": 100.0
+        }
+      ],
+      "editors": [
+        {
+          "name": "VS Code",
+          "total_seconds": 21956.376397,
+          "digital": "6:05:56",
+          "decimal": "6.08",
+          "text": "6 hrs 5 mins",
+          "hours": 6,
+          "minutes": 5,
+          "seconds": 56,
+          "percent": 100.0
+        }
+      ],
+      "machines": [
+        {
+          "name": "haru",
+          "total_seconds": 21956.376397,
+          "machine_name_id": "41fa6a6b-dbca-403d-a51e-7cd433e9a8ff",
+          "digital": "6:05:56",
+          "decimal": "6.08",
+          "text": "6 hrs 5 mins",
+          "hours": 6,
+          "minutes": 5,
+          "seconds": 56,
+          "percent": 100.0
+        }
+      ],
+      "operating_systems": [
+        {
+          "name": "Linux",
+          "total_seconds": 21956.376397,
+          "digital": "6:05:56",
+          "decimal": "6.08",
+          "text": "6 hrs 5 mins",
+          "hours": 6,
+          "minutes": 5,
+          "seconds": 56,
+          "percent": 100.0
+        }
+      ]
+    },
+    {
+      "date": "2025-07-23",
+      "total_coding_time": 12307.054439,
+      "categories": [
+        {
+          "name": "Coding",
+          "total_seconds": 12137.037904,
+          "digital": "3:22:17",
+          "decimal": "3.37",
+          "text": "3 hrs 22 mins",
+          "hours": 3,
+          "minutes": 22,
+          "seconds": 17,
+          "percent": 98.62
+        },
+        {
+          "name": "AI Coding",
+          "total_seconds": 170.016535,
+          "digital": "0:02:50",
+          "decimal": "0.03",
+          "text": "2 mins",
+          "hours": 0,
+          "minutes": 2,
+          "seconds": 50,
+          "percent": 1.38
+        }
+      ],
+      "languages": [
+        {
+          "name": "JSON",
+          "total_seconds": 5410.305676,
+          "digital": "1:30:10",
+          "decimal": "1.50",
+          "text": "1 hr 30 mins",
+          "hours": 1,
+          "minutes": 30,
+          "seconds": 10,
+          "percent": 43.96
+        },
+        {
+          "name": "Python",
+          "total_seconds": 3932.711349,
+          "digital": "1:05:32",
+          "decimal": "1.08",
+          "text": "1 hr 5 mins",
+          "hours": 1,
+          "minutes": 5,
+          "seconds": 32,
+          "percent": 31.95
+        },
+        {
+          "name": "Text",
+          "total_seconds": 1515.642886,
+          "digital": "0:25:15",
+          "decimal": "0.42",
+          "text": "25 mins",
+          "hours": 0,
+          "minutes": 25,
+          "seconds": 15,
+          "percent": 12.32
+        },
+        {
+          "name": "CSV",
+          "total_seconds": 726.934378,
+          "digital": "0:12:06",
+          "decimal": "0.20",
+          "text": "12 mins",
+          "hours": 0,
+          "minutes": 12,
+          "seconds": 6,
+          "percent": 5.91
+        },
+        {
+          "name": "Markdown",
+          "total_seconds": 690.506273,
+          "digital": "0:11:30",
+          "decimal": "0.18",
+          "text": "11 mins",
+          "hours": 0,
+          "minutes": 11,
+          "seconds": 30,
+          "percent": 5.61
+        },
+        {
+          "name": "Other",
+          "total_seconds": 30.953877,
+          "digital": "0:00:30",
+          "decimal": "0.00",
+          "text": "30 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 30,
+          "percent": 0.25
+        }
+      ],
+      "projects": [
+        {
+          "name": "poker",
+          "total_seconds": 12225.06189,
+          "color": null,
+          "digital": "3:23:45",
+          "decimal": "3.38",
+          "text": "3 hrs 23 mins",
+          "hours": 3,
+          "minutes": 23,
+          "seconds": 45,
+          "percent": 99.33
+        },
+        {
+          "name": "Unknown Project",
+          "total_seconds": 81.992549,
+          "color": null,
+          "digital": "0:01:21",
+          "decimal": "0.02",
+          "text": "1 min",
+          "hours": 0,
+          "minutes": 1,
+          "seconds": 21,
+          "percent": 0.67
+        }
+      ],
+      "editors": [
+        {
+          "name": "VS Code",
+          "total_seconds": 12307.054439,
+          "digital": "3:25:07",
+          "decimal": "3.42",
+          "text": "3 hrs 25 mins",
+          "hours": 3,
+          "minutes": 25,
+          "seconds": 7,
+          "percent": 100.0
+        }
+      ],
+      "machines": [
+        {
+          "name": "haru",
+          "total_seconds": 12307.054439,
+          "machine_name_id": "41fa6a6b-dbca-403d-a51e-7cd433e9a8ff",
+          "digital": "3:25:07",
+          "decimal": "3.42",
+          "text": "3 hrs 25 mins",
+          "hours": 3,
+          "minutes": 25,
+          "seconds": 7,
+          "percent": 100.0
+        }
+      ],
+      "operating_systems": [
+        {
+          "name": "Linux",
+          "total_seconds": 12307.054439,
+          "digital": "3:25:07",
+          "decimal": "3.42",
+          "text": "3 hrs 25 mins",
+          "hours": 3,
+          "minutes": 25,
+          "seconds": 7,
+          "percent": 100.0
+        }
+      ]
+    },
+    {
+      "date": "2025-07-24",
+      "total_coding_time": 36636.110341,
+      "categories": [
+        {
+          "name": "Coding",
+          "total_seconds": 35818.338774,
+          "digital": "9:56:58",
+          "decimal": "9.93",
+          "text": "9 hrs 56 mins",
+          "hours": 9,
+          "minutes": 56,
+          "seconds": 58,
+          "percent": 97.77
+        },
+        {
+          "name": "AI Coding",
+          "total_seconds": 817.771567,
+          "digital": "0:13:37",
+          "decimal": "0.22",
+          "text": "13 mins",
+          "hours": 0,
+          "minutes": 13,
+          "seconds": 37,
+          "percent": 2.23
+        }
+      ],
+      "languages": [
+        {
+          "name": "Python",
+          "total_seconds": 29752.860306,
+          "digital": "8:15:52",
+          "decimal": "8.25",
+          "text": "8 hrs 15 mins",
+          "hours": 8,
+          "minutes": 15,
+          "seconds": 52,
+          "percent": 81.21
+        },
+        {
+          "name": "JSON",
+          "total_seconds": 3564.252078,
+          "digital": "0:59:24",
+          "decimal": "0.98",
+          "text": "59 mins",
+          "hours": 0,
+          "minutes": 59,
+          "seconds": 24,
+          "percent": 9.73
+        },
+        {
+          "name": "Markdown",
+          "total_seconds": 2504.487115,
+          "digital": "0:41:44",
+          "decimal": "0.68",
+          "text": "41 mins",
+          "hours": 0,
+          "minutes": 41,
+          "seconds": 44,
+          "percent": 6.84
+        },
+        {
+          "name": "Text",
+          "total_seconds": 620.580427,
+          "digital": "0:10:20",
+          "decimal": "0.17",
+          "text": "10 mins",
+          "hours": 0,
+          "minutes": 10,
+          "seconds": 20,
+          "percent": 1.69
+        },
+        {
+          "name": "YAML",
+          "total_seconds": 78.457395,
+          "digital": "0:01:18",
+          "decimal": "0.02",
+          "text": "1 min",
+          "hours": 0,
+          "minutes": 1,
+          "seconds": 18,
+          "percent": 0.21
+        },
+        {
+          "name": "Git Config",
+          "total_seconds": 76.147897,
+          "digital": "0:01:16",
+          "decimal": "0.02",
+          "text": "1 min",
+          "hours": 0,
+          "minutes": 1,
+          "seconds": 16,
+          "percent": 0.21
+        },
+        {
+          "name": "Other",
+          "total_seconds": 31.977934,
+          "digital": "0:00:31",
+          "decimal": "0.00",
+          "text": "31 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 31,
+          "percent": 0.09
+        },
+        {
+          "name": "HTML",
+          "total_seconds": 4.348645,
+          "digital": "0:00:04",
+          "decimal": "0.00",
+          "text": "4 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 4,
+          "percent": 0.01
+        },
+        {
+          "name": "CSV",
+          "total_seconds": 2.998544,
+          "digital": "0:00:02",
+          "decimal": "0.00",
+          "text": "2 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 2,
+          "percent": 0.01
+        }
+      ],
+      "projects": [
+        {
+          "name": "poker",
+          "total_seconds": 35385.59138,
+          "color": null,
+          "digital": "9:49:45",
+          "decimal": "9.82",
+          "text": "9 hrs 49 mins",
+          "hours": 9,
+          "minutes": 49,
+          "seconds": 45,
+          "percent": 96.59
+        },
+        {
+          "name": "poker-copy",
+          "total_seconds": 1250.518961,
+          "color": null,
+          "digital": "0:20:50",
+          "decimal": "0.33",
+          "text": "20 mins",
+          "hours": 0,
+          "minutes": 20,
+          "seconds": 50,
+          "percent": 3.41
+        }
+      ],
+      "editors": [
+        {
+          "name": "VS Code",
+          "total_seconds": 36636.110341,
+          "digital": "10:10:36",
+          "decimal": "10.17",
+          "text": "10 hrs 10 mins",
+          "hours": 10,
+          "minutes": 10,
+          "seconds": 36,
+          "percent": 100.0
+        }
+      ],
+      "machines": [
+        {
+          "name": "haru",
+          "total_seconds": 36636.110341,
+          "machine_name_id": "41fa6a6b-dbca-403d-a51e-7cd433e9a8ff",
+          "digital": "10:10:36",
+          "decimal": "10.17",
+          "text": "10 hrs 10 mins",
+          "hours": 10,
+          "minutes": 10,
+          "seconds": 36,
+          "percent": 100.0
+        }
+      ],
+      "operating_systems": [
+        {
+          "name": "Linux",
+          "total_seconds": 36636.110341,
+          "digital": "10:10:36",
+          "decimal": "10.17",
+          "text": "10 hrs 10 mins",
+          "hours": 10,
+          "minutes": 10,
+          "seconds": 36,
+          "percent": 100.0
+        }
+      ]
+    },
+    {
+      "date": "2025-07-25",
+      "total_coding_time": 23467.685374,
+      "categories": [
+        {
+          "name": "Coding",
+          "total_seconds": 22928.367938,
+          "digital": "6:22:08",
+          "decimal": "6.37",
+          "text": "6 hrs 22 mins",
+          "hours": 6,
+          "minutes": 22,
+          "seconds": 8,
+          "percent": 97.7
+        },
+        {
+          "name": "Debugging",
+          "total_seconds": 539.317436,
+          "digital": "0:08:59",
+          "decimal": "0.13",
+          "text": "8 mins",
+          "hours": 0,
+          "minutes": 8,
+          "seconds": 59,
+          "percent": 2.3
+        }
+      ],
+      "languages": [
+        {
+          "name": "Python",
+          "total_seconds": 23368.561167,
+          "digital": "6:29:28",
+          "decimal": "6.48",
+          "text": "6 hrs 29 mins",
+          "hours": 6,
+          "minutes": 29,
+          "seconds": 28,
+          "percent": 99.58
+        },
+        {
+          "name": "JSON",
+          "total_seconds": 99.124207,
+          "digital": "0:01:39",
+          "decimal": "0.02",
+          "text": "1 min",
+          "hours": 0,
+          "minutes": 1,
+          "seconds": 39,
+          "percent": 0.42
+        }
+      ],
+      "projects": [
+        {
+          "name": "poker",
+          "total_seconds": 23467.685374,
+          "color": null,
+          "digital": "6:31:07",
+          "decimal": "6.52",
+          "text": "6 hrs 31 mins",
+          "hours": 6,
+          "minutes": 31,
+          "seconds": 7,
+          "percent": 100.0
+        }
+      ],
+      "editors": [
+        {
+          "name": "VS Code",
+          "total_seconds": 23467.685374,
+          "digital": "6:31:07",
+          "decimal": "6.52",
+          "text": "6 hrs 31 mins",
+          "hours": 6,
+          "minutes": 31,
+          "seconds": 7,
+          "percent": 100.0
+        }
+      ],
+      "machines": [
+        {
+          "name": "haru",
+          "total_seconds": 23467.685374,
+          "machine_name_id": "41fa6a6b-dbca-403d-a51e-7cd433e9a8ff",
+          "digital": "6:31:07",
+          "decimal": "6.52",
+          "text": "6 hrs 31 mins",
+          "hours": 6,
+          "minutes": 31,
+          "seconds": 7,
+          "percent": 100.0
+        }
+      ],
+      "operating_systems": [
+        {
+          "name": "Linux",
+          "total_seconds": 23467.685374,
+          "digital": "6:31:07",
+          "decimal": "6.52",
+          "text": "6 hrs 31 mins",
+          "hours": 6,
+          "minutes": 31,
+          "seconds": 7,
+          "percent": 100.0
+        }
+      ]
+    },
+    {
+      "date": "2025-07-26",
+      "total_coding_time": 27037.153351,
+      "categories": [
+        {
+          "name": "Coding",
+          "total_seconds": 26636.196081,
+          "digital": "7:23:56",
+          "decimal": "7.38",
+          "text": "7 hrs 23 mins",
+          "hours": 7,
+          "minutes": 23,
+          "seconds": 56,
+          "percent": 98.52
+        },
+        {
+          "name": "AI Coding",
+          "total_seconds": 400.95727,
+          "digital": "0:06:40",
+          "decimal": "0.10",
+          "text": "6 mins",
+          "hours": 0,
+          "minutes": 6,
+          "seconds": 40,
+          "percent": 1.48
+        }
+      ],
+      "languages": [
+        {
+          "name": "Python",
+          "total_seconds": 26135.909371,
+          "digital": "7:15:35",
+          "decimal": "7.25",
+          "text": "7 hrs 15 mins",
+          "hours": 7,
+          "minutes": 15,
+          "seconds": 35,
+          "percent": 96.67
+        },
+        {
+          "name": "JSON",
+          "total_seconds": 420.414285,
+          "digital": "0:07:00",
+          "decimal": "0.12",
+          "text": "7 mins",
+          "hours": 0,
+          "minutes": 7,
+          "seconds": 0,
+          "percent": 1.55
+        },
+        {
+          "name": "Other",
+          "total_seconds": 320.332526,
+          "digital": "0:05:20",
+          "decimal": "0.08",
+          "text": "5 mins",
+          "hours": 0,
+          "minutes": 5,
+          "seconds": 20,
+          "percent": 1.18
+        },
+        {
+          "name": "Markdown",
+          "total_seconds": 154.48485,
+          "digital": "0:02:34",
+          "decimal": "0.03",
+          "text": "2 mins",
+          "hours": 0,
+          "minutes": 2,
+          "seconds": 34,
+          "percent": 0.57
+        },
+        {
+          "name": "Git Config",
+          "total_seconds": 6.012319,
+          "digital": "0:00:06",
+          "decimal": "0.00",
+          "text": "6 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 6,
+          "percent": 0.02
+        }
+      ],
+      "projects": [
+        {
+          "name": "poker",
+          "total_seconds": 27002.776318,
+          "color": null,
+          "digital": "7:30:02",
+          "decimal": "7.50",
+          "text": "7 hrs 30 mins",
+          "hours": 7,
+          "minutes": 30,
+          "seconds": 2,
+          "percent": 99.87
+        },
+        {
+          "name": "cs50",
+          "total_seconds": 34.377033,
+          "color": null,
+          "digital": "0:00:34",
+          "decimal": "0.00",
+          "text": "34 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 34,
+          "percent": 0.13
+        }
+      ],
+      "editors": [
+        {
+          "name": "VS Code",
+          "total_seconds": 27037.153351,
+          "digital": "7:30:37",
+          "decimal": "7.50",
+          "text": "7 hrs 30 mins",
+          "hours": 7,
+          "minutes": 30,
+          "seconds": 37,
+          "percent": 100.0
+        }
+      ],
+      "machines": [
+        {
+          "name": "haru",
+          "total_seconds": 27037.153351,
+          "machine_name_id": "102b80a9-1819-4809-9aeb-1e3cb4f0cdf5",
+          "digital": "7:30:37",
+          "decimal": "7.50",
+          "text": "7 hrs 30 mins",
+          "hours": 7,
+          "minutes": 30,
+          "seconds": 37,
+          "percent": 100.0
+        }
+      ],
+      "operating_systems": [
+        {
+          "name": "Linux",
+          "total_seconds": 27037.153351,
+          "digital": "7:30:37",
+          "decimal": "7.50",
+          "text": "7 hrs 30 mins",
+          "hours": 7,
+          "minutes": 30,
+          "seconds": 37,
+          "percent": 100.0
+        }
+      ]
+    },
+    {
+      "date": "2025-07-27",
+      "total_coding_time": 18252.145055,
+      "categories": [
+        {
+          "name": "Coding",
+          "total_seconds": 14192.623724,
+          "digital": "3:56:32",
+          "decimal": "3.93",
+          "text": "3 hrs 56 mins",
+          "hours": 3,
+          "minutes": 56,
+          "seconds": 32,
+          "percent": 77.76
+        },
+        {
+          "name": "Writing Docs",
+          "total_seconds": 3963.409464,
+          "digital": "1:06:03",
+          "decimal": "1.10",
+          "text": "1 hr 6 mins",
+          "hours": 1,
+          "minutes": 6,
+          "seconds": 3,
+          "percent": 21.71
+        },
+        {
+          "name": "AI Coding",
+          "total_seconds": 96.111867,
+          "digital": "0:01:36",
+          "decimal": "0.02",
+          "text": "1 min",
+          "hours": 0,
+          "minutes": 1,
+          "seconds": 36,
+          "percent": 0.53
+        }
+      ],
+      "languages": [
+        {
+          "name": "Python",
+          "total_seconds": 10077.773033,
+          "digital": "2:47:57",
+          "decimal": "2.78",
+          "text": "2 hrs 47 mins",
+          "hours": 2,
+          "minutes": 47,
+          "seconds": 57,
+          "percent": 55.21
+        },
+        {
+          "name": "Markdown",
+          "total_seconds": 3986.221105,
+          "digital": "1:06:26",
+          "decimal": "1.10",
+          "text": "1 hr 6 mins",
+          "hours": 1,
+          "minutes": 6,
+          "seconds": 26,
+          "percent": 21.84
+        },
+        {
+          "name": "YAML",
+          "total_seconds": 1671.349225,
+          "digital": "0:27:51",
+          "decimal": "0.45",
+          "text": "27 mins",
+          "hours": 0,
+          "minutes": 27,
+          "seconds": 51,
+          "percent": 9.16
+        },
+        {
+          "name": "JSON",
+          "total_seconds": 1464.044624,
+          "digital": "0:24:24",
+          "decimal": "0.40",
+          "text": "24 mins",
+          "hours": 0,
+          "minutes": 24,
+          "seconds": 24,
+          "percent": 8.02
+        },
+        {
+          "name": "Text",
+          "total_seconds": 485.367296,
+          "digital": "0:08:05",
+          "decimal": "0.13",
+          "text": "8 mins",
+          "hours": 0,
+          "minutes": 8,
+          "seconds": 5,
+          "percent": 2.66
+        },
+        {
+          "name": "Git Config",
+          "total_seconds": 421.803551,
+          "digital": "0:07:01",
+          "decimal": "0.12",
+          "text": "7 mins",
+          "hours": 0,
+          "minutes": 7,
+          "seconds": 1,
+          "percent": 2.31
+        },
+        {
+          "name": "Other",
+          "total_seconds": 145.586221,
+          "digital": "0:02:25",
+          "decimal": "0.03",
+          "text": "2 mins",
+          "hours": 0,
+          "minutes": 2,
+          "seconds": 25,
+          "percent": 0.8
+        }
+      ],
+      "projects": [
+        {
+          "name": "poker",
+          "total_seconds": 10482.016412,
+          "color": null,
+          "digital": "2:54:42",
+          "decimal": "2.90",
+          "text": "2 hrs 54 mins",
+          "hours": 2,
+          "minutes": 54,
+          "seconds": 42,
+          "percent": 57.43
+        },
+        {
+          "name": "wakatime-log",
+          "total_seconds": 7112.394514,
+          "color": null,
+          "digital": "1:58:32",
+          "decimal": "1.97",
+          "text": "1 hr 58 mins",
+          "hours": 1,
+          "minutes": 58,
+          "seconds": 32,
+          "percent": 38.97
+        },
+        {
+          "name": "waka",
+          "total_seconds": 366.628239,
+          "color": null,
+          "digital": "0:06:06",
+          "decimal": "0.10",
+          "text": "6 mins",
+          "hours": 0,
+          "minutes": 6,
+          "seconds": 6,
+          "percent": 2.01
+        },
+        {
+          "name": "Unknown Project",
+          "total_seconds": 291.10589,
+          "color": null,
+          "digital": "0:04:51",
+          "decimal": "0.07",
+          "text": "4 mins",
+          "hours": 0,
+          "minutes": 4,
+          "seconds": 51,
+          "percent": 1.59
+        },
+        {
+          "name": "wakatime_logs",
+          "total_seconds": 0.0,
+          "color": null,
+          "digital": "0:00:00",
+          "decimal": "0.00",
+          "text": "0 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 0,
+          "percent": 0.0
+        }
+      ],
+      "editors": [
+        {
+          "name": "VS Code",
+          "total_seconds": 10640.453315,
+          "digital": "2:57:20",
+          "decimal": "2.95",
+          "text": "2 hrs 57 mins",
+          "hours": 2,
+          "minutes": 57,
+          "seconds": 20,
+          "percent": 58.3
+        },
+        {
+          "name": "Cursor",
+          "total_seconds": 7611.69174,
+          "digital": "2:06:51",
+          "decimal": "2.10",
+          "text": "2 hrs 6 mins",
+          "hours": 2,
+          "minutes": 6,
+          "seconds": 51,
+          "percent": 41.7
+        }
+      ],
+      "machines": [
+        {
+          "name": "haru",
+          "total_seconds": 18252.145055,
+          "machine_name_id": "102b80a9-1819-4809-9aeb-1e3cb4f0cdf5",
+          "digital": "5:04:12",
+          "decimal": "5.07",
+          "text": "5 hrs 4 mins",
+          "hours": 5,
+          "minutes": 4,
+          "seconds": 12,
+          "percent": 100.0
+        }
+      ],
+      "operating_systems": [
+        {
+          "name": "Linux",
+          "total_seconds": 18252.145055,
+          "digital": "5:04:12",
+          "decimal": "5.07",
+          "text": "5 hrs 4 mins",
+          "hours": 5,
+          "minutes": 4,
+          "seconds": 12,
+          "percent": 100.0
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "generated_at": "2025-07-27T10:11:28.050292",
+    "days_with_data": 7,
+    "total_days": 7
+  }
+}
