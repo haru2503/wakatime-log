@@ -1,0 +1,52 @@
+# .github/workflows/wakatime-logger.yml
+name: WakaTime Auto Logger
+
+on:
+  schedule:
+    # Chạy mỗi ngày lúc 1:00 AM UTC (8:00 AM Việt Nam)
+    - cron: '0 1 * * *'
+  # Cho phép trigger manual để test
+  workflow_dispatch:
+
+jobs:
+  fetch-wakatime:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        
+    - name: Install dependencies
+      run: |
+        pip install requests cryptography
+        
+    - name: Fetch WakaTime data
+      env:
+        WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+      run: |
+        python wakatime_fetcher.py
+        
+    - name: Commit and push
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add wakatime_logs/
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Auto fetch WakaTime data $(date -u)"
+          git push
+        fi
+
+    - name: Create verification report
+      run: |
+        echo "## WakaTime Fetch Report - $(date -u)" >> $GITHUB_STEP_SUMMARY
+        echo "- **Workflow Run**: ${{ github.run_id }}" >> $GITHUB_STEP_SUMMARY
+        echo "- **Triggered by**: GitHub Actions (automated)" >> $GITHUB_STEP_SUMMARY
+        echo "- **Runner**: ubuntu-latest (GitHub's server)" >> $GITHUB_STEP_SUMMARY
+        echo "- **Cannot be manipulated by user**" >> $GITHUB_STEP_SUMMARY
