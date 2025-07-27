@@ -221,7 +221,6 @@ class TrustlessWakaTimeLogger:
         """Format seconds to detailed time (e.g., 46 hrs 2 mins (46:02:30))"""
         hours = int(total_seconds // 3600)
         minutes = int((total_seconds % 3600) // 60)
-        seconds = int(total_seconds % 60)
 
         time_str = self.format_time(total_seconds)
         if hours > 0:
@@ -557,7 +556,7 @@ class TrustlessWakaTimeLogger:
 
         # Check if it's Sunday (end of week) to fetch 7 days and generate week summary
         if target_date.weekday() == 6:  # Sunday
-            print(f"[*] Sunday detected, fetching 7 days of data...")
+            print("[*] Sunday detected, fetching 7 days of data...")
             week_dates = self.get_week_dates(target_date)
 
             # Fetch data for all 7 days of the week
@@ -581,7 +580,7 @@ class TrustlessWakaTimeLogger:
 
                 if target_date == last_sunday_of_month:
                     print(
-                        f"[*] Last Sunday of month detected, generating month summary..."
+                        "[*] Last Sunday of month detected, generating month summary..."
                     )
                     month_dates = self.get_month_dates(target_date)
                     month_folder_path = self.get_folder_path(target_date).parent
@@ -609,7 +608,7 @@ def verify_authenticity(filename):
     with open(filename, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    print(f"\n=== AUTHENTICITY VERIFICATION ===")
+    print("\n=== AUTHENTICITY VERIFICATION ===")
     print(f"File: {filename}")
 
     # Check content hash
@@ -657,10 +656,10 @@ if __name__ == "__main__":
         # Verify
         verify_authenticity(filename)
 
-        print(f"\n[CHALLENGE] If someone claims this data is fake:")
-        print(f"Explain how they could have faked:")
-        print(f"1. External NTP timestamps from atomic clock")
-        print(f"2. GitHub API server time")
-        print(f"3. WorldTimeAPI timestamps")
-        print(f"4. Network request evidence")
-        print(f"\nIt is impossible to fake all of these!")
+        print("\n[CHALLENGE] If someone claims this data is fake:")
+        print("Explain how they could have faked:")
+        print("1. External NTP timestamps from atomic clock")
+        print("2. GitHub API server time")
+        print("3. WorldTimeAPI timestamps")
+        print("4. Network request evidence")
+        print("\nIt is impossible to fake all of these!")

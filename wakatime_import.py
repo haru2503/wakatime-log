@@ -411,7 +411,7 @@ class WakaTimeImporter:
                     if week_summary_data:
                         self.save_week_summary(week_folder_path, week_summary_data)
 
-        print(f"\n[+] Import completed successfully!")
+        print("\n[+] Import completed successfully!")
         print(f"[+] Total files imported: {len(imported_files)}")
         print(f"[+] Week summaries generated: {len(imported_weeks)}")
 
@@ -428,9 +428,9 @@ def main():
     # Import last N days (default 20)
     imported_files = importer.import_last_n_days()
 
-    print(f"\n[SUCCESS] Import completed!")
-    print(f"Check the wakatime_logs/ directory for your imported data.")
-    print(f"You can now use wakatime_visualizer.py to analyze your data!")
+    print("\n[SUCCESS] Import completed!")
+    print("Check the wakatime_logs/ directory for your imported data.")
+    print("You can now use wakatime_visualizer.py to analyze your data!")
 
 
 if __name__ == "__main__":
