@@ -37,9 +37,13 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+        
+        # Cập nhật remote url để dùng PAT cho authentication
         git remote set-url origin https://x-access-token:${PAT}@github.com/haru2503/wakatime-log.git
+        
         git add wakatime_logs/
-        if git diff --staged --quiet; then
+        
+        if git diff --cached --quiet; then
           echo "No changes to commit"
         else
           git commit -m "Auto fetch WakaTime data $(date -u)"
