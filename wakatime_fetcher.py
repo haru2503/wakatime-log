@@ -217,6 +217,18 @@ class TrustlessWakaTimeLogger:
         else:
             return f"{minutes}m"
 
+    def format_time_detailed(self, total_seconds):
+        """Format seconds to detailed time (e.g., 46 hrs 2 mins (46:02:30))"""
+        hours = int(total_seconds // 3600)
+        minutes = int((total_seconds % 3600) // 60)
+        seconds = int(total_seconds % 60)
+
+        time_str = self.format_time(total_seconds)
+        if hours > 0:
+            return f"{hours} hrs {minutes} mins ({time_str})"
+        else:
+            return f"{minutes} mins ({time_str})"
+
     def format_breakdown(self, items, title):
         """Format breakdown of items with time and percentage"""
         if not items:
@@ -235,7 +247,7 @@ class TrustlessWakaTimeLogger:
             percent = item.get("percent", 0)
             time_str = self.format_time_readable(total_seconds)
 
-            breakdown_lines.append(f"  {name} - {time_str} ({percent:.2f}%)")
+            breakdown_lines.append(f"  - {name} - {time_str} ({percent:.2f}%)")
 
         return "\n".join(breakdown_lines)
 
@@ -309,14 +321,8 @@ class TrustlessWakaTimeLogger:
         md_content = f"""# Week Summary: {week_summary_data['week_dates'][0]} to {week_summary_data['week_dates'][-1]}
 
 ## Weekly Totals
-- **Total Coding Time**: {self.format_time(week_summary_data['total_coding_time'])}
-- **Daily Average Coding Time**: {self.format_time(week_summary_data['daily_avg_coding_time'])}
-- **Total Categories Time**: {self.format_time(week_summary_data['total_categories_time'])}
-- **Total Language Time**: {self.format_time(week_summary_data['total_language_time'])}
-- **Total Project Time**: {self.format_time(week_summary_data['total_project_time'])}
-- **Total Editor Time**: {self.format_time(week_summary_data['total_editor_time'])}
-- **Total Machine Time**: {self.format_time(week_summary_data['total_machine_time'])}
-- **Total OS Time**: {self.format_time(week_summary_data['total_os_time'])}
+- **Total Coding Time**: {self.format_time_detailed(week_summary_data['total_coding_time'])}
+- **Daily Average Coding Time**: {self.format_time_detailed(week_summary_data['daily_avg_coding_time'])}
 
 ## Daily Breakdown
 """
@@ -324,7 +330,7 @@ class TrustlessWakaTimeLogger:
         for day_summary in week_summary_data["daily_summaries"]:
             md_content += f"""
 ### {day_summary['date']}
-- **Total Coding Time**: {self.format_time(day_summary['total_coding_time'])}
+- **Total Coding Time**: {self.format_time_detailed(day_summary['total_coding_time'])}
 
 {self.format_breakdown(day_summary['languages'], 'Languages')}
 
