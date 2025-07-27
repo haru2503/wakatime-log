@@ -88,7 +88,7 @@ class TrustlessWakaTimeLogger:
         }
     
     def verify_with_wakatime_api(self, data):
-         """Cross-verify by calling WakaTime API"""
+        """Cross-verify by calling WakaTime API"""
         try:
             # Get current user info
             user_url = "https://wakatime.com/api/v1/users/current"
