@@ -111,6 +111,51 @@ class WakaTimeCharts:
         plt.tight_layout()
         return self._save_chart_to_file(fig, "daily_coding_time")
 
+    def create_daily_stacked_bar_chart(
+        self,
+        daily_summaries,
+        title="Daily Coding Time by Project",
+        chart_name="daily_stacked_bar",
+    ):
+        """Create a stacked bar chart for total coding time per day, each bar split by project"""
+        if not daily_summaries:
+            return None
+
+        dates = [day["date"] for day in daily_summaries]
+        all_projects = set()
+        for day in daily_summaries:
+            for project in day.get("projects", []):
+                all_projects.add(project["name"])
+        all_projects = sorted(list(all_projects))
+
+        # Prepare data: matrix [project][day]
+        project_times = {project: [] for project in all_projects}
+        for day in daily_summaries:
+            projects_today = {
+                p["name"]: p["total_seconds"] for p in day.get("projects", [])
+            }
+            for project in all_projects:
+                project_times[project].append(projects_today.get(project, 0))
+
+        # Colors
+        colors = plt.cm.Set3(np.linspace(0, 1, len(all_projects)))
+        fig, ax = plt.subplots(figsize=(12, 6))
+        bottoms = np.zeros(len(dates))
+        for i, project in enumerate(all_projects):
+            times = np.array(project_times[project]) / 3600  # convert to hours
+            ax.bar(
+                dates, times, bottom=bottoms, label=project, color=colors[i], alpha=0.8
+            )
+            bottoms += times
+
+        ax.set_title(title, fontsize=14, fontweight="bold")
+        ax.set_xlabel("Date")
+        ax.set_ylabel("Coding Time (hours)")
+        plt.setp(ax.get_xticklabels(), rotation=45, ha="right")
+        ax.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
+        plt.tight_layout()
+        return self._save_chart_to_file(fig, chart_name)
+
     def create_pie_chart(self, items, title, max_items=8):
         """Create a pie chart for languages, categories, editors, etc."""
         if not items:
@@ -225,6 +270,14 @@ class WakaTimeCharts:
             )
             if chart_file:
                 charts["daily_coding_time"] = chart_file
+            # Thêm chart stacked bar
+            stacked_chart = self.create_daily_stacked_bar_chart(
+                week_summary_data["daily_summaries"],
+                title="Daily Coding Time by Project (Weekly)",
+                chart_name="daily_stacked_bar_weekly",
+            )
+            if stacked_chart:
+                charts["daily_stacked_bar"] = stacked_chart
 
         # Aggregate data for weekly pie charts
         weekly_languages = self._aggregate_items(week_summary_data, "languages")
@@ -343,6 +396,18 @@ class WakaTimeCharts:
             )
             if chart_file:
                 charts["weekly_coding_time"] = chart_file
+            # Thêm chart stacked bar cho từng ngày trong tháng
+            # Gom daily_summaries của tất cả các tuần
+            all_days = []
+            for week in month_summary_data["weekly_summaries"]:
+                all_days.extend(week.get("daily_summaries", []))
+            stacked_chart = self.create_daily_stacked_bar_chart(
+                all_days,
+                title="Daily Coding Time by Project (Monthly)",
+                chart_name="daily_stacked_bar_monthly",
+            )
+            if stacked_chart:
+                charts["daily_stacked_bar"] = stacked_chart
 
         # Aggregate data for monthly pie charts
         monthly_languages = self._aggregate_items(month_summary_data, "languages")

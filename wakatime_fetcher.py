@@ -327,6 +327,10 @@ class TrustlessWakaTimeLogger:
         # Add daily coding time chart
         if charts_data.get("daily_coding_time"):
             md_content += f"\n{charts.embed_chart_in_markdown(charts_data['daily_coding_time'], 'Daily Coding Time')}\n"
+        # Thêm chart stacked bar
+        if charts_data.get("daily_stacked_bar"):
+            md_content += "\n### Daily Coding Time by Project (Stacked Bar)\n"
+            md_content += f"{charts.embed_chart_in_markdown(charts_data['daily_stacked_bar'], 'Daily Coding Time by Project')}\n"
 
         # Add weekly aggregated charts
         if charts_data.get("weekly_languages"):
@@ -543,21 +547,15 @@ class TrustlessWakaTimeLogger:
         # Save as Markdown
         month_md_file = month_folder_path / f"{month_folder_path.name}_summary.md"
 
-        md_content = f"""# Month Summary: {month_summary_data['month']} {month_summary_data['year']}
-
-## Monthly Totals
-- **Total Coding Time**: {self.format_time(month_summary_data['total_coding_time'])}
-- **Weekly Average Coding Time**: {self.format_time(month_summary_data['weekly_avg_coding_time'])}
-- **Daily Average Coding Time**: {self.format_time(month_summary_data['daily_avg_coding_time'])}
-- **Total Categories Time**: {self.format_time(month_summary_data['total_categories_time'])}
-- **Total Language Time**: {self.format_time(month_summary_data['total_language_time'])}
-- **Total Project Time**: {self.format_time(month_summary_data['total_project_time'])}
-- **Total Editor Time**: {self.format_time(month_summary_data['total_editor_time'])}
-- **Total Machine Time**: {self.format_time(month_summary_data['total_machine_time'])}
-- **Total OS Time**: {self.format_time(month_summary_data['total_os_time'])}
-
-## Weekly Breakdown
-"""
+        md_content = f"# Month Summary: {month_summary_data['month']} {month_summary_data['year']}\n\n"
+        md_content += f"## Monthly Totals\n- **Total Coding Time**: {self.format_time(month_summary_data['total_coding_time'])}\n- **Weekly Average Coding Time**: {self.format_time(month_summary_data['weekly_avg_coding_time'])}\n- **Daily Average Coding Time**: {self.format_time(month_summary_data['daily_avg_coding_time'])}\n- **Total Categories Time**: {self.format_time(month_summary_data['total_categories_time'])}\n- **Total Language Time**: {self.format_time(month_summary_data['total_language_time'])}\n- **Total Project Time**: {self.format_time(month_summary_data['total_project_time'])}\n- **Total Editor Time**: {self.format_time(month_summary_data['total_editor_time'])}\n- **Total Machine Time**: {self.format_time(month_summary_data['total_machine_time'])}\n- **Total OS Time**: {self.format_time(month_summary_data['total_os_time'])}\n\n## Charts\n"
+        # Thêm chart stacked bar cho tháng nếu có
+        charts = WakaTimeCharts()
+        charts_data = charts.create_monthly_summary_charts(month_summary_data)
+        if charts_data.get("daily_stacked_bar"):
+            md_content += "\n### Daily Coding Time by Project (Stacked Bar)\n"
+            md_content += f"{charts.embed_chart_in_markdown(charts_data['daily_stacked_bar'], 'Daily Coding Time by Project')}\n"
+        md_content += "\n## Weekly Breakdown\n"
 
         for week_summary in month_summary_data["weekly_summaries"]:
             md_content += f"""

@@ -325,6 +325,10 @@ class WakaTimeImporter:
         # Add daily coding time chart
         if charts_data.get("daily_coding_time"):
             md_content += f"\n{charts.embed_chart_in_markdown(charts_data['daily_coding_time'], 'Daily Coding Time')}\n"
+        # Thêm chart stacked bar
+        if charts_data.get("daily_stacked_bar"):
+            md_content += "\n### Daily Coding Time by Project (Stacked Bar)\n"
+            md_content += f"{charts.embed_chart_in_markdown(charts_data['daily_stacked_bar'], 'Daily Coding Time by Project')}\n"
 
         # Add weekly aggregated charts
         if charts_data.get("weekly_languages"):
