@@ -101,20 +101,21 @@ def create_weekly_summary(week_folder_path, week_summary_data):
     # Save as Markdown (lightweight version)
     week_md_file = week_folder_path / f"{week_folder_path.name}_summary.md"
 
-    md_content = f"""# Week Summary: {week_summary_data['week_dates'][0]} to {week_summary_data['week_dates'][-1]}
-
-## Weekly Totals
-- **Total Coding Time**: {format_time_detailed(week_summary_data['total_coding_time'])}
-- **Daily Average Coding Time**: {format_time_detailed(week_summary_data['daily_avg_coding_time'])}
-
-## Charts
-
-### Daily Coding Time
-"""
+    md_content = (
+        f"# Week Summary: {week_summary_data['week_dates'][0]} to {week_summary_data['week_dates'][-1]}\n\n"
+        f"## Weekly Totals\n"
+        f"- **Total Coding Time**: {format_time_detailed(week_summary_data['total_coding_time'])}\n"
+        f"- **Daily Average Coding Time**: {format_time_detailed(week_summary_data['daily_avg_coding_time'])}\n\n"
+        f"## Charts\n\n### Daily Coding Time\n"
+    )
 
     # Add daily coding time chart
     if charts_data.get("daily_coding_time"):
         md_content += f"\n{charts.embed_chart_in_markdown(charts_data['daily_coding_time'], 'Daily Coding Time')}\n"
+
+    # Add daily stacked bar chart by project
+    if charts_data.get("daily_stacked_bar"):
+        md_content += f"\n{charts.embed_chart_in_markdown(charts_data['daily_stacked_bar'], 'Daily Coding Time by Project')}\n"
 
     # Add weekly aggregated charts
     if charts_data.get("weekly_languages"):
@@ -141,11 +142,10 @@ def create_weekly_summary(week_folder_path, week_summary_data):
         md_content += "\n### Weekly Projects Distribution\n"
         md_content += f"{charts.embed_chart_in_markdown(charts_data['weekly_projects'], 'Weekly Projects')}\n"
 
-    md_content += f"""
----
-*Generated on: {datetime.now().isoformat()}*
-*Days with data: {week_summary_data['metadata']['days_with_data']}/{week_summary_data['metadata']['total_days']}*
-"""
+    md_content += (
+        f"---\n*Generated on: {datetime.now().isoformat()}*\n"
+        f"*Days with data: {week_summary_data['metadata']['days_with_data']}/{week_summary_data['metadata']['total_days']}*\n"
+    )
 
     with open(week_md_file, "w", encoding="utf-8") as f:
         f.write(md_content)
@@ -163,20 +163,21 @@ def create_monthly_summary(month_folder_path, month_summary_data):
     # Save as Markdown (lightweight version)
     month_md_file = month_folder_path / f"{month_folder_path.name}_summary.md"
 
-    md_content = f"""# Monthly Summary: {month_summary_data.get('month_name', 'Unknown Month')}
-
-## Monthly Totals
-- **Total Coding Time**: {format_time_detailed(month_summary_data.get('total_coding_time', 0))}
-- **Weekly Average Coding Time**: {format_time_detailed(month_summary_data.get('weekly_avg_coding_time', 0))}
-
-## Charts
-
-### Weekly Coding Time
-"""
+    md_content = (
+        f"# Monthly Summary: {month_summary_data.get('month_name', 'Unknown Month')}\n\n"
+        f"## Monthly Totals\n"
+        f"- **Total Coding Time**: {format_time_detailed(month_summary_data.get('total_coding_time', 0))}\n"
+        f"- **Weekly Average Coding Time**: {format_time_detailed(month_summary_data.get('weekly_avg_coding_time', 0))}\n\n"
+        f"## Charts\n\n### Weekly Coding Time\n"
+    )
 
     # Add weekly coding time chart
     if charts_data.get("weekly_coding_time"):
         md_content += f"\n{charts.embed_chart_in_markdown(charts_data['weekly_coding_time'], 'Weekly Coding Time')}\n"
+
+    # Add daily stacked bar chart by project (monthly)
+    if charts_data.get("daily_stacked_bar"):
+        md_content += f"\n{charts.embed_chart_in_markdown(charts_data['daily_stacked_bar'], 'Daily Coding Time by Project (Monthly)')}\n"
 
     # Add monthly aggregated charts
     if charts_data.get("monthly_languages"):

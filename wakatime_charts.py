@@ -117,41 +117,73 @@ class WakaTimeCharts:
         title="Daily Coding Time by Project",
         chart_name="daily_stacked_bar",
     ):
-        """Create a stacked bar chart for total coding time per day, each bar split by project"""
         if not daily_summaries:
             return None
 
-        dates = [day["date"] for day in daily_summaries]
-        all_projects = set()
-        for day in daily_summaries:
-            for project in day.get("projects", []):
-                all_projects.add(project["name"])
-        all_projects = sorted(list(all_projects))
+        import matplotlib.pyplot as plt
+        import numpy as np
+        from datetime import datetime
 
-        # Prepare data: matrix [project][day]
+        dates = [day["date"] for day in daily_summaries]
+        # Định dạng ngày cho trục x
+        date_labels = [
+            datetime.strptime(d, "%Y-%m-%d").strftime("%d-%m-%Y") for d in dates
+        ]
+        all_projects = sorted(
+            {p["name"] for day in daily_summaries for p in day.get("projects", [])}
+        )
+
+        # Chuẩn bị dữ liệu: mỗi project là 1 list thời gian theo ngày
         project_times = {project: [] for project in all_projects}
+        total_times = []
         for day in daily_summaries:
             projects_today = {
                 p["name"]: p["total_seconds"] for p in day.get("projects", [])
             }
+            total = sum(projects_today.values())
+            total_times.append(total / 3600)  # giờ
             for project in all_projects:
-                project_times[project].append(projects_today.get(project, 0))
+                project_times[project].append(
+                    projects_today.get(project, 0) / 3600
+                )  # giờ
 
-        # Colors
-        colors = plt.cm.Set3(np.linspace(0, 1, len(all_projects)))
-        fig, ax = plt.subplots(figsize=(12, 6))
+        fig, ax = plt.subplots(figsize=(max(8, len(dates) * 1.2), 6))
         bottoms = np.zeros(len(dates))
+        bar_width = 0.6
+
+        color_map = plt.cm.get_cmap("tab20", len(all_projects))
         for i, project in enumerate(all_projects):
-            times = np.array(project_times[project]) / 3600  # convert to hours
+            times = project_times[project]
             ax.bar(
-                dates, times, bottom=bottoms, label=project, color=colors[i], alpha=0.8
+                date_labels,
+                times,
+                bottom=bottoms,
+                label=project,
+                width=bar_width,
+                color=color_map(i),
             )
-            bottoms += times
+            bottoms += np.array(times)
+
+        # Hiển thị tổng thời gian trên đầu mỗi cột
+        for i, (x, total) in enumerate(zip(date_labels, total_times)):
+            ax.text(
+                i,
+                bottoms[i] + 0.1,
+                f"{total:.2f}h",
+                ha="center",
+                va="bottom",
+                fontsize=10,
+                fontweight="bold",
+            )
+
+        # Đảm bảo cột không bị "đâm thủng" chart
+        y_max = max(bottoms) * 1.15 if bottoms.any() else 1
+        ax.set_ylim(0, y_max)
 
         ax.set_title(title, fontsize=14, fontweight="bold")
         ax.set_xlabel("Date")
         ax.set_ylabel("Coding Time (hours)")
-        plt.setp(ax.get_xticklabels(), rotation=45, ha="right")
+        plt.setp(ax.get_xticklabels(), rotation=30, ha="right")
         ax.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
         plt.tight_layout()
         return self._save_chart_to_file(fig, chart_name)
@@ -547,4 +579,60 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    charts = WakaTimeCharts()
+    # Dữ liệu mẫu 7 ngày, 3 project
+    sample_data = [
+        {
+            "date": "Mon",
+            "projects": [
+                {"name": "poker", "total_seconds": 3 * 3600},
+                {"name": "cs50", "total_seconds": 4 * 3600},
+            ],
+        },
+        {
+            "date": "Tue",
+            "projects": [
+                {"name": "poker", "total_seconds": 2 * 3600},
+                {"name": "cs50", "total_seconds": 5 * 3600},
+            ],
+        },
+        {
+            "date": "Wed",
+            "projects": [
+                {"name": "poker", "total_seconds": 1 * 3600},
+                {"name": "cs50", "total_seconds": 2 * 3600},
+                {"name": "waka", "total_seconds": 3 * 3600},
+            ],
+        },
+        {
+            "date": "Thu",
+            "projects": [
+                {"name": "poker", "total_seconds": 4 * 3600},
+                {"name": "waka", "total_seconds": 2 * 3600},
+            ],
+        },
+        {
+            "date": "Fri",
+            "projects": [
+                {"name": "cs50", "total_seconds": 6 * 3600},
+            ],
+        },
+        {
+            "date": "Sat",
+            "projects": [
+                {"name": "waka", "total_seconds": 5 * 3600},
+            ],
+        },
+        {
+            "date": "Sun",
+            "projects": [
+                {"name": "poker", "total_seconds": 2 * 3600},
+                {"name": "cs50", "total_seconds": 2 * 3600},
+                {"name": "waka", "total_seconds": 2 * 3600},
+            ],
+        },
+    ]
+    charts.create_daily_stacked_bar_chart(
+        sample_data, title="Test Stacked Bar Chart", chart_name="test_stacked_bar"
+    )
+    print("[TEST] Saved test stacked bar chart to charts/test_stacked_bar.png")
