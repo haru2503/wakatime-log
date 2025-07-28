@@ -1,0 +1,468 @@
+{
+  "wakatime_data": {
+    "data": [
+      {
+        "grand_total": {
+          "hours": 2,
+          "minutes": 47,
+          "total_seconds": 10063.681114,
+          "digital": "2:47",
+          "decimal": "2.78",
+          "text": "2 hrs 47 mins"
+        },
+        "range": {
+          "start": "2025-07-27T17:00:00Z",
+          "end": "2025-07-28T16:59:59Z",
+          "date": "2025-07-28",
+          "text": "Mon Jul 28th 2025",
+          "timezone": "Asia/Ho_Chi_Minh"
+        },
+        "projects": [
+          {
+            "name": "wakatime-log",
+            "total_seconds": 10063.681114,
+            "color": null,
+            "digital": "2:47:43",
+            "decimal": "2.78",
+            "text": "2 hrs 47 mins",
+            "hours": 2,
+            "minutes": 47,
+            "seconds": 43,
+            "percent": 100.0
+          }
+        ],
+        "languages": [
+          {
+            "name": "Python",
+            "total_seconds": 4718.086687,
+            "digital": "1:18:38",
+            "decimal": "1.30",
+            "text": "1 hr 18 mins",
+            "hours": 1,
+            "minutes": 18,
+            "seconds": 38,
+            "percent": 46.88
+          },
+          {
+            "name": "Markdown",
+            "total_seconds": 4067.32237,
+            "digital": "1:07:47",
+            "decimal": "1.12",
+            "text": "1 hr 7 mins",
+            "hours": 1,
+            "minutes": 7,
+            "seconds": 47,
+            "percent": 40.42
+          },
+          {
+            "name": "Git Config",
+            "total_seconds": 794.049213,
+            "digital": "0:13:14",
+            "decimal": "0.22",
+            "text": "13 mins",
+            "hours": 0,
+            "minutes": 13,
+            "seconds": 14,
+            "percent": 7.89
+          },
+          {
+            "name": "YAML",
+            "total_seconds": 196.813887,
+            "digital": "0:03:16",
+            "decimal": "0.05",
+            "text": "3 mins",
+            "hours": 0,
+            "minutes": 3,
+            "seconds": 16,
+            "percent": 1.96
+          },
+          {
+            "name": "Text",
+            "total_seconds": 181.715192,
+            "digital": "0:03:01",
+            "decimal": "0.05",
+            "text": "3 mins",
+            "hours": 0,
+            "minutes": 3,
+            "seconds": 1,
+            "percent": 1.81
+          },
+          {
+            "name": "JSON",
+            "total_seconds": 103.459518,
+            "digital": "0:01:43",
+            "decimal": "0.02",
+            "text": "1 min",
+            "hours": 0,
+            "minutes": 1,
+            "seconds": 43,
+            "percent": 1.03
+          },
+          {
+            "name": "Other",
+            "total_seconds": 2.234247,
+            "digital": "0:00:02",
+            "decimal": "0.00",
+            "text": "2 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 2,
+            "percent": 0.02
+          }
+        ],
+        "dependencies": [
+          {
+            "name": "pathlib",
+            "total_seconds": 4408.559931,
+            "digital": "1:13:28",
+            "decimal": "1.22",
+            "text": "1 hr 13 mins",
+            "hours": 1,
+            "minutes": 13,
+            "seconds": 28,
+            "percent": 14.18
+          },
+          {
+            "name": "numpy",
+            "total_seconds": 3222.864732,
+            "digital": "0:53:42",
+            "decimal": "0.88",
+            "text": "53 mins",
+            "hours": 0,
+            "minutes": 53,
+            "seconds": 42,
+            "percent": 10.36
+          },
+          {
+            "name": "matplotlib",
+            "total_seconds": 3222.864732,
+            "digital": "0:53:42",
+            "decimal": "0.88",
+            "text": "53 mins",
+            "hours": 0,
+            "minutes": 53,
+            "seconds": 42,
+            "percent": 10.36
+          },
+          {
+            "name": "io",
+            "total_seconds": 3190.543441,
+            "digital": "0:53:10",
+            "decimal": "0.88",
+            "text": "53 mins",
+            "hours": 0,
+            "minutes": 53,
+            "seconds": 10,
+            "percent": 10.26
+          },
+          {
+            "name": "base64",
+            "total_seconds": 3190.543441,
+            "digital": "0:53:10",
+            "decimal": "0.88",
+            "text": "53 mins",
+            "hours": 0,
+            "minutes": 53,
+            "seconds": 10,
+            "percent": 10.26
+          },
+          {
+            "name": "datetime",
+            "total_seconds": 2618.833136,
+            "digital": "0:43:38",
+            "decimal": "0.72",
+            "text": "43 mins",
+            "hours": 0,
+            "minutes": 43,
+            "seconds": 38,
+            "percent": 8.42
+          },
+          {
+            "name": "json",
+            "total_seconds": 2618.833136,
+            "digital": "0:43:38",
+            "decimal": "0.72",
+            "text": "43 mins",
+            "hours": 0,
+            "minutes": 43,
+            "seconds": 38,
+            "percent": 8.42
+          },
+          {
+            "name": "requests",
+            "total_seconds": 1443.222947,
+            "digital": "0:24:03",
+            "decimal": "0.40",
+            "text": "24 mins",
+            "hours": 0,
+            "minutes": 24,
+            "seconds": 3,
+            "percent": 4.64
+          },
+          {
+            "name": "hashlib",
+            "total_seconds": 1443.222947,
+            "digital": "0:24:03",
+            "decimal": "0.40",
+            "text": "24 mins",
+            "hours": 0,
+            "minutes": 24,
+            "seconds": 3,
+            "percent": 4.64
+          },
+          {
+            "name": "time",
+            "total_seconds": 1443.222947,
+            "digital": "0:24:03",
+            "decimal": "0.40",
+            "text": "24 mins",
+            "hours": 0,
+            "minutes": 24,
+            "seconds": 3,
+            "percent": 4.64
+          },
+          {
+            "name": "ntplib",
+            "total_seconds": 1443.222947,
+            "digital": "0:24:03",
+            "decimal": "0.40",
+            "text": "24 mins",
+            "hours": 0,
+            "minutes": 24,
+            "seconds": 3,
+            "percent": 4.64
+          },
+          {
+            "name": "calendar",
+            "total_seconds": 1443.222947,
+            "digital": "0:24:03",
+            "decimal": "0.40",
+            "text": "24 mins",
+            "hours": 0,
+            "minutes": 24,
+            "seconds": 3,
+            "percent": 4.64
+          },
+          {
+            "name": "wakatime_charts",
+            "total_seconds": 1362.110448,
+            "digital": "0:22:42",
+            "decimal": "0.37",
+            "text": "22 mins",
+            "hours": 0,
+            "minutes": 22,
+            "seconds": 42,
+            "percent": 4.38
+          },
+          {
+            "name": "argparse",
+            "total_seconds": 32.321291,
+            "digital": "0:00:32",
+            "decimal": "0.00",
+            "text": "32 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 32,
+            "percent": 0.1
+          },
+          {
+            "name": "end",
+            "total_seconds": 4.042522,
+            "digital": "0:00:04",
+            "decimal": "0.00",
+            "text": "4 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 4,
+            "percent": 0.01
+          },
+          {
+            "name": "daily_average",
+            "total_seconds": 4.042522,
+            "digital": "0:00:04",
+            "decimal": "0.00",
+            "text": "4 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 4,
+            "percent": 0.01
+          },
+          {
+            "name": "cumulative_total",
+            "total_seconds": 4.042522,
+            "digital": "0:00:04",
+            "decimal": "0.00",
+            "text": "4 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 4,
+            "percent": 0.01
+          },
+          {
+            "name": "start",
+            "total_seconds": 4.042522,
+            "digital": "0:00:04",
+            "decimal": "0.00",
+            "text": "4 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 4,
+            "percent": 0.01
+          }
+        ],
+        "machines": [
+          {
+            "name": "haru",
+            "total_seconds": 10063.681114,
+            "machine_name_id": "102b80a9-1819-4809-9aeb-1e3cb4f0cdf5",
+            "digital": "2:47:43",
+            "decimal": "2.78",
+            "text": "2 hrs 47 mins",
+            "hours": 2,
+            "minutes": 47,
+            "seconds": 43,
+            "percent": 100.0
+          }
+        ],
+        "editors": [
+          {
+            "name": "Cursor",
+            "total_seconds": 10063.681114,
+            "digital": "2:47:43",
+            "decimal": "2.78",
+            "text": "2 hrs 47 mins",
+            "hours": 2,
+            "minutes": 47,
+            "seconds": 43,
+            "percent": 100.0
+          }
+        ],
+        "operating_systems": [
+          {
+            "name": "Linux",
+            "total_seconds": 10063.681114,
+            "digital": "2:47:43",
+            "decimal": "2.78",
+            "text": "2 hrs 47 mins",
+            "hours": 2,
+            "minutes": 47,
+            "seconds": 43,
+            "percent": 100.0
+          }
+        ],
+        "categories": [
+          {
+            "name": "Coding",
+            "total_seconds": 3797.24574,
+            "digital": "1:03:17",
+            "decimal": "1.05",
+            "text": "1 hr 3 mins",
+            "hours": 1,
+            "minutes": 3,
+            "seconds": 17,
+            "percent": 37.73
+          },
+          {
+            "name": "Writing Docs",
+            "total_seconds": 3507.280576,
+            "digital": "0:58:27",
+            "decimal": "0.97",
+            "text": "58 mins",
+            "hours": 0,
+            "minutes": 58,
+            "seconds": 27,
+            "percent": 34.85
+          },
+          {
+            "name": "AI Coding",
+            "total_seconds": 2756.752524,
+            "digital": "0:45:56",
+            "decimal": "0.75",
+            "text": "45 mins",
+            "hours": 0,
+            "minutes": 45,
+            "seconds": 56,
+            "percent": 27.39
+          },
+          {
+            "name": "Writing Tests",
+            "total_seconds": 2.402274,
+            "digital": "0:00:02",
+            "decimal": "0.00",
+            "text": "2 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 2,
+            "percent": 0.02
+          }
+        ]
+      }
+    ],
+    "start": "2025-07-27T17:00:00Z",
+    "end": "2025-07-28T16:59:59Z",
+    "cumulative_total": {
+      "seconds": 10063.681114,
+      "text": "2 hrs 47 mins",
+      "digital": "2:47",
+      "decimal": "2.78"
+    },
+    "daily_average": {
+      "holidays": 0,
+      "days_minus_holidays": 1,
+      "days_including_holidays": 1,
+      "seconds": 10061,
+      "seconds_including_other_language": 10064,
+      "text": "2 hrs 47 mins",
+      "text_including_other_language": "2 hrs 47 mins"
+    }
+  },
+  "authenticity_proof": {
+    "content_hash": "749cdcca4a68ebaf1586126253fe1419b85acf0c2595b818adb28e3eb03c3edb",
+    "external_timestamps": {
+      "data_hash": "749cdcca4a68ebaf1586126253fe1419b85acf0c2595b818adb28e3eb03c3edb",
+      "timestamps": {
+        "ntp_time": 1753691617.2530403,
+        "ntp_server": "pool.ntp.org",
+        "github_server_time": "Mon, 28 Jul 2025 08:33:34 GMT"
+      },
+      "verification_note": "These timestamps are from external sources and cannot be manipulated"
+    },
+    "network_evidence": {
+      "user_agent": "WakaTimeImporter/1.0",
+      "request_time": "2025-07-28T08:33:37.442430",
+      "system_info": {
+        "platform": "posix",
+        "hostname": "unknown"
+      }
+    },
+    "authenticity_note": "This data cannot be fabricated due to external verifications"
+  },
+  "request_proof": {
+    "url": "https://wakatime.com/api/v1/users/current/summaries?start=2025-07-28&end=2025-07-28",
+    "method": "GET",
+    "status_code": 200,
+    "response_headers": {
+      "Server": "nginx",
+      "Date": "Mon, 28 Jul 2025 08:33:37 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "6516",
+      "Connection": "keep-alive",
+      "X-Content-Type-Options": "nosniff",
+      "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+      "X-XSS-Protection": "1; mode=block",
+      "Feature-Policy": "accelerometer 'none';autoplay 'self';camera 'none';fullscreen 'self';geolocation 'none';gyroscope 'none';magnetometer 'none';microphone 'none';midi 'none';payment 'self';picture-in-picture 'none';sync-xhr 'self';usb 'none';",
+      "Referrer-Policy": "strict-origin-when-cross-origin",
+      "X-Frame-Options": "SAMEORIGIN",
+      "Cross-Origin-Opener-Policy": "same-origin",
+      "Content-Security-Policy": "default-src 'self'; frame-ancestors 'self'; script-src 'self' 'unsafe-eval' https://www.google.com/ https://www.gstatic.com/; img-src 'self' data: https://cdn.loom.com/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://fonts.gstatic.com/; font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/; media-src 'self' https://*.amazonaws.com; frame-src 'self' https://www.google.com/ https://www.youtube.com/ https://www.loom.com/ player.vimeo.com; object-src 'self'; connect-src 'self' https://www.google.com/ https://avatar-cdn.atlassian.com;"
+    },
+    "request_duration": 0.2801022529602051,
+    "response_size": 6516
+  },
+  "metadata": {
+    "version": "1.0",
+    "date_fetched": "2025-07-28",
+    "script_name": "WakaTimeImporter",
+    "trustless_note": "This file contains multiple external verifications that make fabrication impossible"
+  }
+}
