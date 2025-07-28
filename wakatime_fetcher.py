@@ -322,7 +322,7 @@ class TrustlessWakaTimeLogger:
         # Save as Markdown (lightweight)
         week_md_file = week_folder_path / f"{week_folder_path.name}_summary.md"
 
-        md_content = f"""# Week Summary: {week_summary_data['week_dates'][0]} to {week_summary_data['week_dates'][-1]}\n\n## Weekly Totals\n- **Total Coding Time**: {self.format_time_detailed(week_summary_data['total_coding_time'])}\n- **Daily Average Coding Time**: {self.format_time_detailed(week_summary_data['daily_avg_coding_time'])}\n\n## Charts\n\n### Daily Coding Time\n"""
+        md_content = f"""# Week Summary: {week_summary_data['week_dates'][0]} to {week_summary_data['week_dates'][-1]}\n\n## Weekly Totals\n- **Total Coding Time**: {self.format_time_detailed(week_summary_data['total_coding_time'])}\n- **Daily Average Coding Time**: {self.format_time_detailed(week_summary_data['daily_avg_coding_time'])}\n\n## Charts\n"""
 
         # Add daily coding time chart
         # if charts_data.get("daily_coding_time"):
