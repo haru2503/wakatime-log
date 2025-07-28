@@ -50,6 +50,7 @@ jobs:
 
         echo "Stage changes"
         git add wakatime_logs/
+        git add charts/
 
         if git diff --cached --quiet; then
           echo "No changes to commit"
