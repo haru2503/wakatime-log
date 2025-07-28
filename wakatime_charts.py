@@ -418,16 +418,18 @@ class WakaTimeCharts:
         ]
 
     def _save_chart_to_file(self, fig, chart_name):
-        """Save chart to PNG file"""
-        # Create charts directory if it doesn't exist
-        charts_dir = Path("charts")
-        charts_dir.mkdir(exist_ok=True)
+        """Save chart to PNG file in charts folder at repo root"""
+        import os
+        from pathlib import Path
 
+        # Determine repo root (where this script is located)
+        repo_root = Path(__file__).parent.resolve()
+        charts_dir = repo_root / "charts"
+        charts_dir.mkdir(exist_ok=True)
         # Save chart as PNG
         filename = charts_dir / f"{chart_name}.png"
         fig.savefig(filename, format="png", dpi=150, bbox_inches="tight")
         plt.close(fig)
-
         return str(filename)
 
     def _save_chart_to_base64(self, fig):
