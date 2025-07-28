@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import base64
 from io import BytesIO
+from pathlib import Path
 
 
 class WakaTimeCharts:
@@ -108,7 +109,7 @@ class WakaTimeCharts:
         ax.set_ylim(0, max_time * 1.1)  # Add 10% padding
 
         plt.tight_layout()
-        return self._save_chart_to_base64(fig)
+        return self._save_chart_to_file(fig, "daily_coding_time")
 
     def create_pie_chart(self, items, title, max_items=8):
         """Create a pie chart for languages, categories, editors, etc."""
@@ -207,17 +208,23 @@ class WakaTimeCharts:
         )
 
         plt.tight_layout()
-        return self._save_chart_to_base64(fig)
+        return self._save_chart_to_file(fig, title.lower().replace(" ", "_"))
 
-    def create_weekly_summary_charts(self, week_summary_data):
+    def create_weekly_summary_charts(self, week_summary_data, output_dir=None):
         """Create all charts for weekly summary"""
         charts = {}
 
+        if output_dir:
+            output_path = Path(output_dir)
+            output_path.mkdir(parents=True, exist_ok=True)
+
         # Daily coding time chart
         if week_summary_data.get("daily_summaries"):
-            charts["daily_coding_time"] = self.create_daily_coding_time_chart(
+            chart_file = self.create_daily_coding_time_chart(
                 week_summary_data["daily_summaries"], "Weekly Daily Coding Time"
             )
+            if chart_file:
+                charts["daily_coding_time"] = chart_file
 
         # Aggregate data for weekly pie charts
         weekly_languages = self._aggregate_items(week_summary_data, "languages")
@@ -229,74 +236,95 @@ class WakaTimeCharts:
 
         # Create weekly pie charts
         if weekly_languages:
-            charts["weekly_languages"] = self.create_pie_chart(
-                weekly_languages, "Weekly Languages"
-            )
+            chart_file = self.create_pie_chart(weekly_languages, "Weekly Languages")
+            if chart_file:
+                charts["weekly_languages"] = chart_file
+
         if weekly_categories:
-            charts["weekly_categories"] = self.create_pie_chart(
-                weekly_categories, "Weekly Categories"
-            )
+            chart_file = self.create_pie_chart(weekly_categories, "Weekly Categories")
+            if chart_file:
+                charts["weekly_categories"] = chart_file
+
         if weekly_editors:
-            charts["weekly_editors"] = self.create_pie_chart(
-                weekly_editors, "Weekly Editors"
-            )
+            chart_file = self.create_pie_chart(weekly_editors, "Weekly Editors")
+            if chart_file:
+                charts["weekly_editors"] = chart_file
+
         if weekly_os:
-            charts["weekly_os"] = self.create_pie_chart(
-                weekly_os, "Weekly Operating Systems"
-            )
+            chart_file = self.create_pie_chart(weekly_os, "Weekly Operating Systems")
+            if chart_file:
+                charts["weekly_os"] = chart_file
+
         if weekly_machines:
-            charts["weekly_machines"] = self.create_pie_chart(
-                weekly_machines, "Weekly Machines"
-            )
+            chart_file = self.create_pie_chart(weekly_machines, "Weekly Machines")
+            if chart_file:
+                charts["weekly_machines"] = chart_file
+
         if weekly_projects:
-            charts["weekly_projects"] = self.create_pie_chart(
-                weekly_projects, "Weekly Projects"
-            )
+            chart_file = self.create_pie_chart(weekly_projects, "Weekly Projects")
+            if chart_file:
+                charts["weekly_projects"] = chart_file
 
         # Daily breakdown charts (for individual days)
         for day_summary in week_summary_data.get("daily_summaries", []):
             # Languages pie chart
             if day_summary.get("languages"):
-                charts[f"languages_{day_summary['date']}"] = self.create_pie_chart(
+                chart_file = self.create_pie_chart(
                     day_summary["languages"], f"Languages - {day_summary['date']}"
                 )
+                if chart_file:
+                    charts[f"languages_{day_summary['date']}"] = chart_file
 
             # Categories pie chart
             if day_summary.get("categories"):
-                charts[f"categories_{day_summary['date']}"] = self.create_pie_chart(
+                chart_file = self.create_pie_chart(
                     day_summary["categories"], f"Categories - {day_summary['date']}"
                 )
+                if chart_file:
+                    charts[f"categories_{day_summary['date']}"] = chart_file
 
             # Editors pie chart
             if day_summary.get("editors"):
-                charts[f"editors_{day_summary['date']}"] = self.create_pie_chart(
+                chart_file = self.create_pie_chart(
                     day_summary["editors"], f"Editors - {day_summary['date']}"
                 )
+                if chart_file:
+                    charts[f"editors_{day_summary['date']}"] = chart_file
 
             # Operating Systems pie chart
             if day_summary.get("operating_systems"):
-                charts[f"os_{day_summary['date']}"] = self.create_pie_chart(
+                chart_file = self.create_pie_chart(
                     day_summary["operating_systems"],
                     f"Operating Systems - {day_summary['date']}",
                 )
+                if chart_file:
+                    charts[f"os_{day_summary['date']}"] = chart_file
 
             # Machines pie chart
             if day_summary.get("machines"):
-                charts[f"machines_{day_summary['date']}"] = self.create_pie_chart(
+                chart_file = self.create_pie_chart(
                     day_summary["machines"], f"Machines - {day_summary['date']}"
                 )
+                if chart_file:
+                    charts[f"machines_{day_summary['date']}"] = chart_file
 
             # Projects pie chart
             if day_summary.get("projects"):
-                charts[f"projects_{day_summary['date']}"] = self.create_pie_chart(
+                chart_file = self.create_pie_chart(
                     day_summary["projects"], f"Projects - {day_summary['date']}"
                 )
+                if chart_file:
+                    charts[f"projects_{day_summary['date']}"] = chart_file
 
         return charts
 
-    def create_monthly_summary_charts(self, month_summary_data):
+    def create_monthly_summary_charts(self, month_summary_data, output_dir=None):
         """Create all charts for monthly summary"""
         charts = {}
+
+        if output_dir:
+            output_path = Path(output_dir)
+            output_path.mkdir(parents=True, exist_ok=True)
 
         # Weekly coding time chart
         if month_summary_data.get("weekly_summaries"):
@@ -310,9 +338,11 @@ class WakaTimeCharts:
                     }
                 )
 
-            charts["weekly_coding_time"] = self.create_daily_coding_time_chart(
+            chart_file = self.create_daily_coding_time_chart(
                 weekly_data, "Monthly Weekly Coding Time"
             )
+            if chart_file:
+                charts["weekly_coding_time"] = chart_file
 
         # Aggregate data for monthly pie charts
         monthly_languages = self._aggregate_items(month_summary_data, "languages")
@@ -324,29 +354,34 @@ class WakaTimeCharts:
 
         # Create monthly pie charts
         if monthly_languages:
-            charts["monthly_languages"] = self.create_pie_chart(
-                monthly_languages, "Monthly Languages"
-            )
+            chart_file = self.create_pie_chart(monthly_languages, "Monthly Languages")
+            if chart_file:
+                charts["monthly_languages"] = chart_file
+
         if monthly_categories:
-            charts["monthly_categories"] = self.create_pie_chart(
-                monthly_categories, "Monthly Categories"
-            )
+            chart_file = self.create_pie_chart(monthly_categories, "Monthly Categories")
+            if chart_file:
+                charts["monthly_categories"] = chart_file
+
         if monthly_editors:
-            charts["monthly_editors"] = self.create_pie_chart(
-                monthly_editors, "Monthly Editors"
-            )
+            chart_file = self.create_pie_chart(monthly_editors, "Monthly Editors")
+            if chart_file:
+                charts["monthly_editors"] = chart_file
+
         if monthly_os:
-            charts["monthly_os"] = self.create_pie_chart(
-                monthly_os, "Monthly Operating Systems"
-            )
+            chart_file = self.create_pie_chart(monthly_os, "Monthly Operating Systems")
+            if chart_file:
+                charts["monthly_os"] = chart_file
+
         if monthly_machines:
-            charts["monthly_machines"] = self.create_pie_chart(
-                monthly_machines, "Monthly Machines"
-            )
+            chart_file = self.create_pie_chart(monthly_machines, "Monthly Machines")
+            if chart_file:
+                charts["monthly_machines"] = chart_file
+
         if monthly_projects:
-            charts["monthly_projects"] = self.create_pie_chart(
-                monthly_projects, "Monthly Projects"
-            )
+            chart_file = self.create_pie_chart(monthly_projects, "Monthly Projects")
+            if chart_file:
+                charts["monthly_projects"] = chart_file
 
         return charts
 
@@ -382,6 +417,19 @@ class WakaTimeCharts:
             if seconds > 0
         ]
 
+    def _save_chart_to_file(self, fig, chart_name):
+        """Save chart to PNG file"""
+        # Create charts directory if it doesn't exist
+        charts_dir = Path("charts")
+        charts_dir.mkdir(exist_ok=True)
+
+        # Save chart as PNG
+        filename = charts_dir / f"{chart_name}.png"
+        fig.savefig(filename, format="png", dpi=150, bbox_inches="tight")
+        plt.close(fig)
+
+        return str(filename)
+
     def _save_chart_to_base64(self, fig):
         """Save chart to base64 string for embedding in markdown"""
         img_buffer = BytesIO()
@@ -391,9 +439,9 @@ class WakaTimeCharts:
         plt.close(fig)
         return f"data:image/png;base64,{img_str}"
 
-    def embed_chart_in_markdown(self, chart_base64, alt_text="Chart"):
-        """Create markdown image tag for chart"""
-        return f"![{alt_text}]({chart_base64})"
+    def embed_chart_in_markdown(self, chart_file, alt_text="Chart"):
+        """Create markdown image tag for chart file"""
+        return f"![{alt_text}]({chart_file})"
 
 
 def main():
