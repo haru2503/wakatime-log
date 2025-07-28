@@ -323,8 +323,8 @@ class WakaTimeImporter:
         md_content = f"""# Week Summary: {week_summary_data['week_dates'][0]} to {week_summary_data['week_dates'][-1]}\n\n## Weekly Totals\n- **Total Coding Time**: {self.format_time_detailed(week_summary_data['total_coding_time'])}\n- **Daily Average Coding Time**: {self.format_time_detailed(week_summary_data['daily_avg_coding_time'])}\n\n## Charts\n\n### Daily Coding Time\n"""
 
         # Add daily coding time chart
-        if charts_data.get("daily_coding_time"):
-            md_content += f"\n{charts.embed_chart_in_markdown(charts_data['daily_coding_time'], 'Daily Coding Time')}\n"
+        # if charts_data.get("daily_coding_time"):
+        #     md_content += f"\n{charts.embed_chart_in_markdown(charts_data['daily_coding_time'], 'Daily Coding Time')}\n"
         # Thêm chart stacked bar
         if charts_data.get("daily_stacked_bar"):
             md_content += "\n### Daily Coding Time by Project (Stacked Bar)\n"
