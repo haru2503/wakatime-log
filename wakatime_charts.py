@@ -142,35 +142,71 @@ class WakaTimeCharts:
         # Calculate percentages
         percentages = [size / total * 100 for size in sizes]
 
-        # Create pie chart
-        fig, ax = plt.subplots(figsize=(8, 6))
+        # Create pie chart with more space for legend
+        fig, ax = plt.subplots(figsize=(12, 8))
 
-        # Create pie chart with custom colors
+        # Create pie chart with custom colors and no labels on pie
         colors = plt.cm.Set3(np.linspace(0, 1, len(labels)))
+
+        # Only show percentage if it's large enough (>5%)
+        def make_autopct(values):
+            def my_autopct(pct):
+                # Only show percentage if it's > 5%
+                if pct > 5:
+                    return f"{pct:.1f}%"
+                else:
+                    return ""
+
+            return my_autopct
+
         wedges, texts, autotexts = ax.pie(
-            sizes, labels=labels, autopct="%1.1f%%", colors=colors, startangle=90
+            sizes,
+            labels=None,  # No labels on pie
+            autopct=make_autopct(sizes),
+            colors=colors,
+            startangle=90,
+            pctdistance=0.85,
         )
 
-        # Customize text
+        # Customize percentage text
         for autotext in autotexts:
             autotext.set_color("white")
             autotext.set_fontweight("bold")
+            autotext.set_fontsize(10)
 
-        ax.set_title(title, fontsize=14, fontweight="bold")
+        ax.set_title(title, fontsize=16, fontweight="bold", pad=20)
 
-        # Add time labels
-        for i, (wedge, size) in enumerate(zip(wedges, sizes)):
+        # Add total time in the center
+        total_time_str = self.format_time_readable(total)
+        ax.text(
+            0,
+            0,
+            total_time_str,
+            ha="center",
+            va="center",
+            fontsize=14,
+            fontweight="bold",
+            transform=ax.transData,
+        )
+
+        # Create legend with time and percentage
+        legend_labels = []
+        for i, (label, size, pct) in enumerate(zip(labels, sizes, percentages)):
             time_str = self.format_time_readable(size)
-            ax.text(
-                0,
-                0,
-                f"{time_str}",
-                ha="center",
-                va="center",
-                fontsize=10,
-                fontweight="bold",
-                transform=wedge.get_transform(),
-            )
+            if pct > 5:
+                legend_labels.append(f"{label} - {time_str} ({pct:.1f}%)")
+            else:
+                legend_labels.append(f"{label} - {time_str}")
+
+        # Add legend outside the pie chart
+        ax.legend(
+            wedges,
+            legend_labels,
+            title="Legend",
+            loc="center left",
+            bbox_to_anchor=(1, 0, 0.5, 1),
+            fontsize=10,
+        )
 
         plt.tight_layout()
         return self._save_chart_to_base64(fig)
@@ -246,13 +282,13 @@ class WakaTimeCharts:
                 weekly_data, "Monthly Weekly Coding Time"
             )
 
-        # Aggregate data for pie charts
-        total_languages = []
-        total_categories = []
-        total_editors = []
-        total_os = []
-        total_machines = []
-        total_projects = []
+        # Aggregate data for pie charts (placeholder for future implementation)
+        # total_languages = []
+        # total_categories = []
+        # total_editors = []
+        # total_os = []
+        # total_machines = []
+        # total_projects = []
 
         # This would need to be implemented based on the actual data structure
         # For now, we'll create placeholder charts
