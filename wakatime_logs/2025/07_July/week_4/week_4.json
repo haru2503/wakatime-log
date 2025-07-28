@@ -1,0 +1,203 @@
+{
+  "week_dates": [
+    "2025-07-28",
+    "2025-07-29",
+    "2025-07-30",
+    "2025-07-31",
+    "2025-08-01",
+    "2025-08-02",
+    "2025-08-03"
+  ],
+  "total_coding_time": 3545.717918,
+  "daily_avg_coding_time": 3545.717918,
+  "daily_summaries": [
+    {
+      "date": "2025-07-28",
+      "total_coding_time": 3545.717918,
+      "categories": [
+        {
+          "name": "Writing Docs",
+          "total_seconds": 1617.473897,
+          "digital": "0:26:57",
+          "decimal": "0.43",
+          "text": "26 mins",
+          "hours": 0,
+          "minutes": 26,
+          "seconds": 57,
+          "percent": 45.62
+        },
+        {
+          "name": "AI Coding",
+          "total_seconds": 1190.584434,
+          "digital": "0:19:50",
+          "decimal": "0.32",
+          "text": "19 mins",
+          "hours": 0,
+          "minutes": 19,
+          "seconds": 50,
+          "percent": 33.58
+        },
+        {
+          "name": "Coding",
+          "total_seconds": 735.257313,
+          "digital": "0:12:15",
+          "decimal": "0.20",
+          "text": "12 mins",
+          "hours": 0,
+          "minutes": 12,
+          "seconds": 15,
+          "percent": 20.74
+        },
+        {
+          "name": "Writing Tests",
+          "total_seconds": 2.402274,
+          "digital": "0:00:02",
+          "decimal": "0.00",
+          "text": "2 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 2,
+          "percent": 0.07
+        }
+      ],
+      "languages": [
+        {
+          "name": "Markdown",
+          "total_seconds": 2177.515691,
+          "digital": "0:36:17",
+          "decimal": "0.60",
+          "text": "36 mins",
+          "hours": 0,
+          "minutes": 36,
+          "seconds": 17,
+          "percent": 61.41
+        },
+        {
+          "name": "Python",
+          "total_seconds": 535.999351,
+          "digital": "0:08:55",
+          "decimal": "0.13",
+          "text": "8 mins",
+          "hours": 0,
+          "minutes": 8,
+          "seconds": 55,
+          "percent": 15.12
+        },
+        {
+          "name": "Git Config",
+          "total_seconds": 351.339796,
+          "digital": "0:05:51",
+          "decimal": "0.08",
+          "text": "5 mins",
+          "hours": 0,
+          "minutes": 5,
+          "seconds": 51,
+          "percent": 9.91
+        },
+        {
+          "name": "YAML",
+          "total_seconds": 196.813887,
+          "digital": "0:03:16",
+          "decimal": "0.05",
+          "text": "3 mins",
+          "hours": 0,
+          "minutes": 3,
+          "seconds": 16,
+          "percent": 5.55
+        },
+        {
+          "name": "Text",
+          "total_seconds": 181.715192,
+          "digital": "0:03:01",
+          "decimal": "0.05",
+          "text": "3 mins",
+          "hours": 0,
+          "minutes": 3,
+          "seconds": 1,
+          "percent": 5.12
+        },
+        {
+          "name": "JSON",
+          "total_seconds": 100.099754,
+          "digital": "0:01:40",
+          "decimal": "0.02",
+          "text": "1 min",
+          "hours": 0,
+          "minutes": 1,
+          "seconds": 40,
+          "percent": 2.82
+        },
+        {
+          "name": "Other",
+          "total_seconds": 2.234247,
+          "digital": "0:00:02",
+          "decimal": "0.00",
+          "text": "2 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 2,
+          "percent": 0.06
+        }
+      ],
+      "projects": [
+        {
+          "name": "wakatime-log",
+          "total_seconds": 3545.717918,
+          "color": null,
+          "digital": "0:59:05",
+          "decimal": "0.98",
+          "text": "59 mins",
+          "hours": 0,
+          "minutes": 59,
+          "seconds": 5,
+          "percent": 100.0
+        }
+      ],
+      "editors": [
+        {
+          "name": "Cursor",
+          "total_seconds": 3545.717918,
+          "digital": "0:59:05",
+          "decimal": "0.98",
+          "text": "59 mins",
+          "hours": 0,
+          "minutes": 59,
+          "seconds": 5,
+          "percent": 100.0
+        }
+      ],
+      "machines": [
+        {
+          "name": "haru",
+          "total_seconds": 3545.717918,
+          "machine_name_id": "102b80a9-1819-4809-9aeb-1e3cb4f0cdf5",
+          "digital": "0:59:05",
+          "decimal": "0.98",
+          "text": "59 mins",
+          "hours": 0,
+          "minutes": 59,
+          "seconds": 5,
+          "percent": 100.0
+        }
+      ],
+      "operating_systems": [
+        {
+          "name": "Linux",
+          "total_seconds": 3545.717918,
+          "digital": "0:59:05",
+          "decimal": "0.98",
+          "text": "59 mins",
+          "hours": 0,
+          "minutes": 59,
+          "seconds": 5,
+          "percent": 100.0
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "generated_at": "2025-07-28T05:32:02.391064",
+    "days_with_data": 1,
+    "total_days": 7
+  }
+}
