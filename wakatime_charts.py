@@ -5,12 +5,7 @@ Generate charts for weekly and monthly summaries
 """
 
 import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
 import numpy as np
-from datetime import datetime
-import os
-from pathlib import Path
-import json
 import base64
 from io import BytesIO
 
@@ -108,6 +103,10 @@ class WakaTimeCharts:
                     fontsize=8,
                 )
 
+        # Set y-axis limit to prevent overflow
+        max_time = max(total_times) if total_times else 0
+        ax.set_ylim(0, max_time * 1.1)  # Add 10% padding
+
         plt.tight_layout()
         return self._save_chart_to_base64(fig)
 
@@ -198,11 +197,10 @@ class WakaTimeCharts:
             else:
                 legend_labels.append(f"{label} - {time_str}")
 
-        # Add legend outside the pie chart
+        # Add legend outside the pie chart (without title)
         ax.legend(
             wedges,
             legend_labels,
-            title="Legend",
             loc="center left",
             bbox_to_anchor=(1, 0, 0.5, 1),
             fontsize=10,
@@ -221,7 +219,41 @@ class WakaTimeCharts:
                 week_summary_data["daily_summaries"], "Weekly Daily Coding Time"
             )
 
-        # Pie charts for each category
+        # Aggregate data for weekly pie charts
+        weekly_languages = self._aggregate_items(week_summary_data, "languages")
+        weekly_categories = self._aggregate_items(week_summary_data, "categories")
+        weekly_editors = self._aggregate_items(week_summary_data, "editors")
+        weekly_os = self._aggregate_items(week_summary_data, "operating_systems")
+        weekly_machines = self._aggregate_items(week_summary_data, "machines")
+        weekly_projects = self._aggregate_items(week_summary_data, "projects")
+
+        # Create weekly pie charts
+        if weekly_languages:
+            charts["weekly_languages"] = self.create_pie_chart(
+                weekly_languages, "Weekly Languages"
+            )
+        if weekly_categories:
+            charts["weekly_categories"] = self.create_pie_chart(
+                weekly_categories, "Weekly Categories"
+            )
+        if weekly_editors:
+            charts["weekly_editors"] = self.create_pie_chart(
+                weekly_editors, "Weekly Editors"
+            )
+        if weekly_os:
+            charts["weekly_os"] = self.create_pie_chart(
+                weekly_os, "Weekly Operating Systems"
+            )
+        if weekly_machines:
+            charts["weekly_machines"] = self.create_pie_chart(
+                weekly_machines, "Weekly Machines"
+            )
+        if weekly_projects:
+            charts["weekly_projects"] = self.create_pie_chart(
+                weekly_projects, "Weekly Projects"
+            )
+
+        # Daily breakdown charts (for individual days)
         for day_summary in week_summary_data.get("daily_summaries", []):
             # Languages pie chart
             if day_summary.get("languages"):
@@ -282,18 +314,73 @@ class WakaTimeCharts:
                 weekly_data, "Monthly Weekly Coding Time"
             )
 
-        # Aggregate data for pie charts (placeholder for future implementation)
-        # total_languages = []
-        # total_categories = []
-        # total_editors = []
-        # total_os = []
-        # total_machines = []
-        # total_projects = []
+        # Aggregate data for monthly pie charts
+        monthly_languages = self._aggregate_items(month_summary_data, "languages")
+        monthly_categories = self._aggregate_items(month_summary_data, "categories")
+        monthly_editors = self._aggregate_items(month_summary_data, "editors")
+        monthly_os = self._aggregate_items(month_summary_data, "operating_systems")
+        monthly_machines = self._aggregate_items(month_summary_data, "machines")
+        monthly_projects = self._aggregate_items(month_summary_data, "projects")
 
-        # This would need to be implemented based on the actual data structure
-        # For now, we'll create placeholder charts
+        # Create monthly pie charts
+        if monthly_languages:
+            charts["monthly_languages"] = self.create_pie_chart(
+                monthly_languages, "Monthly Languages"
+            )
+        if monthly_categories:
+            charts["monthly_categories"] = self.create_pie_chart(
+                monthly_categories, "Monthly Categories"
+            )
+        if monthly_editors:
+            charts["monthly_editors"] = self.create_pie_chart(
+                monthly_editors, "Monthly Editors"
+            )
+        if monthly_os:
+            charts["monthly_os"] = self.create_pie_chart(
+                monthly_os, "Monthly Operating Systems"
+            )
+        if monthly_machines:
+            charts["monthly_machines"] = self.create_pie_chart(
+                monthly_machines, "Monthly Machines"
+            )
+        if monthly_projects:
+            charts["monthly_projects"] = self.create_pie_chart(
+                monthly_projects, "Monthly Projects"
+            )
 
         return charts
+
+    def _aggregate_items(self, summary_data, item_type):
+        """Aggregate items across all days/weeks for pie charts"""
+        aggregated = {}
+
+        # Handle daily summaries (for weekly data)
+        for day in summary_data.get("daily_summaries", []):
+            for item in day.get(item_type, []):
+                name = item["name"]
+                seconds = item.get("total_seconds", 0)
+                if name in aggregated:
+                    aggregated[name] += seconds
+                else:
+                    aggregated[name] = seconds
+
+        # Handle weekly summaries (for monthly data)
+        for week in summary_data.get("weekly_summaries", []):
+            for day in week.get("daily_summaries", []):
+                for item in day.get(item_type, []):
+                    name = item["name"]
+                    seconds = item.get("total_seconds", 0)
+                    if name in aggregated:
+                        aggregated[name] += seconds
+                    else:
+                        aggregated[name] = seconds
+
+        # Convert to list format
+        return [
+            {"name": name, "total_seconds": seconds}
+            for name, seconds in aggregated.items()
+            if seconds > 0
+        ]
 
     def _save_chart_to_base64(self, fig):
         """Save chart to base64 string for embedding in markdown"""
