@@ -1,15 +1,25 @@
 # Trustless WakaTime Logger
 
-A trustless system for logging WakaTime data with external verification to prove authenticity and prevent data fabrication.
+**Trustless WakaTime Logger** is a system that automatically logs WakaTime data daily, with one core purpose:
+📌 **To make it impossible for *anyone*, including the user themselves, to fake or tamper with the logged data**.
+
+It achieves this by:
+
+* Storing logs in an **immutable** way (once written, cannot be edited).
+* Integrating **external verification** or proof mechanisms.
+* Promoting full **transparency and integrity** in personal (or public) coding activity tracking.
+
+> The goal is to create a truly **trustless WakaTime logger** – where even the user **can't lie to themselves**, encouraging discipline and honesty.
 
 ## Features
 
-- **Trustless Verification**: Multiple external timestamps (NTP, GitHub API, WorldTimeAPI) to prevent data fabrication
-- **Structured Organization**: Data organized by year/month/week with automatic folder creation
-- **Weekly Summaries**: Automatic generation of weekly summaries with detailed statistics
-- **Monthly Summaries**: Monthly aggregation of weekly data
-- **Data Visualization**: Simple charts and statistics for analyzing coding patterns
-- **Sunday Special**: On Sundays, fetches 7 days of data and generates week summaries
+* **Trustless Verification**: Multiple external timestamps (NTP, GitHub API, WorldTimeAPI) to prevent data fabrication
+* **Structured Organization**: Data organized by year/month/week with automatic folder creation
+* **Weekly Summaries**: Automatic generation of weekly summaries with detailed statistics and visualizations
+* **Monthly Summaries**: Monthly aggregation of weekly data with charts
+* **Data Visualization**: Interactive charts embedded in summary files and standalone visualization tools
+* **Sunday Special**: On Sundays, fetches 7 days of data and generates week summaries
+* **GitHub Actions**: Automated daily fetching and manual data import workflows
 
 ## Folder Structure
 
@@ -22,11 +32,11 @@ wakatime_logs/
 │   │   │   ├── 2025-01-02.json
 │   │   │   ├── ...
 │   │   │   ├── week_1.json          # Weekly summary data
-│   │   │   └── week_1_summary.md    # Weekly summary report
+│   │   │   └── week_1_summary.md    # Weekly summary report with charts
 │   │   ├── week_2/
 │   │   ├── ...
 │   │   ├── 01_January.json          # Monthly summary data
-│   │   └── 01_January_summary.md    # Monthly summary report
+│   │   └── 01_January_summary.md    # Monthly summary report with charts
 │   └── 02_February/
 └── 2024/
 ```
@@ -35,22 +45,22 @@ wakatime_logs/
 
 1. Clone the repository:
 
-```bash
-git clone <repository-url>
-cd wakatime-log
-```
+    ```bash
+    git clone https://github.com/haru2503/wakatime-log.git
+    cd wakatime-log
+    ```
 
-1. Install dependencies:
+2. Install dependencies:
 
-```bash
-pip install -r requirements.txt
-```
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-1. Set up your WakaTime API key:
+3. Set up your WakaTime API key:
 
-```bash
-export WAKATIME_API_KEY='your_api_key_here'
-```
+    ```bash
+    export WAKATIME_API_KEY='your_api_key_here'
+    ```
 
 ## Usage
 
@@ -66,14 +76,66 @@ python wakatime_fetcher.py
 
 The script automatically:
 
-- Creates folders based on date structure
-- Generates week summaries on Sundays
-- Generates month summaries on the last Sunday of each month
-- Fetches 7 days of data when run on Sunday
+* Creates folders based on date structure
+* Generates week summaries on Sundays with embedded charts
+* Generates month summaries on the last Sunday of each month with visualizations
+* Fetches 7 days of data when run on Sunday
+
+### GitHub Actions Workflows
+
+This repository includes two GitHub Actions workflows:
+
+#### 1. Daily Fetch Workflow (`log-wakatime.yml`)
+
+**Purpose**: Automatically fetch daily WakaTime data and commit to repository
+
+**Setup**:
+
+1. Go to your repository Settings → Secrets and variables → Actions
+2. Add `WAKATIME_API_KEY` secret with your WakaTime API key
+3. The workflow runs daily at 1:00 AM UTC
+
+**Features**:
+
+* Fetches yesterday's data automatically
+* On Sundays, fetches 7 days and generates week summaries
+* On last Sunday of month, generates month summaries
+* Commits changes to repository with trustless verification
+
+#### 2. Manual Import Workflow (`wakatime-import.yml`)
+
+**Purpose**: Import historical WakaTime data (last N days)
+
+**Setup**:
+
+1. Same API key setup as above
+2. Go to Actions tab → "Import WakaTime Data" → "Run workflow"
+3. Choose number of days to import (default: 20)
+
+**Features**:
+
+* Import up to 400 days of historical data
+* Creates complete folder structure
+* Generates all summaries and visualizations
+* Perfect for initial setup or data recovery
 
 ### Data Visualization
 
-Use the visualizer to create charts and analyze your data:
+#### Embedded Charts in Summaries
+
+Weekly and monthly summary files (`.md`) now include:
+
+* **Daily Coding Time Bar Chart**: Shows total coding time per day with project breakdown
+* **Languages Pie Chart**: Distribution of programming languages
+* **Categories Pie Chart**: Distribution of coding categories
+* **Editors Pie Chart**: Distribution of code editors used
+* **Operating Systems Pie Chart**: Distribution of OS usage
+* **Machines Pie Chart**: Distribution of machines used
+* **Projects Pie Chart**: Distribution of projects worked on
+
+#### Standalone Visualization Tool
+
+Use the visualizer for custom analysis:
 
 ```bash
 # Daily coding time chart
@@ -110,14 +172,15 @@ When the script runs on Sunday, it:
 
 1. Fetches data for all 7 days of the week
 2. Generates `week_N.json` with aggregated data
-3. Creates `week_N_summary.md` with detailed breakdown
+3. Creates `week_N_summary.md` with detailed breakdown and charts
 
 ### Weekly Summary Contents
 
-- Total coding time for the week
-- Daily average coding time
-- Total time by categories, languages, projects, editors, machines, OS
-- Daily breakdown for each day of the week
+* Total coding time for the week
+* Daily average coding time
+* Total time by categories, languages, projects, editors, machines, OS
+* Daily breakdown for each day of the week
+* **Embedded Charts**: Bar chart for daily coding time, pie charts for distributions
 
 ## Monthly Summaries
 
@@ -125,20 +188,21 @@ On the last Sunday of each month, the script also:
 
 1. Aggregates all weekly summaries for the month
 2. Generates `MM_Month.json` with monthly data
-3. Creates `MM_Month_summary.md` with monthly breakdown
+3. Creates `MM_Month_summary.md` with monthly breakdown and visualizations
 
 ### Monthly Summary Contents
 
-- Total coding time for the month
-- Weekly and daily averages
-- Total time by categories, languages, projects, editors, machines, OS
-- Weekly breakdown for each week of the month
+* Total coding time for the month
+* Weekly and daily averages
+* Total time by categories, languages, projects, editors, machines, OS
+* Weekly breakdown for each week of the month
+* **Embedded Charts**: Bar chart for weekly coding time, pie charts for distributions
 
 ## Folder Creation Rules
 
-- **Month folders**: Created on the first day of each month
-- **Week folders**: Created on the first Monday of each month
-- **Cross-month weeks**: If a week spans two months, data goes to the week folder in the starting month
+* **Month folders**: Created on the first day of each month
+* **Week folders**: Created on the first Monday of each month
+* **Cross-month weeks**: If a week spans two months, data goes to the week folder in the starting month
 
 ## Data Structure
 
@@ -185,7 +249,16 @@ This will create mock data in `test_wakatime_logs/` to demonstrate the structure
 
 ## Automation
 
-Set up a cron job or GitHub Actions to run daily:
+### GitHub Actions (Recommended)
+
+The repository includes pre-configured GitHub Actions workflows:
+
+1. **Daily Fetch**: Automatically runs every day at 1:00 AM UTC
+2. **Manual Import**: Run on-demand to import historical data
+
+### Manual Cron Job
+
+Set up a cron job to run daily:
 
 ```bash
 # Daily at 1 AM
@@ -194,7 +267,7 @@ Set up a cron job or GitHub Actions to run daily:
 
 ## Contributing
 
-Feel free to submit issues and enhancement requests!
+Feel free to submit issues and pull requests!!! 🤗
 
 ## License
 
