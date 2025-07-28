@@ -94,6 +94,31 @@ def test_new_weekly_summary():
     return new_summary_file
 
 
+def test_weekly_stacked_bar_chart_with_real_data():
+    """Test tạo stacked bar chart daily theo project với dữ liệu thật, lưu ra file markdown riêng."""
+    week_folder = Path("wakatime_logs/2025/07_July/week_3")
+    week_json_file = week_folder / "week_3.json"
+    if not week_json_file.exists():
+        print("Week JSON file not found!")
+        return
+    with open(week_json_file, "r", encoding="utf-8") as f:
+        week_summary_data = json.load(f)
+    charts = WakaTimeCharts()
+    charts_data = charts.create_weekly_summary_charts(week_summary_data)
+    md_content = "# Test: Stacked Bar Chart by Project (Weekly)\n\n"
+    if charts_data.get("daily_stacked_bar"):
+        md_content += charts.embed_chart_in_markdown(
+            charts_data["daily_stacked_bar"], "Daily Coding Time by Project (Weekly)"
+        )
+    else:
+        md_content += "(No stacked bar chart generated)\n"
+    out_file = Path("test/test_weekly_stacked_bar_chart.md")
+    with open(out_file, "w", encoding="utf-8") as f:
+        f.write(md_content)
+    print(f"Stacked bar chart markdown saved: {out_file}")
+    return out_file
+
+
 def format_time_detailed(total_seconds):
     """Format seconds to detailed time"""
     hours = int(total_seconds // 3600)
@@ -109,3 +134,4 @@ def format_time_detailed(total_seconds):
 
 if __name__ == "__main__":
     test_new_weekly_summary()
+    test_weekly_stacked_bar_chart_with_real_data()
