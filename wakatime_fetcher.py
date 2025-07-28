@@ -71,7 +71,7 @@ class TrustlessWakaTimeLogger:
             response = ntp_client.request("pool.ntp.org")
             timestamps["ntp_time"] = response.tx_time
             timestamps["ntp_server"] = "pool.ntp.org"
-        except:
+        except Exception:
             timestamps["ntp_time"] = time.time()
             timestamps["ntp_server"] = "system_fallback"
 
@@ -82,14 +82,14 @@ class TrustlessWakaTimeLogger:
             )
             if time_api.status_code == 200:
                 timestamps["external_time"] = time_api.json()
-        except:
+        except Exception:
             pass
 
         # 3. GitHub API timestamp (from GitHub's server)
         try:
             github_api = requests.get("https://api.github.com", timeout=5)
             timestamps["github_server_time"] = github_api.headers.get("Date")
-        except:
+        except Exception:
             pass
 
         return {
@@ -379,18 +379,46 @@ class TrustlessWakaTimeLogger:
                     week_data = json.load(f)
                     month_data.append(week_data)
 
+                    # Calculate totals from daily summaries
+                    total_categories_time = 0
+                    total_language_time = 0
+                    total_project_time = 0
+                    total_editor_time = 0
+                    total_machine_time = 0
+                    total_os_time = 0
+
+                    for day_summary in week_data["daily_summaries"]:
+                        total_categories_time += self.calculate_total_seconds(
+                            day_summary.get("categories", [])
+                        )
+                        total_language_time += self.calculate_total_seconds(
+                            day_summary.get("languages", [])
+                        )
+                        total_project_time += self.calculate_total_seconds(
+                            day_summary.get("projects", [])
+                        )
+                        total_editor_time += self.calculate_total_seconds(
+                            day_summary.get("editors", [])
+                        )
+                        total_machine_time += self.calculate_total_seconds(
+                            day_summary.get("machines", [])
+                        )
+                        total_os_time += self.calculate_total_seconds(
+                            day_summary.get("operating_systems", [])
+                        )
+
                     # Extract weekly summary
                     weekly_summary = {
                         "week": week_folder.name,
                         "week_dates": week_data["week_dates"],
                         "total_coding_time": week_data["total_coding_time"],
                         "daily_avg_coding_time": week_data["daily_avg_coding_time"],
-                        "total_categories_time": week_data["total_categories_time"],
-                        "total_language_time": week_data["total_language_time"],
-                        "total_project_time": week_data["total_project_time"],
-                        "total_editor_time": week_data["total_editor_time"],
-                        "total_machine_time": week_data["total_machine_time"],
-                        "total_os_time": week_data["total_os_time"],
+                        "total_categories_time": total_categories_time,
+                        "total_language_time": total_language_time,
+                        "total_project_time": total_project_time,
+                        "total_editor_time": total_editor_time,
+                        "total_machine_time": total_machine_time,
+                        "total_os_time": total_os_time,
                         "days_with_data": week_data["metadata"]["days_with_data"],
                     }
                     weekly_summaries.append(weekly_summary)
@@ -495,8 +523,8 @@ class TrustlessWakaTimeLogger:
 ---
 *Generated on: {month_summary_data['metadata']['generated_at']}*
 *Total weeks: {month_summary_data['metadata']['total_weeks']}*
-*Total days with data: {month_summary_data['metadata']['total_days_with_data']}/{month_summary_data['metadata']['total_days_in_month']}*
-"""
+*Total days with data: {month_summary_data['metadata']['total_days_with_data']}/"""
+        md_content += f"{month_summary_data['metadata']['total_days_in_month']}*"
 
         with open(month_md_file, "w", encoding="utf-8") as f:
             f.write(md_content)
