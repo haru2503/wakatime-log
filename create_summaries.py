@@ -103,7 +103,7 @@ def create_weekly_summary(week_folder_path, week_summary_data):
         f"{format_time_detailed(week_summary_data['total_coding_time'])}\n"
         f"- **Daily Average Coding Time**: "
         f"{format_time_detailed(week_summary_data['daily_avg_coding_time'])}\n\n"
-        f"## Charts\n\n### Daily Coding Time\n"
+        f"## Charts\n"
     )
 
     # Add daily coding time chart
