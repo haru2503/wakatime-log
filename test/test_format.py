@@ -126,8 +126,8 @@ def test_format():
     wakatime_data = MOCK_DAILY_DATA["wakatime_data"]["data"][0]
 
     print("**Sample Daily Data:**")
-    print(f"Date: 2025-01-01")
-    print(f"Total Coding Time: 07:30:00")
+    print("Date: 2025-01-01")
+    print("Total Coding Time: 07:30:00")
     print()
 
     print(format_breakdown(wakatime_data.get("languages", []), "Languages"))
