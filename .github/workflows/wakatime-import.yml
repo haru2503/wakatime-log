@@ -25,7 +25,7 @@ jobs:
         
     - name: Install dependencies
       run: |
-        pip install requests cryptography ntplib
+        pip install -r requirements.txt
 
     - name: Check git remote
       run: git remote -v
