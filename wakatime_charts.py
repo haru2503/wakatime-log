@@ -440,8 +440,13 @@ class WakaTimeCharts:
         return f"data:image/png;base64,{img_str}"
 
     def embed_chart_in_markdown(self, chart_file, alt_text="Chart"):
-        """Create markdown image tag for chart file"""
-        return f"![{alt_text}]({chart_file})"
+        """Create markdown image tag for chart file, always use /charts/... absolute path"""
+        from pathlib import Path
+
+        chart_path = Path(chart_file)
+        # Always use absolute path from repo root
+        abs_path = f"/charts/{chart_path.name}"
+        return f"![{alt_text}]({abs_path})"
 
 
 def main():
