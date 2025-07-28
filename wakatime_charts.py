@@ -30,86 +30,86 @@ class WakaTimeCharts:
         else:
             return f"{minutes}m"
 
-    def create_daily_coding_time_chart(
-        self, daily_summaries, title="Daily Coding Time"
-    ):
-        """Create a stacked bar chart showing daily coding time with project breakdown"""
-        if not daily_summaries:
-            return None
+    # def create_daily_coding_time_chart(
+    #     self, daily_summaries, title="Daily Coding Time"
+    # ):
+    #     """Create a stacked bar chart showing daily coding time with project breakdown"""
+    #     if not daily_summaries:
+    #         return None
 
-        dates = [day["date"] for day in daily_summaries]
-        total_times = [day["total_coding_time"] for day in daily_summaries]
+    #     dates = [day["date"] for day in daily_summaries]
+    #     total_times = [day["total_coding_time"] for day in daily_summaries]
 
-        # Get unique projects across all days
-        all_projects = set()
-        for day in daily_summaries:
-            for project in day.get("projects", []):
-                all_projects.add(project["name"])
+    #     # Get unique projects across all days
+    #     all_projects = set()
+    #     for day in daily_summaries:
+    #         for project in day.get("projects", []):
+    #             all_projects.add(project["name"])
 
-        # Create color map for projects
-        colors = plt.cm.Set3(np.linspace(0, 1, len(all_projects)))
-        project_colors = {project: colors[i] for i, project in enumerate(all_projects)}
+    #     # Create color map for projects
+    #     colors = plt.cm.Set3(np.linspace(0, 1, len(all_projects)))
+    #     project_colors = {project: colors[i] for i, project in enumerate(all_projects)}
 
-        # Create stacked bar chart
-        fig, ax = plt.subplots(figsize=(12, 6))
+    #     # Create stacked bar chart
+    #     fig, ax = plt.subplots(figsize=(12, 6))
 
-        # Initialize bottom positions
-        bottoms = np.zeros(len(dates))
+    #     # Initialize bottom positions
+    #     bottoms = np.zeros(len(dates))
 
-        # Plot each project
-        for project in all_projects:
-            project_times = []
-            for day in daily_summaries:
-                project_data = next(
-                    (p for p in day.get("projects", []) if p["name"] == project), None
-                )
-                project_times.append(
-                    project_data["total_seconds"] if project_data else 0
-                )
+    #     # Plot each project
+    #     for project in all_projects:
+    #         project_times = []
+    #         for day in daily_summaries:
+    #             project_data = next(
+    #                 (p for p in day.get("projects", []) if p["name"] == project), None
+    #             )
+    #             project_times.append(
+    #                 project_data["total_seconds"] if project_data else 0
+    #             )
 
-            if sum(project_times) > 0:  # Only plot if project has time
-                ax.bar(
-                    dates,
-                    project_times,
-                    bottom=bottoms,
-                    label=project,
-                    color=project_colors[project],
-                    alpha=0.8,
-                )
-                bottoms += np.array(project_times)
+    #         if sum(project_times) > 0:  # Only plot if project has time
+    #             ax.bar(
+    #                 dates,
+    #                 project_times,
+    #                 bottom=bottoms,
+    #                 label=project,
+    #                 color=project_colors[project],
+    #                 alpha=0.8,
+    #             )
+    #             bottoms += np.array(project_times)
 
-        # Customize chart
-        ax.set_title(title, fontsize=14, fontweight="bold")
-        ax.set_xlabel("Date")
-        ax.set_ylabel("Coding Time (hours)")
+    #     # Customize chart
+    #     ax.set_title(title, fontsize=14, fontweight="bold")
+    #     ax.set_xlabel("Date")
+    #     ax.set_ylabel("Coding Time (hours)")
 
-        # Format y-axis to show hours
-        ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda x, p: f"{x/3600:.1f}h"))
+    #     # Format y-axis to show hours
+    #     ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda x, p: f"{x/3600:.1f}h"))
 
-        # Rotate x-axis labels
-        plt.setp(ax.get_xticklabels(), rotation=45, ha="right")
+    #     # Rotate x-axis labels
+    #     plt.setp(ax.get_xticklabels(), rotation=45, ha="right")
 
-        # Add legend
-        ax.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
+    #     # Add legend
+    #     ax.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
 
-        # Add value labels on bars
-        for i, (date, total_time) in enumerate(zip(dates, total_times)):
-            if total_time > 0:
-                ax.text(
-                    i,
-                    total_time + 0.1,
-                    self.format_time_readable(total_time),
-                    ha="center",
-                    va="bottom",
-                    fontsize=8,
-                )
+    #     # Add value labels on bars
+    #     for i, (date, total_time) in enumerate(zip(dates, total_times)):
+    #         if total_time > 0:
+    #             ax.text(
+    #                 i,
+    #                 total_time + 0.1,
+    #                 self.format_time_readable(total_time),
+    #                 ha="center",
+    #                 va="bottom",
+    #                 fontsize=8,
+    #             )
 
-        # Set y-axis limit to prevent overflow
-        max_time = max(total_times) if total_times else 0
-        ax.set_ylim(0, max_time * 1.1)  # Add 10% padding
+    #     # Set y-axis limit to prevent overflow
+    #     max_time = max(total_times) if total_times else 0
+    #     ax.set_ylim(0, max_time * 1.1)  # Add 10% padding
 
-        plt.tight_layout()
-        return self._save_chart_to_file(fig, "daily_coding_time")
+    #     plt.tight_layout()
+    #     return self._save_chart_to_file(fig, "daily_coding_time")
 
     def create_daily_stacked_bar_chart(
         self,
