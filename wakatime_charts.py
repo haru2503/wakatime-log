@@ -546,93 +546,40 @@ class WakaTimeCharts:
         return f"![{alt_text}]({abs_path})"
 
 
-def main():
-    """Test the charts generator"""
-    charts = WakaTimeCharts()
-
-    # Test with sample data
-    sample_data = {
-        "daily_summaries": [
-            {
-                "date": "2025-01-01",
-                "total_coding_time": 28800,  # 8 hours
-                "languages": [
-                    {"name": "Python", "total_seconds": 14400, "percent": 50.0},
-                    {"name": "JavaScript", "total_seconds": 7200, "percent": 25.0},
-                    {"name": "HTML", "total_seconds": 7200, "percent": 25.0},
-                ],
-                "categories": [
-                    {"name": "Coding", "total_seconds": 23040, "percent": 80.0},
-                    {"name": "Debugging", "total_seconds": 5760, "percent": 20.0},
-                ],
-                "projects": [
-                    {"name": "Project A", "total_seconds": 14400, "percent": 50.0},
-                    {"name": "Project B", "total_seconds": 14400, "percent": 50.0},
-                ],
-            }
-        ]
-    }
-
-    charts_data = charts.create_weekly_summary_charts(sample_data)
-    print("Charts generated successfully!")
-    print(f"Generated {len(charts_data)} charts")
-
-
 if __name__ == "__main__":
+    import json
+
+    # Tìm tuần gần nhất có dữ liệu thật
+    logs_root = Path("wakatime_logs")
+    week_json = None
+    for year_dir in sorted(logs_root.iterdir(), reverse=True):
+        if not year_dir.is_dir():
+            continue
+        for month_dir in sorted(year_dir.iterdir(), reverse=True):
+            if not month_dir.is_dir():
+                continue
+            for week_dir in sorted(month_dir.iterdir(), reverse=True):
+                if not week_dir.is_dir() or not week_dir.name.startswith("week_"):
+                    continue
+                week_json_file = week_dir / f"{week_dir.name}.json"
+                if week_json_file.exists():
+                    week_json = week_json_file
+                    break
+            if week_json:
+                break
+        if week_json:
+            break
+
+    if not week_json:
+        print("Không tìm thấy file week_x.json nào trong wakatime_logs/.")
+        exit(1)
+
+    print(f"Đang dùng dữ liệu thật từ: {week_json}")
+    with open(week_json, "r", encoding="utf-8") as f:
+        week_summary_data = json.load(f)
+
     charts = WakaTimeCharts()
-    # Dữ liệu mẫu 7 ngày, 3 project
-    sample_data = [
-        {
-            "date": "Mon",
-            "projects": [
-                {"name": "poker", "total_seconds": 3 * 3600},
-                {"name": "cs50", "total_seconds": 4 * 3600},
-            ],
-        },
-        {
-            "date": "Tue",
-            "projects": [
-                {"name": "poker", "total_seconds": 2 * 3600},
-                {"name": "cs50", "total_seconds": 5 * 3600},
-            ],
-        },
-        {
-            "date": "Wed",
-            "projects": [
-                {"name": "poker", "total_seconds": 1 * 3600},
-                {"name": "cs50", "total_seconds": 2 * 3600},
-                {"name": "waka", "total_seconds": 3 * 3600},
-            ],
-        },
-        {
-            "date": "Thu",
-            "projects": [
-                {"name": "poker", "total_seconds": 4 * 3600},
-                {"name": "waka", "total_seconds": 2 * 3600},
-            ],
-        },
-        {
-            "date": "Fri",
-            "projects": [
-                {"name": "cs50", "total_seconds": 6 * 3600},
-            ],
-        },
-        {
-            "date": "Sat",
-            "projects": [
-                {"name": "waka", "total_seconds": 5 * 3600},
-            ],
-        },
-        {
-            "date": "Sun",
-            "projects": [
-                {"name": "poker", "total_seconds": 2 * 3600},
-                {"name": "cs50", "total_seconds": 2 * 3600},
-                {"name": "waka", "total_seconds": 2 * 3600},
-            ],
-        },
-    ]
-    charts.create_daily_stacked_bar_chart(
-        sample_data, title="Test Stacked Bar Chart", chart_name="test_stacked_bar"
-    )
-    print("[TEST] Saved test stacked bar chart to charts/test_stacked_bar.png")
+    charts_data = charts.create_weekly_summary_charts(week_summary_data)
+    print(f"Đã tạo {len(charts_data)} chart từ dữ liệu thật tuần gần nhất:")
+    for k, v in charts_data.items():
+        print(f"  - {k}: {v}")
