@@ -12,6 +12,7 @@ from datetime import datetime, timedelta
 import os
 from pathlib import Path
 import calendar
+from wakatime_charts import WakaTimeCharts
 
 
 class WakaTimeImporter:
@@ -312,6 +313,10 @@ class WakaTimeImporter:
         with open(week_json_file, "w", encoding="utf-8") as f:
             json.dump(week_summary_data, f, indent=2)
 
+        # Generate charts
+        charts = WakaTimeCharts()
+        charts_data = charts.create_weekly_summary_charts(week_summary_data)
+
         # Save as Markdown
         week_md_file = week_folder_path / f"{week_folder_path.name}_summary.md"
 
@@ -321,8 +326,16 @@ class WakaTimeImporter:
 - **Total Coding Time**: {self.format_time_detailed(week_summary_data['total_coding_time'])}
 - **Daily Average Coding Time**: {self.format_time_detailed(week_summary_data['daily_avg_coding_time'])}
 
-## Daily Breakdown
+## Charts
+
+### Daily Coding Time
 """
+
+        # Add daily coding time chart
+        if charts_data.get("daily_coding_time"):
+            md_content += f"\n{charts.embed_chart_in_markdown(charts_data['daily_coding_time'], 'Daily Coding Time')}\n"
+
+        md_content += "\n## Daily Breakdown\n"
 
         for day_summary in week_summary_data["daily_summaries"]:
             md_content += f"""
@@ -342,6 +355,32 @@ class WakaTimeImporter:
 {self.format_breakdown(day_summary['projects'], 'Projects')}
 
 """
+
+            # Add charts for this day
+            date = day_summary["date"]
+            if charts_data.get(f"languages_{date}"):
+                md_content += "\n#### Languages Distribution\n"
+                md_content += f"{charts.embed_chart_in_markdown(charts_data[f'languages_{date}'], 'Languages')}\n"
+
+            if charts_data.get(f"categories_{date}"):
+                md_content += "\n#### Categories Distribution\n"
+                md_content += f"{charts.embed_chart_in_markdown(charts_data[f'categories_{date}'], 'Categories')}\n"
+
+            if charts_data.get(f"editors_{date}"):
+                md_content += "\n#### Editors Distribution\n"
+                md_content += f"{charts.embed_chart_in_markdown(charts_data[f'editors_{date}'], 'Editors')}\n"
+
+            if charts_data.get(f"os_{date}"):
+                md_content += "\n#### Operating Systems Distribution\n"
+                md_content += f"{charts.embed_chart_in_markdown(charts_data[f'os_{date}'], 'Operating Systems')}\n"
+
+            if charts_data.get(f"machines_{date}"):
+                md_content += "\n#### Machines Distribution\n"
+                md_content += f"{charts.embed_chart_in_markdown(charts_data[f'machines_{date}'], 'Machines')}\n"
+
+            if charts_data.get(f"projects_{date}"):
+                md_content += "\n#### Projects Distribution\n"
+                md_content += f"{charts.embed_chart_in_markdown(charts_data[f'projects_{date}'], 'Projects')}\n"
 
         md_content += f"""
 ---
