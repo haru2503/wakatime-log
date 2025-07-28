@@ -107,8 +107,6 @@ def create_weekly_summary(week_folder_path, week_summary_data):
     )
 
     # Add daily coding time chart
-    if charts_data.get("daily_coding_time"):
-        md_content += f"\n{charts.embed_chart_in_markdown(charts_data['daily_coding_time'], 'Daily Coding Time')}\n"
 
     # Add daily stacked bar chart by project
     if charts_data.get("daily_stacked_bar"):
@@ -171,8 +169,6 @@ def create_monthly_summary(month_folder_path, month_summary_data):
     )
 
     # Add weekly coding time chart
-    if charts_data.get("weekly_coding_time"):
-        md_content += f"\n{charts.embed_chart_in_markdown(charts_data['weekly_coding_time'], 'Weekly Coding Time')}\n"
 
     # Add daily stacked bar chart by project (monthly)
     if charts_data.get("daily_stacked_bar"):
@@ -264,7 +260,9 @@ def main():
         return
 
     today = datetime.now().date()
-    # weekday_today = today.weekday()  # 0=Monday, 6=Sunday (not used)
+    # Xác định tháng hiện tại
+    current_month = today.month
+    current_year = today.year
 
     for year_dir in wakatime_logs.iterdir():
         if not year_dir.is_dir():
@@ -272,25 +270,35 @@ def main():
         for month_dir in year_dir.iterdir():
             if not month_dir.is_dir():
                 continue
+            # Chỉ tạo monthly summary cho tháng đã kết thúc
+            month_num = int(month_dir.name.split("_")[0])
+            year_num = int(year_dir.name)
+            if (year_num > current_year) or (
+                year_num == current_year and month_num >= current_month
+            ):
+                continue
+            # Tạo monthly summary nếu có dữ liệu
+            month_json_file = month_dir / f"{month_dir.name}.json"
+            if month_json_file.exists():
+                with open(month_json_file, "r", encoding="utf-8") as f:
+                    month_summary_data = json.load(f)
+                create_monthly_summary(month_dir, month_summary_data)
+            # Xử lý các week như cũ
             for week_dir in month_dir.iterdir():
                 if not week_dir.is_dir() or not week_dir.name.startswith("week_"):
                     continue
                 week_json_file = week_dir / f"{week_dir.name}.json"
                 if not week_json_file.exists():
                     continue
-                # Đọc dữ liệu tuần
                 with open(week_json_file, "r", encoding="utf-8") as f:
                     week_summary_data = json.load(f)
                 week_dates = week_summary_data.get("week_dates", [])
                 if not week_dates or len(week_dates) < 7:
                     continue  # skip incomplete week
                 week_end = datetime.strptime(week_dates[-1], "%Y-%m-%d").date()
-                # Chỉ tạo summary cho tuần đã kết thúc (hôm nay là thứ Hai, chỉ tạo cho tuần trước)
                 if today <= week_end:
                     continue
-                # Tạo weekly summary
                 create_weekly_summary(week_dir, week_summary_data)
-                # Tạo daily summaries
                 for day_summary in week_summary_data.get("daily_summaries", []):
                     day_file = week_dir / f"{day_summary['date']}.json"
                     if day_file.exists():

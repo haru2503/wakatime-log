@@ -302,15 +302,9 @@ class WakaTimeCharts:
         else:
             week_range = "unknown_range"
 
-        # Daily coding time chart
+        # Không tạo daily_coding_time chart nữa!
+        # Chỉ tạo stacked bar chart
         if week_summary_data.get("daily_summaries"):
-            chart_file = self.create_daily_coding_time_chart(
-                week_summary_data["daily_summaries"],
-                f"Weekly Daily Coding Time ({week_range})",
-            )
-            if chart_file:
-                charts["daily_coding_time"] = chart_file
-            # Thêm chart stacked bar
             stacked_chart = self.create_daily_stacked_bar_chart(
                 week_summary_data["daily_summaries"],
                 title=f"Daily Coding Time by Project (Weekly {week_range})",
@@ -437,25 +431,9 @@ class WakaTimeCharts:
         year = month_summary_data.get("year")
         month_range = f"{year}_{month}" if month and year else "unknown_month"
 
-        # Weekly coding time chart
+        # Không tạo weekly_coding_time chart nữa!
+        # Chỉ tạo stacked bar chart cho từng ngày trong tháng
         if month_summary_data.get("weekly_summaries"):
-            weekly_data = []
-            for week in month_summary_data["weekly_summaries"]:
-                weekly_data.append(
-                    {
-                        "date": f"Week {week['week'].split('_')[1]}",
-                        "total_coding_time": week["total_coding_time"],
-                        "projects": [],  # We'll need to aggregate projects from daily data
-                    }
-                )
-
-            chart_file = self.create_daily_coding_time_chart(
-                weekly_data, f"Monthly Weekly Coding Time ({month_range})"
-            )
-            if chart_file:
-                charts["weekly_coding_time"] = chart_file
-            # Thêm chart stacked bar cho từng ngày trong tháng
-            # Gom daily_summaries của tất cả các tuần
             all_days = []
             for week in month_summary_data["weekly_summaries"]:
                 all_days.extend(week.get("daily_summaries", []))
