@@ -309,7 +309,7 @@ class TrustlessWakaTimeLogger:
         return week_summary_data
 
     def save_week_summary(self, week_folder_path, week_summary_data):
-        """Save week summary as JSON and Markdown"""
+        """Save week summary as JSON and Markdown (lightweight, no daily breakdown)"""
         # Save as JSON
         week_json_file = week_folder_path / f"{week_folder_path.name}.json"
         with open(week_json_file, "w", encoding="utf-8") as f:
@@ -319,76 +319,36 @@ class TrustlessWakaTimeLogger:
         charts = WakaTimeCharts()
         charts_data = charts.create_weekly_summary_charts(week_summary_data)
 
-        # Save as Markdown
+        # Save as Markdown (lightweight)
         week_md_file = week_folder_path / f"{week_folder_path.name}_summary.md"
 
-        md_content = f"""# Week Summary: {week_summary_data['week_dates'][0]} to {week_summary_data['week_dates'][-1]}
-
-## Weekly Totals
-- **Total Coding Time**: {self.format_time_detailed(week_summary_data['total_coding_time'])}
-- **Daily Average Coding Time**: {self.format_time_detailed(week_summary_data['daily_avg_coding_time'])}
-
-## Charts
-
-### Daily Coding Time
-"""
+        md_content = f"""# Week Summary: {week_summary_data['week_dates'][0]} to {week_summary_data['week_dates'][-1]}\n\n## Weekly Totals\n- **Total Coding Time**: {self.format_time_detailed(week_summary_data['total_coding_time'])}\n- **Daily Average Coding Time**: {self.format_time_detailed(week_summary_data['daily_avg_coding_time'])}\n\n## Charts\n\n### Daily Coding Time\n"""
 
         # Add daily coding time chart
         if charts_data.get("daily_coding_time"):
             md_content += f"\n{charts.embed_chart_in_markdown(charts_data['daily_coding_time'], 'Daily Coding Time')}\n"
 
-        md_content += "\n## Daily Breakdown\n"
+        # Add weekly aggregated charts
+        if charts_data.get("weekly_languages"):
+            md_content += "\n### Weekly Languages Distribution\n"
+            md_content += f"{charts.embed_chart_in_markdown(charts_data['weekly_languages'], 'Weekly Languages')}\n"
+        if charts_data.get("weekly_categories"):
+            md_content += "\n### Weekly Categories Distribution\n"
+            md_content += f"{charts.embed_chart_in_markdown(charts_data['weekly_categories'], 'Weekly Categories')}\n"
+        if charts_data.get("weekly_editors"):
+            md_content += "\n### Weekly Editors Distribution\n"
+            md_content += f"{charts.embed_chart_in_markdown(charts_data['weekly_editors'], 'Weekly Editors')}\n"
+        if charts_data.get("weekly_os"):
+            md_content += "\n### Weekly Operating Systems Distribution\n"
+            md_content += f"{charts.embed_chart_in_markdown(charts_data['weekly_os'], 'Weekly Operating Systems')}\n"
+        if charts_data.get("weekly_machines"):
+            md_content += "\n### Weekly Machines Distribution\n"
+            md_content += f"{charts.embed_chart_in_markdown(charts_data['weekly_machines'], 'Weekly Machines')}\n"
+        if charts_data.get("weekly_projects"):
+            md_content += "\n### Weekly Projects Distribution\n"
+            md_content += f"{charts.embed_chart_in_markdown(charts_data['weekly_projects'], 'Weekly Projects')}\n"
 
-        for day_summary in week_summary_data["daily_summaries"]:
-            md_content += f"""
-### {day_summary['date']}
-- **Total Coding Time**: {self.format_time_detailed(day_summary['total_coding_time'])}
-
-{self.format_breakdown(day_summary['languages'], 'Languages')}
-
-{self.format_breakdown(day_summary['categories'], 'Categories')}
-
-{self.format_breakdown(day_summary['editors'], 'Editors')}
-
-{self.format_breakdown(day_summary['operating_systems'], 'Operating Systems')}
-
-{self.format_breakdown(day_summary['machines'], 'Machines')}
-
-{self.format_breakdown(day_summary['projects'], 'Projects')}
-
-"""
-
-            # Add charts for this day
-            date = day_summary["date"]
-            if charts_data.get(f"languages_{date}"):
-                md_content += "\n#### Languages Distribution\n"
-                md_content += f"{charts.embed_chart_in_markdown(charts_data[f'languages_{date}'], 'Languages')}\n"
-
-            if charts_data.get(f"categories_{date}"):
-                md_content += "\n#### Categories Distribution\n"
-                md_content += f"{charts.embed_chart_in_markdown(charts_data[f'categories_{date}'], 'Categories')}\n"
-
-            if charts_data.get(f"editors_{date}"):
-                md_content += "\n#### Editors Distribution\n"
-                md_content += f"{charts.embed_chart_in_markdown(charts_data[f'editors_{date}'], 'Editors')}\n"
-
-            if charts_data.get(f"os_{date}"):
-                md_content += "\n#### Operating Systems Distribution\n"
-                md_content += f"{charts.embed_chart_in_markdown(charts_data[f'os_{date}'], 'Operating Systems')}\n"
-
-            if charts_data.get(f"machines_{date}"):
-                md_content += "\n#### Machines Distribution\n"
-                md_content += f"{charts.embed_chart_in_markdown(charts_data[f'machines_{date}'], 'Machines')}\n"
-
-            if charts_data.get(f"projects_{date}"):
-                md_content += "\n#### Projects Distribution\n"
-                md_content += f"{charts.embed_chart_in_markdown(charts_data[f'projects_{date}'], 'Projects')}\n"
-
-        md_content += f"""
----
-*Generated on: {week_summary_data['metadata']['generated_at']}*
-*Days with data: {week_summary_data['metadata']['days_with_data']}/{week_summary_data['metadata']['total_days']}*
-"""
+        md_content += f"""\n---\n*Generated on: {week_summary_data['metadata']['generated_at']}*\n*Days with data: {week_summary_data['metadata']['days_with_data']}/{week_summary_data['metadata']['total_days']}*\n"""
 
         with open(week_md_file, "w", encoding="utf-8") as f:
             f.write(md_content)
@@ -396,7 +356,63 @@ class TrustlessWakaTimeLogger:
         print(f"[+] Saved week summary: {week_json_file}")
         print(f"[+] Saved week summary: {week_md_file}")
 
+        # Create daily summaries
+        for day_summary in week_summary_data["daily_summaries"]:
+            day_file = week_folder_path / f"{day_summary['date']}.json"
+            if day_file.exists():
+                with open(day_file, "r", encoding="utf-8") as f:
+                    day_data = json.load(f)
+                self.save_daily_summary(day_summary["date"], day_data)
+
         return week_json_file, week_md_file
+
+    def save_daily_summary(self, date_str, day_data):
+        """Create individual daily summary markdown file with PNG charts"""
+        from datetime import datetime as dt
+
+        charts = WakaTimeCharts()
+        wakatime_data = day_data["wakatime_data"]["data"][0]
+        day_date = dt.strptime(date_str, "%Y-%m-%d").date()
+        daily_summary = {
+            "date": date_str,
+            "total_coding_time": self.calculate_total_seconds(
+                [wakatime_data["grand_total"]]
+            ),
+            "categories": wakatime_data.get("categories", []),
+            "languages": wakatime_data.get("languages", []),
+            "projects": wakatime_data.get("projects", []),
+            "editors": wakatime_data.get("editors", []),
+            "machines": wakatime_data.get("machines", []),
+            "operating_systems": wakatime_data.get("operating_systems", []),
+        }
+        charts_data = charts.create_weekly_summary_charts(
+            {"daily_summaries": [daily_summary]}
+        )
+        folder_path = self.get_folder_path(day_date)
+        daily_md_file = folder_path / f"{date_str}_summary.md"
+        md_content = f"""# Daily Summary: {date_str}\n\n## Daily Totals\n- **Total Coding Time**: {self.format_time_detailed(daily_summary['total_coding_time'])}\n\n## Charts\n\n### Languages Distribution\n"""
+        if charts_data.get(f"languages_{date_str}"):
+            md_content += f"{charts.embed_chart_in_markdown(charts_data[f'languages_{date_str}'], 'Languages')}\n"
+        md_content += "\n### Categories Distribution\n"
+        if charts_data.get(f"categories_{date_str}"):
+            md_content += f"{charts.embed_chart_in_markdown(charts_data[f'categories_{date_str}'], 'Categories')}\n"
+        md_content += "\n### Editors Distribution\n"
+        if charts_data.get(f"editors_{date_str}"):
+            md_content += f"{charts.embed_chart_in_markdown(charts_data[f'editors_{date_str}'], 'Editors')}\n"
+        md_content += "\n### Operating Systems Distribution\n"
+        if charts_data.get(f"os_{date_str}"):
+            md_content += f"{charts.embed_chart_in_markdown(charts_data[f'os_{date_str}'], 'Operating Systems')}\n"
+        md_content += "\n### Machines Distribution\n"
+        if charts_data.get(f"machines_{date_str}"):
+            md_content += f"{charts.embed_chart_in_markdown(charts_data[f'machines_{date_str}'], 'Machines')}\n"
+        md_content += "\n### Projects Distribution\n"
+        if charts_data.get(f"projects_{date_str}"):
+            md_content += f"{charts.embed_chart_in_markdown(charts_data[f'projects_{date_str}'], 'Projects')}\n"
+        md_content += f"""\n---\n*Generated on: {datetime.now().isoformat()}*\n"""
+        with open(daily_md_file, "w", encoding="utf-8") as f:
+            f.write(md_content)
+        print(f"[+] Saved daily summary: {daily_md_file}")
+        return daily_md_file
 
     def generate_month_summary(self, month_folder_path, month_dates):
         """Generate month summary from all week data files"""
