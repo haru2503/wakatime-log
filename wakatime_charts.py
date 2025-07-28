@@ -295,18 +295,26 @@ class WakaTimeCharts:
             output_path = Path(output_dir)
             output_path.mkdir(parents=True, exist_ok=True)
 
+        # Lấy range tuần
+        week_dates = week_summary_data.get("week_dates", [])
+        if week_dates:
+            week_range = f"{week_dates[0]}_{week_dates[-1]}"
+        else:
+            week_range = "unknown_range"
+
         # Daily coding time chart
         if week_summary_data.get("daily_summaries"):
             chart_file = self.create_daily_coding_time_chart(
-                week_summary_data["daily_summaries"], "Weekly Daily Coding Time"
+                week_summary_data["daily_summaries"],
+                f"Weekly Daily Coding Time ({week_range})",
             )
             if chart_file:
                 charts["daily_coding_time"] = chart_file
             # Thêm chart stacked bar
             stacked_chart = self.create_daily_stacked_bar_chart(
                 week_summary_data["daily_summaries"],
-                title="Daily Coding Time by Project (Weekly)",
-                chart_name="daily_stacked_bar_weekly",
+                title=f"Daily Coding Time by Project (Weekly {week_range})",
+                chart_name=f"daily_stacked_bar_weekly_{week_range}",
             )
             if stacked_chart:
                 charts["daily_stacked_bar"] = stacked_chart
@@ -321,85 +329,98 @@ class WakaTimeCharts:
 
         # Create weekly pie charts
         if weekly_languages:
-            chart_file = self.create_pie_chart(weekly_languages, "Weekly Languages")
+            chart_file = self.create_pie_chart(
+                weekly_languages, f"Weekly Languages ({week_range})"
+            )
             if chart_file:
                 charts["weekly_languages"] = chart_file
 
         if weekly_categories:
-            chart_file = self.create_pie_chart(weekly_categories, "Weekly Categories")
+            chart_file = self.create_pie_chart(
+                weekly_categories, f"Weekly Categories ({week_range})"
+            )
             if chart_file:
                 charts["weekly_categories"] = chart_file
 
         if weekly_editors:
-            chart_file = self.create_pie_chart(weekly_editors, "Weekly Editors")
+            chart_file = self.create_pie_chart(
+                weekly_editors, f"Weekly Editors ({week_range})"
+            )
             if chart_file:
                 charts["weekly_editors"] = chart_file
 
         if weekly_os:
-            chart_file = self.create_pie_chart(weekly_os, "Weekly Operating Systems")
+            chart_file = self.create_pie_chart(
+                weekly_os, f"Weekly Operating Systems ({week_range})"
+            )
             if chart_file:
                 charts["weekly_os"] = chart_file
 
         if weekly_machines:
-            chart_file = self.create_pie_chart(weekly_machines, "Weekly Machines")
+            chart_file = self.create_pie_chart(
+                weekly_machines, f"Weekly Machines ({week_range})"
+            )
             if chart_file:
                 charts["weekly_machines"] = chart_file
 
         if weekly_projects:
-            chart_file = self.create_pie_chart(weekly_projects, "Weekly Projects")
+            chart_file = self.create_pie_chart(
+                weekly_projects, f"Weekly Projects ({week_range})"
+            )
             if chart_file:
                 charts["weekly_projects"] = chart_file
 
         # Daily breakdown charts (for individual days)
         for day_summary in week_summary_data.get("daily_summaries", []):
+            day_date = day_summary.get("date", "unknown")
             # Languages pie chart
             if day_summary.get("languages"):
                 chart_file = self.create_pie_chart(
-                    day_summary["languages"], f"Languages - {day_summary['date']}"
+                    day_summary["languages"], f"Languages - {day_date}"
                 )
                 if chart_file:
-                    charts[f"languages_{day_summary['date']}"] = chart_file
+                    charts[f"languages_{day_date}"] = chart_file
 
             # Categories pie chart
             if day_summary.get("categories"):
                 chart_file = self.create_pie_chart(
-                    day_summary["categories"], f"Categories - {day_summary['date']}"
+                    day_summary["categories"], f"Categories - {day_date}"
                 )
                 if chart_file:
-                    charts[f"categories_{day_summary['date']}"] = chart_file
+                    charts[f"categories_{day_date}"] = chart_file
 
             # Editors pie chart
             if day_summary.get("editors"):
                 chart_file = self.create_pie_chart(
-                    day_summary["editors"], f"Editors - {day_summary['date']}"
+                    day_summary["editors"], f"Editors - {day_date}"
                 )
                 if chart_file:
-                    charts[f"editors_{day_summary['date']}"] = chart_file
+                    charts[f"editors_{day_date}"] = chart_file
 
             # Operating Systems pie chart
             if day_summary.get("operating_systems"):
                 chart_file = self.create_pie_chart(
                     day_summary["operating_systems"],
-                    f"Operating Systems - {day_summary['date']}",
+                    f"Operating Systems - {day_date}",
                 )
                 if chart_file:
-                    charts[f"os_{day_summary['date']}"] = chart_file
+                    charts[f"os_{day_date}"] = chart_file
 
             # Machines pie chart
             if day_summary.get("machines"):
                 chart_file = self.create_pie_chart(
-                    day_summary["machines"], f"Machines - {day_summary['date']}"
+                    day_summary["machines"], f"Machines - {day_date}"
                 )
                 if chart_file:
-                    charts[f"machines_{day_summary['date']}"] = chart_file
+                    charts[f"machines_{day_date}"] = chart_file
 
             # Projects pie chart
             if day_summary.get("projects"):
                 chart_file = self.create_pie_chart(
-                    day_summary["projects"], f"Projects - {day_summary['date']}"
+                    day_summary["projects"], f"Projects - {day_date}"
                 )
                 if chart_file:
-                    charts[f"projects_{day_summary['date']}"] = chart_file
+                    charts[f"projects_{day_date}"] = chart_file
 
         return charts
 
@@ -410,6 +431,11 @@ class WakaTimeCharts:
         if output_dir:
             output_path = Path(output_dir)
             output_path.mkdir(parents=True, exist_ok=True)
+
+        # Lấy range tháng
+        month = month_summary_data.get("month")
+        year = month_summary_data.get("year")
+        month_range = f"{year}_{month}" if month and year else "unknown_month"
 
         # Weekly coding time chart
         if month_summary_data.get("weekly_summaries"):
@@ -424,7 +450,7 @@ class WakaTimeCharts:
                 )
 
             chart_file = self.create_daily_coding_time_chart(
-                weekly_data, "Monthly Weekly Coding Time"
+                weekly_data, f"Monthly Weekly Coding Time ({month_range})"
             )
             if chart_file:
                 charts["weekly_coding_time"] = chart_file
@@ -435,8 +461,8 @@ class WakaTimeCharts:
                 all_days.extend(week.get("daily_summaries", []))
             stacked_chart = self.create_daily_stacked_bar_chart(
                 all_days,
-                title="Daily Coding Time by Project (Monthly)",
-                chart_name="daily_stacked_bar_monthly",
+                title=f"Daily Coding Time by Project (Monthly {month_range})",
+                chart_name=f"daily_stacked_bar_monthly_{month_range}",
             )
             if stacked_chart:
                 charts["daily_stacked_bar"] = stacked_chart
@@ -451,32 +477,44 @@ class WakaTimeCharts:
 
         # Create monthly pie charts
         if monthly_languages:
-            chart_file = self.create_pie_chart(monthly_languages, "Monthly Languages")
+            chart_file = self.create_pie_chart(
+                monthly_languages, f"Monthly Languages ({month_range})"
+            )
             if chart_file:
                 charts["monthly_languages"] = chart_file
 
         if monthly_categories:
-            chart_file = self.create_pie_chart(monthly_categories, "Monthly Categories")
+            chart_file = self.create_pie_chart(
+                monthly_categories, f"Monthly Categories ({month_range})"
+            )
             if chart_file:
                 charts["monthly_categories"] = chart_file
 
         if monthly_editors:
-            chart_file = self.create_pie_chart(monthly_editors, "Monthly Editors")
+            chart_file = self.create_pie_chart(
+                monthly_editors, f"Monthly Editors ({month_range})"
+            )
             if chart_file:
                 charts["monthly_editors"] = chart_file
 
         if monthly_os:
-            chart_file = self.create_pie_chart(monthly_os, "Monthly Operating Systems")
+            chart_file = self.create_pie_chart(
+                monthly_os, f"Monthly Operating Systems ({month_range})"
+            )
             if chart_file:
                 charts["monthly_os"] = chart_file
 
         if monthly_machines:
-            chart_file = self.create_pie_chart(monthly_machines, "Monthly Machines")
+            chart_file = self.create_pie_chart(
+                monthly_machines, f"Monthly Machines ({month_range})"
+            )
             if chart_file:
                 charts["monthly_machines"] = chart_file
 
         if monthly_projects:
-            chart_file = self.create_pie_chart(monthly_projects, "Monthly Projects")
+            chart_file = self.create_pie_chart(
+                monthly_projects, f"Monthly Projects ({month_range})"
+            )
             if chart_file:
                 charts["monthly_projects"] = chart_file
 

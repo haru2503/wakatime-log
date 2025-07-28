@@ -47,15 +47,12 @@ def create_daily_summary(day_date, day_data):
     folder_path = get_folder_path(day_date)
     daily_md_file = folder_path / f"{day_date.strftime('%Y-%m-%d')}_summary.md"
 
-    md_content = f"""# Daily Summary: {day_date.strftime('%Y-%m-%d')}
-
-## Daily Totals
-- **Total Coding Time**: {format_time_detailed(daily_summary['total_coding_time'])}
-
-## Charts
-
-### Languages Distribution
-"""
+    md_content = (
+        f"# Daily Summary: {day_date.strftime('%Y-%m-%d')}\n\n"
+        f"## Daily Totals\n"
+        f"- **Total Coding Time**: {format_time_detailed(daily_summary['total_coding_time'])}\n\n"
+        f"## Charts\n\n### Languages Distribution\n"
+    )
 
     if charts_data.get(f"languages_{daily_summary['date']}"):
         md_content += f"{charts.embed_chart_in_markdown(charts_data[f'languages_{daily_summary['date']}'], 'Languages')}\n"
@@ -80,10 +77,7 @@ def create_daily_summary(day_date, day_data):
     if charts_data.get(f"projects_{daily_summary['date']}"):
         md_content += f"{charts.embed_chart_in_markdown(charts_data[f'projects_{daily_summary['date']}'], 'Projects')}\n"
 
-    md_content += f"""
----
-*Generated on: {datetime.now().isoformat()}*
-"""
+    md_content += f"\n---\n*Generated on: {datetime.now().isoformat()}*\n"
 
     with open(daily_md_file, "w", encoding="utf-8") as f:
         f.write(md_content)
@@ -102,10 +96,13 @@ def create_weekly_summary(week_folder_path, week_summary_data):
     week_md_file = week_folder_path / f"{week_folder_path.name}_summary.md"
 
     md_content = (
-        f"# Week Summary: {week_summary_data['week_dates'][0]} to {week_summary_data['week_dates'][-1]}\n\n"
+        f"# Week Summary: {week_summary_data['week_dates'][0]} to "
+        f"{week_summary_data['week_dates'][-1]}\n\n"
         f"## Weekly Totals\n"
-        f"- **Total Coding Time**: {format_time_detailed(week_summary_data['total_coding_time'])}\n"
-        f"- **Daily Average Coding Time**: {format_time_detailed(week_summary_data['daily_avg_coding_time'])}\n\n"
+        f"- **Total Coding Time**: "
+        f"{format_time_detailed(week_summary_data['total_coding_time'])}\n"
+        f"- **Daily Average Coding Time**: "
+        f"{format_time_detailed(week_summary_data['daily_avg_coding_time'])}\n\n"
         f"## Charts\n\n### Daily Coding Time\n"
     )
 
@@ -166,8 +163,10 @@ def create_monthly_summary(month_folder_path, month_summary_data):
     md_content = (
         f"# Monthly Summary: {month_summary_data.get('month_name', 'Unknown Month')}\n\n"
         f"## Monthly Totals\n"
-        f"- **Total Coding Time**: {format_time_detailed(month_summary_data.get('total_coding_time', 0))}\n"
-        f"- **Weekly Average Coding Time**: {format_time_detailed(month_summary_data.get('weekly_avg_coding_time', 0))}\n\n"
+        f"- **Total Coding Time**: "
+        f"{format_time_detailed(month_summary_data.get('total_coding_time', 0))}\n"
+        f"- **Weekly Average Coding Time**: "
+        f"{format_time_detailed(month_summary_data.get('weekly_avg_coding_time', 0))}\n\n"
         f"## Charts\n\n### Weekly Coding Time\n"
     )
 
@@ -259,50 +258,48 @@ def main():
     """Create summaries for existing data"""
     print("[*] Creating summaries for existing data...")
 
-    # Find all week folders
     wakatime_logs = Path("wakatime_logs")
     if not wakatime_logs.exists():
         print("wakatime_logs directory not found!")
         return
 
-    # Process each week folder
+    today = datetime.now().date()
+    # weekday_today = today.weekday()  # 0=Monday, 6=Sunday (not used)
+
     for year_dir in wakatime_logs.iterdir():
         if not year_dir.is_dir():
             continue
-
         for month_dir in year_dir.iterdir():
             if not month_dir.is_dir():
                 continue
-
             for week_dir in month_dir.iterdir():
                 if not week_dir.is_dir() or not week_dir.name.startswith("week_"):
                     continue
-
-                print(f"\n[*] Processing {week_dir}")
-
-                # Check if week JSON exists
                 week_json_file = week_dir / f"{week_dir.name}.json"
-                if week_json_file.exists():
-                    with open(week_json_file, "r", encoding="utf-8") as f:
-                        week_summary_data = json.load(f)
-
-                    # Create weekly summary
-                    create_weekly_summary(week_dir, week_summary_data)
-
-                    # Create daily summaries
-                    for day_summary in week_summary_data.get("daily_summaries", []):
-                        day_file = week_dir / f"{day_summary['date']}.json"
-                        if day_file.exists():
-                            with open(day_file, "r", encoding="utf-8") as f:
-                                day_data = json.load(f)
-
-                            from datetime import datetime
-
-                            day_date = datetime.strptime(
-                                day_summary["date"], "%Y-%m-%d"
-                            ).date()
-                            create_daily_summary(day_date, day_data)
-
+                if not week_json_file.exists():
+                    continue
+                # Đọc dữ liệu tuần
+                with open(week_json_file, "r", encoding="utf-8") as f:
+                    week_summary_data = json.load(f)
+                week_dates = week_summary_data.get("week_dates", [])
+                if not week_dates or len(week_dates) < 7:
+                    continue  # skip incomplete week
+                week_end = datetime.strptime(week_dates[-1], "%Y-%m-%d").date()
+                # Chỉ tạo summary cho tuần đã kết thúc (hôm nay là thứ Hai, chỉ tạo cho tuần trước)
+                if today <= week_end:
+                    continue
+                # Tạo weekly summary
+                create_weekly_summary(week_dir, week_summary_data)
+                # Tạo daily summaries
+                for day_summary in week_summary_data.get("daily_summaries", []):
+                    day_file = week_dir / f"{day_summary['date']}.json"
+                    if day_file.exists():
+                        with open(day_file, "r", encoding="utf-8") as f:
+                            day_data = json.load(f)
+                        day_date = datetime.strptime(
+                            day_summary["date"], "%Y-%m-%d"
+                        ).date()
+                        create_daily_summary(day_date, day_data)
     print("\n[+] Summary creation completed!")
 
 
