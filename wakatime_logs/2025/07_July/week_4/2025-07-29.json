@@ -1,0 +1,270 @@
+{
+  "wakatime_data": {
+    "data": [
+      {
+        "grand_total": {
+          "hours": 0,
+          "minutes": 8,
+          "total_seconds": 497.245683,
+          "digital": "0:08",
+          "decimal": "0.13",
+          "text": "8 mins"
+        },
+        "range": {
+          "start": "2025-07-28T17:00:00Z",
+          "end": "2025-07-29T16:59:59Z",
+          "date": "2025-07-29",
+          "text": "Tue Jul 29th 2025",
+          "timezone": "Asia/Ho_Chi_Minh"
+        },
+        "projects": [
+          {
+            "name": "wakatime-log",
+            "total_seconds": 497.245683,
+            "color": null,
+            "digital": "0:08:17",
+            "decimal": "0.13",
+            "text": "8 mins",
+            "hours": 0,
+            "minutes": 8,
+            "seconds": 17,
+            "percent": 100.0
+          }
+        ],
+        "languages": [
+          {
+            "name": "Python",
+            "total_seconds": 497.245683,
+            "digital": "0:08:17",
+            "decimal": "0.13",
+            "text": "8 mins",
+            "hours": 0,
+            "minutes": 8,
+            "seconds": 17,
+            "percent": 100.0
+          }
+        ],
+        "dependencies": [
+          {
+            "name": "datetime",
+            "total_seconds": 497.245683,
+            "digital": "0:08:17",
+            "decimal": "0.13",
+            "text": "8 mins",
+            "hours": 0,
+            "minutes": 8,
+            "seconds": 17,
+            "percent": 11.11
+          },
+          {
+            "name": "json",
+            "total_seconds": 497.245683,
+            "digital": "0:08:17",
+            "decimal": "0.13",
+            "text": "8 mins",
+            "hours": 0,
+            "minutes": 8,
+            "seconds": 17,
+            "percent": 11.11
+          },
+          {
+            "name": "requests",
+            "total_seconds": 497.245683,
+            "digital": "0:08:17",
+            "decimal": "0.13",
+            "text": "8 mins",
+            "hours": 0,
+            "minutes": 8,
+            "seconds": 17,
+            "percent": 11.11
+          },
+          {
+            "name": "hashlib",
+            "total_seconds": 497.245683,
+            "digital": "0:08:17",
+            "decimal": "0.13",
+            "text": "8 mins",
+            "hours": 0,
+            "minutes": 8,
+            "seconds": 17,
+            "percent": 11.11
+          },
+          {
+            "name": "pathlib",
+            "total_seconds": 497.245683,
+            "digital": "0:08:17",
+            "decimal": "0.13",
+            "text": "8 mins",
+            "hours": 0,
+            "minutes": 8,
+            "seconds": 17,
+            "percent": 11.11
+          },
+          {
+            "name": "time",
+            "total_seconds": 497.245683,
+            "digital": "0:08:17",
+            "decimal": "0.13",
+            "text": "8 mins",
+            "hours": 0,
+            "minutes": 8,
+            "seconds": 17,
+            "percent": 11.11
+          },
+          {
+            "name": "ntplib",
+            "total_seconds": 497.245683,
+            "digital": "0:08:17",
+            "decimal": "0.13",
+            "text": "8 mins",
+            "hours": 0,
+            "minutes": 8,
+            "seconds": 17,
+            "percent": 11.11
+          },
+          {
+            "name": "calendar",
+            "total_seconds": 497.245683,
+            "digital": "0:08:17",
+            "decimal": "0.13",
+            "text": "8 mins",
+            "hours": 0,
+            "minutes": 8,
+            "seconds": 17,
+            "percent": 11.11
+          },
+          {
+            "name": "wakatime_charts",
+            "total_seconds": 497.245683,
+            "digital": "0:08:17",
+            "decimal": "0.13",
+            "text": "8 mins",
+            "hours": 0,
+            "minutes": 8,
+            "seconds": 17,
+            "percent": 11.11
+          }
+        ],
+        "machines": [
+          {
+            "name": "haru",
+            "total_seconds": 497.245683,
+            "machine_name_id": "102b80a9-1819-4809-9aeb-1e3cb4f0cdf5",
+            "digital": "0:08:17",
+            "decimal": "0.13",
+            "text": "8 mins",
+            "hours": 0,
+            "minutes": 8,
+            "seconds": 17,
+            "percent": 100.0
+          }
+        ],
+        "editors": [
+          {
+            "name": "Cursor",
+            "total_seconds": 497.245683,
+            "digital": "0:08:17",
+            "decimal": "0.13",
+            "text": "8 mins",
+            "hours": 0,
+            "minutes": 8,
+            "seconds": 17,
+            "percent": 100.0
+          }
+        ],
+        "operating_systems": [
+          {
+            "name": "Linux",
+            "total_seconds": 497.245683,
+            "digital": "0:08:17",
+            "decimal": "0.13",
+            "text": "8 mins",
+            "hours": 0,
+            "minutes": 8,
+            "seconds": 17,
+            "percent": 100.0
+          }
+        ],
+        "categories": [
+          {
+            "name": "Coding",
+            "total_seconds": 497.245683,
+            "digital": "0:08:17",
+            "decimal": "0.13",
+            "text": "8 mins",
+            "hours": 0,
+            "minutes": 8,
+            "seconds": 17,
+            "percent": 100.0
+          }
+        ]
+      }
+    ],
+    "start": "2025-07-28T17:00:00Z",
+    "end": "2025-07-29T16:59:59Z",
+    "cumulative_total": {
+      "seconds": 497.245683,
+      "text": "8 mins",
+      "digital": "0:08",
+      "decimal": "0.13"
+    },
+    "daily_average": {
+      "holidays": 0,
+      "days_minus_holidays": 1,
+      "days_including_holidays": 1,
+      "seconds": 497,
+      "seconds_including_other_language": 497,
+      "text": "8 mins",
+      "text_including_other_language": "8 mins"
+    }
+  },
+  "authenticity_proof": {
+    "content_hash": "4c7493f0e04b1c8e465050b0bec1a5b0399e2601f90df728c35ee7c48c7f465c",
+    "external_timestamps": {
+      "data_hash": "4c7493f0e04b1c8e465050b0bec1a5b0399e2601f90df728c35ee7c48c7f465c",
+      "timestamps": {
+        "ntp_time": 1753777078.2873163,
+        "ntp_server": "pool.ntp.org",
+        "github_server_time": "Tue, 29 Jul 2025 08:17:58 GMT"
+      },
+      "verification_note": "These timestamps are from external sources and cannot be manipulated"
+    },
+    "network_evidence": {
+      "user_agent": "WakaTimeImporter/1.0",
+      "request_time": "2025-07-29T08:17:58.512503",
+      "system_info": {
+        "platform": "posix",
+        "hostname": "unknown"
+      }
+    },
+    "authenticity_note": "This data cannot be fabricated due to external verifications"
+  },
+  "request_proof": {
+    "url": "https://wakatime.com/api/v1/users/current/summaries?start=2025-07-29&end=2025-07-29",
+    "method": "GET",
+    "status_code": 200,
+    "response_headers": {
+      "Server": "nginx",
+      "Date": "Tue, 29 Jul 2025 08:17:58 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "3379",
+      "Connection": "keep-alive",
+      "X-Content-Type-Options": "nosniff",
+      "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+      "X-XSS-Protection": "1; mode=block",
+      "Feature-Policy": "accelerometer 'none';autoplay 'self';camera 'none';fullscreen 'self';geolocation 'none';gyroscope 'none';magnetometer 'none';microphone 'none';midi 'none';payment 'self';picture-in-picture 'none';sync-xhr 'self';usb 'none';",
+      "Referrer-Policy": "strict-origin-when-cross-origin",
+      "X-Frame-Options": "SAMEORIGIN",
+      "Cross-Origin-Opener-Policy": "same-origin",
+      "Content-Security-Policy": "default-src 'self'; frame-ancestors 'self'; script-src 'self' 'unsafe-eval' https://www.google.com/ https://www.gstatic.com/; img-src 'self' data: https://cdn.loom.com/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://fonts.gstatic.com/; font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/; media-src 'self' https://*.amazonaws.com; frame-src 'self' https://www.google.com/ https://www.youtube.com/ https://www.loom.com/ player.vimeo.com; object-src 'self'; connect-src 'self' https://www.google.com/ https://avatar-cdn.atlassian.com;"
+    },
+    "request_duration": 0.2970597743988037,
+    "response_size": 3379
+  },
+  "metadata": {
+    "version": "1.0",
+    "date_fetched": "2025-07-29",
+    "script_name": "WakaTimeImporter",
+    "trustless_note": "This file contains multiple external verifications that make fabrication impossible"
+  }
+}

@@ -467,15 +467,15 @@
     "external_timestamps": {
       "data_hash": "84b5de365800e4d477e4e2534a2871d0c7ec392999d9089af7a426c1beffcdea",
       "timestamps": {
-        "ntp_time": 1753776997.9857569,
+        "ntp_time": 1753777077.8241005,
         "ntp_server": "pool.ntp.org",
-        "github_server_time": "Tue, 29 Jul 2025 08:16:29 GMT"
+        "github_server_time": "Tue, 29 Jul 2025 08:17:52 GMT"
       },
       "verification_note": "These timestamps are from external sources and cannot be manipulated"
     },
     "network_evidence": {
-      "user_agent": "TrustlessWakaTimeLogger/2.0",
-      "request_time": "2025-07-29T08:16:38.179753",
+      "user_agent": "WakaTimeImporter/1.0",
+      "request_time": "2025-07-29T08:17:57.973610",
       "system_info": {
         "platform": "posix",
         "hostname": "unknown"
@@ -489,7 +489,7 @@
     "status_code": 200,
     "response_headers": {
       "Server": "nginx",
-      "Date": "Tue, 29 Jul 2025 08:16:37 GMT",
+      "Date": "Tue, 29 Jul 2025 08:17:57 GMT",
       "Content-Type": "application/json",
       "Content-Length": "7294",
       "Connection": "keep-alive",
@@ -502,13 +502,13 @@
       "Cross-Origin-Opener-Policy": "same-origin",
       "Content-Security-Policy": "default-src 'self'; frame-ancestors 'self'; script-src 'self' 'unsafe-eval' https://www.google.com/ https://www.gstatic.com/; img-src 'self' data: https://cdn.loom.com/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://fonts.gstatic.com/; font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/; media-src 'self' https://*.amazonaws.com; frame-src 'self' https://www.google.com/ https://www.youtube.com/ https://www.loom.com/ player.vimeo.com; object-src 'self'; connect-src 'self' https://www.google.com/ https://avatar-cdn.atlassian.com;"
     },
-    "request_duration": 0.07919120788574219,
+    "request_duration": 0.2573883533477783,
     "response_size": 7294
   },
   "metadata": {
-    "version": "2.0",
+    "version": "1.0",
     "date_fetched": "2025-07-28",
-    "script_name": "TrustlessWakaTimeLogger",
+    "script_name": "WakaTimeImporter",
     "trustless_note": "This file contains multiple external verifications that make fabrication impossible"
   }
 }

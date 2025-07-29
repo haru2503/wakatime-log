@@ -1,0 +1,314 @@
+{
+  "wakatime_data": {
+    "data": [
+      {
+        "languages": [
+          {
+            "name": "Python",
+            "total_seconds": 21590.313927,
+            "digital": "5:59:50",
+            "decimal": "5.98",
+            "text": "5 hrs 59 mins",
+            "hours": 5,
+            "minutes": 59,
+            "seconds": 50,
+            "percent": 98.33
+          },
+          {
+            "name": "Text",
+            "total_seconds": 288.744445,
+            "digital": "0:04:48",
+            "decimal": "0.07",
+            "text": "4 mins",
+            "hours": 0,
+            "minutes": 4,
+            "seconds": 48,
+            "percent": 1.32
+          },
+          {
+            "name": "Markdown",
+            "total_seconds": 77.318025,
+            "digital": "0:01:17",
+            "decimal": "0.02",
+            "text": "1 min",
+            "hours": 0,
+            "minutes": 1,
+            "seconds": 17,
+            "percent": 0.35
+          }
+        ],
+        "grand_total": {
+          "hours": 6,
+          "minutes": 5,
+          "total_seconds": 21956.376397,
+          "digital": "6:05",
+          "decimal": "6.08",
+          "text": "6 hrs 5 mins"
+        },
+        "editors": [
+          {
+            "name": "VS Code",
+            "total_seconds": 21956.376397,
+            "digital": "6:05:56",
+            "decimal": "6.08",
+            "text": "6 hrs 5 mins",
+            "hours": 6,
+            "minutes": 5,
+            "seconds": 56,
+            "percent": 100.0
+          }
+        ],
+        "operating_systems": [
+          {
+            "name": "Linux",
+            "total_seconds": 21956.376397,
+            "digital": "6:05:56",
+            "decimal": "6.08",
+            "text": "6 hrs 5 mins",
+            "hours": 6,
+            "minutes": 5,
+            "seconds": 56,
+            "percent": 100.0
+          }
+        ],
+        "categories": [
+          {
+            "name": "Coding",
+            "total_seconds": 21341.719783,
+            "digital": "5:55:41",
+            "decimal": "5.92",
+            "text": "5 hrs 55 mins",
+            "hours": 5,
+            "minutes": 55,
+            "seconds": 41,
+            "percent": 97.2
+          },
+          {
+            "name": "Debugging",
+            "total_seconds": 614.656614,
+            "digital": "0:10:14",
+            "decimal": "0.17",
+            "text": "10 mins",
+            "hours": 0,
+            "minutes": 10,
+            "seconds": 14,
+            "percent": 2.8
+          }
+        ],
+        "dependencies": [
+          {
+            "name": "evaluator",
+            "total_seconds": 18967.3417,
+            "digital": "5:16:07",
+            "decimal": "5.27",
+            "text": "5 hrs 16 mins",
+            "hours": 5,
+            "minutes": 16,
+            "seconds": 7,
+            "percent": 16.86
+          },
+          {
+            "name": "card",
+            "total_seconds": 17658.201258,
+            "digital": "4:54:18",
+            "decimal": "4.90",
+            "text": "4 hrs 54 mins",
+            "hours": 4,
+            "minutes": 54,
+            "seconds": 18,
+            "percent": 15.7
+          },
+          {
+            "name": "shutil",
+            "total_seconds": 17161.37837,
+            "digital": "4:46:01",
+            "decimal": "4.77",
+            "text": "4 hrs 46 mins",
+            "hours": 4,
+            "minutes": 46,
+            "seconds": 1,
+            "percent": 15.26
+          },
+          {
+            "name": "random",
+            "total_seconds": 17161.37837,
+            "digital": "4:46:01",
+            "decimal": "4.77",
+            "text": "4 hrs 46 mins",
+            "hours": 4,
+            "minutes": 46,
+            "seconds": 1,
+            "percent": 15.26
+          },
+          {
+            "name": "player",
+            "total_seconds": 17161.37837,
+            "digital": "4:46:01",
+            "decimal": "4.77",
+            "text": "4 hrs 46 mins",
+            "hours": 4,
+            "minutes": 46,
+            "seconds": 1,
+            "percent": 15.26
+          },
+          {
+            "name": "ai",
+            "total_seconds": 16543.866496,
+            "digital": "4:35:43",
+            "decimal": "4.58",
+            "text": "4 hrs 35 mins",
+            "hours": 4,
+            "minutes": 35,
+            "seconds": 43,
+            "percent": 14.71
+          },
+          {
+            "name": "collections",
+            "total_seconds": 3687.702142,
+            "digital": "1:01:27",
+            "decimal": "1.02",
+            "text": "1 hr 1 min",
+            "hours": 1,
+            "minutes": 1,
+            "seconds": 27,
+            "percent": 3.28
+          },
+          {
+            "name": "enum",
+            "total_seconds": 1910.054963,
+            "digital": "0:31:50",
+            "decimal": "0.52",
+            "text": "31 mins",
+            "hours": 0,
+            "minutes": 31,
+            "seconds": 50,
+            "percent": 1.7
+          },
+          {
+            "name": "copy",
+            "total_seconds": 1855.173166,
+            "digital": "0:30:55",
+            "decimal": "0.50",
+            "text": "30 mins",
+            "hours": 0,
+            "minutes": 30,
+            "seconds": 55,
+            "percent": 1.65
+          },
+          {
+            "name": "colorama",
+            "total_seconds": 382.923703,
+            "digital": "0:06:22",
+            "decimal": "0.10",
+            "text": "6 mins",
+            "hours": 0,
+            "minutes": 6,
+            "seconds": 22,
+            "percent": 0.34
+          }
+        ],
+        "machines": [
+          {
+            "name": "haru",
+            "total_seconds": 21956.376397,
+            "machine_name_id": "41fa6a6b-dbca-403d-a51e-7cd433e9a8ff",
+            "digital": "6:05:56",
+            "decimal": "6.08",
+            "text": "6 hrs 5 mins",
+            "hours": 6,
+            "minutes": 5,
+            "seconds": 56,
+            "percent": 100.0
+          }
+        ],
+        "projects": [
+          {
+            "name": "poker",
+            "total_seconds": 21956.376397,
+            "color": null,
+            "digital": "6:05:56",
+            "decimal": "6.08",
+            "text": "6 hrs 5 mins",
+            "hours": 6,
+            "minutes": 5,
+            "seconds": 56,
+            "percent": 100.0
+          }
+        ],
+        "range": {
+          "start": "2025-07-21T17:00:00Z",
+          "end": "2025-07-22T16:59:59Z",
+          "date": "2025-07-22",
+          "text": "Tue Jul 22nd 2025",
+          "timezone": "Asia/Ho_Chi_Minh"
+        }
+      }
+    ],
+    "start": "2025-07-21T17:00:00Z",
+    "end": "2025-07-22T16:59:59Z",
+    "cumulative_total": {
+      "seconds": 21956.376397,
+      "text": "6 hrs 5 mins",
+      "digital": "6:05",
+      "decimal": "6.08"
+    },
+    "daily_average": {
+      "holidays": 0,
+      "days_minus_holidays": 1,
+      "days_including_holidays": 1,
+      "seconds": 21956,
+      "seconds_including_other_language": 21956,
+      "text": "6 hrs 5 mins",
+      "text_including_other_language": "6 hrs 5 mins"
+    }
+  },
+  "authenticity_proof": {
+    "content_hash": "d3fa51f4bc20159d334512d12092195634271773a6d84c2a1cf022e950a6ee39",
+    "external_timestamps": {
+      "data_hash": "d3fa51f4bc20159d334512d12092195634271773a6d84c2a1cf022e950a6ee39",
+      "timestamps": {
+        "ntp_time": 1753777075.201033,
+        "ntp_server": "pool.ntp.org",
+        "github_server_time": "Tue, 29 Jul 2025 08:17:52 GMT"
+      },
+      "verification_note": "These timestamps are from external sources and cannot be manipulated"
+    },
+    "network_evidence": {
+      "user_agent": "WakaTimeImporter/1.0",
+      "request_time": "2025-07-29T08:17:55.360756",
+      "system_info": {
+        "platform": "posix",
+        "hostname": "unknown"
+      }
+    },
+    "authenticity_note": "This data cannot be fabricated due to external verifications"
+  },
+  "request_proof": {
+    "url": "https://wakatime.com/api/v1/users/current/summaries?start=2025-07-22&end=2025-07-22",
+    "method": "GET",
+    "status_code": 200,
+    "response_headers": {
+      "Server": "nginx",
+      "Date": "Tue, 29 Jul 2025 08:17:55 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "4166",
+      "Connection": "keep-alive",
+      "X-Content-Type-Options": "nosniff",
+      "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+      "X-XSS-Protection": "1; mode=block",
+      "Feature-Policy": "accelerometer 'none';autoplay 'self';camera 'none';fullscreen 'self';geolocation 'none';gyroscope 'none';magnetometer 'none';microphone 'none';midi 'none';payment 'self';picture-in-picture 'none';sync-xhr 'self';usb 'none';",
+      "Referrer-Policy": "strict-origin-when-cross-origin",
+      "X-Frame-Options": "SAMEORIGIN",
+      "Cross-Origin-Opener-Policy": "same-origin",
+      "Content-Security-Policy": "default-src 'self'; frame-ancestors 'self'; script-src 'self' 'unsafe-eval' https://www.google.com/ https://www.gstatic.com/; img-src 'self' data: https://cdn.loom.com/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://fonts.gstatic.com/; font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/; media-src 'self' https://*.amazonaws.com; frame-src 'self' https://www.google.com/ https://www.youtube.com/ https://www.loom.com/ player.vimeo.com; object-src 'self'; connect-src 'self' https://www.google.com/ https://avatar-cdn.atlassian.com;"
+    },
+    "request_duration": 0.2379593849182129,
+    "response_size": 4166
+  },
+  "metadata": {
+    "version": "1.0",
+    "date_fetched": "2025-07-22",
+    "script_name": "WakaTimeImporter",
+    "trustless_note": "This file contains multiple external verifications that make fabrication impossible"
+  }
+}
