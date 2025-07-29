@@ -5,7 +5,7 @@
 
 Hệ thống đảm bảo tính xác thực bằng cách:
 
-* Lưu trữ dữ liệu theo cách không thể chỉnh sửa sau khi ghi (immutable).
+* Lưu trữ dữ liệu bất biến, không thể chỉnh sửa sau khi ghi (immutable).
 * Có cơ chế xác minh từ bên thứ ba (external proof/verification).
 * Hướng đến sự minh bạch tuyệt đối cho việc theo dõi thói quen lập trình cá nhân hoặc công khai.
 

@@ -18,7 +18,6 @@ It achieves this by:
 * **Weekly Summaries**: Automatic generation of weekly summaries with detailed statistics and visualizations
 * **Monthly Summaries**: Monthly aggregation of weekly data with charts
 * **Data Visualization**: Interactive charts embedded in summary files and standalone visualization tools
-* **Sunday Special**: On Sundays, fetches 7 days of data and generates week summaries
 * **GitHub Actions**: Automated daily fetching and manual data import workflows
 
 ## Folder Structure
@@ -71,8 +70,8 @@ python wakatime_fetcher.py
 The script automatically:
 
 * Creates folders based on date structure
-* Generates week summaries on Sundays with embedded charts
-* Generates month summaries on the last Sunday of each month with visualizations
+* Generates week summaries on the first day of a new week (Monday) with embedded charts
+* Generates month summaries on the first day of a new month with visualizations
 * Fetches 7 days of data when run on Sunday
 
 ### GitHub Actions Workflows
@@ -92,8 +91,8 @@ This repository includes two GitHub Actions workflows:
 **Features**:
 
 * Fetches yesterday's data automatically
-* On Sundays, fetches 7 days and generates week summaries
-* On last Sunday of month, generates month summaries
+* On the first day of a new week, generates a weekly summary report for the previous week
+* On the first day of a new month, generates a monthly summary report for the previous month
 * Commits changes to repository with trustless verification
 
 #### 2. Manual Import Workflow (`wakatime-import.yml`)
@@ -178,7 +177,7 @@ When the script runs on Sunday, it:
 
 ## Monthly Summaries
 
-On the last Sunday of each month, the script also:
+On the first day of each month, the script also:
 
 1. Aggregates all weekly summaries for the month
 2. Generates `MM_Month.json` with monthly data
