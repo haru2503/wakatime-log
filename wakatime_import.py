@@ -8,10 +8,11 @@ import requests
 import json
 import hashlib
 import time
-from datetime import datetime, timedelta
 import os
-from pathlib import Path
 import calendar
+import re
+from datetime import datetime, timedelta
+from pathlib import Path
 from wakatime_charts import WakaTimeCharts
 
 
@@ -562,10 +563,6 @@ class WakaTimeImporter:
         print(f"\n[*] Import completed! Imported {len(imported_files)} files.")
 
         # === Tạo weekly summary cho mọi tuần đã kết thúc ===
-        from datetime import datetime, timedelta
-        from pathlib import Path
-        import re
-
         today = datetime.today().date()
         base_dir = Path(self.base_dir)
         for year_dir in base_dir.iterdir():
