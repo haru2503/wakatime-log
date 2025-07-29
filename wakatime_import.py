@@ -416,6 +416,116 @@ class WakaTimeImporter:
         print(f"[+] Saved daily summary: {daily_md_file}")
         return daily_md_file
 
+    def generate_previous_week_summary(self):
+        """Generate weekly summary for the previous week (Monday-Sunday) if today is Monday"""
+        today = datetime.today().date()
+        if today.weekday() != 0:
+            print("[!] Not Monday, skipping weekly summary generation.")
+            return None
+        # Hôm nay là thứ 2, xác định tuần trước
+        last_sunday = today - timedelta(days=1)
+        # Tìm Monday của tuần trước
+        last_monday = last_sunday - timedelta(days=last_sunday.weekday())
+        week_dates = [last_monday + timedelta(days=i) for i in range(7)]
+        # Xác định folder chứa dữ liệu tuần trước
+        week_folder_path = self.get_folder_path(last_monday)
+        if not week_folder_path.exists():
+            print(f"[!] No data folder for previous week: {week_folder_path}")
+            return None
+        week_summary_data = self.generate_week_summary(week_folder_path, week_dates)
+        if week_summary_data:
+            self.save_week_summary(week_folder_path, week_summary_data)
+            print(f"[+] Weekly summary for previous week saved: {week_folder_path}")
+            return week_folder_path
+        else:
+            print("[!] No data to generate previous week summary.")
+            return None
+
+    def generate_previous_month_summary(self):
+        """Generate monthly summary for the previous month if today is the 1st"""
+        today = datetime.today().date()
+        if today.day != 1:
+            print("[!] Not the 1st day, skipping monthly summary generation.")
+            return None
+        # Xác định tháng trước
+        first_of_this_month = today.replace(day=1)
+        last_day_prev_month = first_of_this_month - timedelta(days=1)
+        first_day_prev_month = last_day_prev_month.replace(day=1)
+        # Lấy tất cả các ngày trong tháng trước
+        num_days = last_day_prev_month.day
+        month_dates = [
+            first_day_prev_month + timedelta(days=i) for i in range(num_days)
+        ]
+        # Xác định folder chứa dữ liệu tháng trước
+        month_folder = self.get_month_folder_name(first_day_prev_month)
+        year_folder = str(first_day_prev_month.year)
+        month_folder_path = Path(self.base_dir) / year_folder / month_folder
+        if not month_folder_path.exists():
+            print(f"[!] No data folder for previous month: {month_folder_path}")
+            return None
+        # Gom toàn bộ daily summaries trong tháng
+        daily_summaries = []
+        for week_folder in month_folder_path.iterdir():
+            if week_folder.is_dir():
+                for day_date in month_dates:
+                    day_file = week_folder / f"{day_date.strftime('%Y-%m-%d')}.json"
+                    if day_file.exists():
+                        with open(day_file, "r", encoding="utf-8") as f:
+                            day_data = json.load(f)
+                        wakatime_data = day_data["wakatime_data"]["data"][0]
+                        daily_summary = {
+                            "date": day_date.strftime("%Y-%m-%d"),
+                            "total_coding_time": self.calculate_total_seconds(
+                                [wakatime_data["grand_total"]]
+                            ),
+                            "categories": wakatime_data.get("categories", []),
+                            "languages": wakatime_data.get("languages", []),
+                            "projects": wakatime_data.get("projects", []),
+                            "editors": wakatime_data.get("editors", []),
+                            "machines": wakatime_data.get("machines", []),
+                            "operating_systems": wakatime_data.get(
+                                "operating_systems", []
+                            ),
+                        }
+                        daily_summaries.append(daily_summary)
+        if not daily_summaries:
+            print("[!] No data to generate previous month summary.")
+            return None
+        total_coding_time = sum(day["total_coding_time"] for day in daily_summaries)
+        days_with_data = len(daily_summaries)
+        daily_avg_coding_time = (
+            total_coding_time / days_with_data if days_with_data > 0 else 0
+        )
+        month_summary_data = {
+            "month": first_day_prev_month.strftime("%Y-%m"),
+            "month_dates": [d.strftime("%Y-%m-%d") for d in month_dates],
+            "total_coding_time": total_coding_time,
+            "daily_avg_coding_time": daily_avg_coding_time,
+            "daily_summaries": daily_summaries,
+            "metadata": {
+                "generated_at": datetime.now().isoformat(),
+                "days_with_data": days_with_data,
+                "total_days": num_days,
+            },
+        }
+        # Lưu file json và md
+        month_json_file = month_folder_path / f"{month_folder}_summary.json"
+        with open(month_json_file, "w", encoding="utf-8") as f:
+            json.dump(month_summary_data, f, indent=2)
+        # Markdown summary (tối giản)
+        md_content = (
+            f"# Month Summary: {first_day_prev_month.strftime('%B %Y')}\n\n"
+            f"## Monthly Totals\n- **Total Coding Time**: {self.format_time_detailed(total_coding_time)}\n"
+            f"- **Daily Average Coding Time**: {self.format_time_detailed(daily_avg_coding_time)}\n\n---\n"
+            f"*Generated on: {month_summary_data['metadata']['generated_at']}*\n"
+            f"*Days with data: {days_with_data}/{num_days}*\n"
+        )
+        month_md_file = month_folder_path / f"{month_folder}_summary.md"
+        with open(month_md_file, "w", encoding="utf-8") as f:
+            f.write(md_content)
+        print(f"[+] Monthly summary for previous month saved: {month_folder_path}")
+        return month_folder_path
+
     def import_last_n_days(self, days=20):
         """Import the last N days of WakaTime data"""
         print(f"[*] Starting import of last {days} days of WakaTime data...")
@@ -451,24 +561,24 @@ class WakaTimeImporter:
         print(f"\n[*] Import completed! Imported {len(imported_files)} files.")
 
         # Generate week summaries for all imported weeks
-        print("\n[*] Generating week summaries...")
-        for week_path_str in imported_weeks:
-            week_folder_path = Path(week_path_str)
-            if week_folder_path.exists():
-                # Get the week dates for this folder
-                # Find any file in the folder to determine the week
-                json_files = list(week_folder_path.glob("*.json"))
-                if json_files:
-                    # Use the first file to determine the week
-                    sample_file = json_files[0]
-                    sample_date = datetime.strptime(sample_file.stem, "%Y-%m-%d").date()
-                    week_dates = self.get_week_dates(sample_date)
-
-                    week_summary_data = self.generate_week_summary(
-                        week_folder_path, week_dates
-                    )
-                    if week_summary_data:
-                        self.save_week_summary(week_folder_path, week_summary_data)
+        # print("\n[*] Generating week summaries...")
+        # for week_path_str in imported_weeks:
+        #     week_folder_path = Path(week_path_str)
+        #     if week_folder_path.exists():
+        #         # Get the week dates for this folder
+        #         # Find any file in the folder to determine the week
+        #         json_files = list(week_folder_path.glob("*.json"))
+        #         if json_files:
+        #             # Use the first file to determine the week
+        #             sample_file = json_files[0]
+        #             sample_date = datetime.strptime(sample_file.stem, "%Y-%m-%d").date()
+        #             week_dates = self.get_week_dates(sample_date)
+        #
+        #             week_summary_data = self.generate_week_summary(
+        #                 week_folder_path, week_dates
+        #             )
+        #             if week_summary_data:
+        #                 self.save_week_summary(week_folder_path, week_summary_data)
 
         print("\n[+] Import completed successfully!")
         print(f"[+] Total files imported: {len(imported_files)}")
@@ -486,6 +596,11 @@ def main():
 
     # Import last N days (default 20)
     imported_files = importer.import_last_n_days()
+
+    # Weekly summary: chỉ tạo nếu hôm nay là thứ 2
+    importer.generate_previous_week_summary()
+    # Monthly summary: chỉ tạo nếu hôm nay là ngày 1
+    importer.generate_previous_month_summary()
 
     print("\n[SUCCESS] Import completed!")
     print("Check the wakatime_logs/ directory for your imported data.")
