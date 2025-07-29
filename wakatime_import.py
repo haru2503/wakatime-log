@@ -548,6 +548,7 @@ class WakaTimeImporter:
             daily_data = self.fetch_daily_data(current_date)
             if daily_data:
                 daily_file = self.save_daily_data(current_date, daily_data)
+                self.save_daily_summary(current_date.strftime("%Y-%m-%d"), daily_data)
                 imported_files.append(daily_file)
 
                 # Track which week this belongs to
