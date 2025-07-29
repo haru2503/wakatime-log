@@ -681,6 +681,36 @@ class TrustlessWakaTimeLogger:
 
             # Save daily data
             daily_file = self.save_daily_data(target_date, daily_data)
+
+            # Always create daily summary .md
+            self.save_daily_summary(target_date.strftime("%Y-%m-%d"), daily_data)
+
+            # If today is Monday, generate weekly summary for last week
+            today = datetime.today().date()
+            if today.weekday() == 0:  # Monday
+                # Get last week's Sunday
+                last_sunday = today - timedelta(days=1)
+                week_dates = self.get_week_dates(last_sunday)
+                week_folder_path = self.get_folder_path(last_sunday)
+                week_summary_data = self.generate_week_summary(
+                    week_folder_path, week_dates
+                )
+                if week_summary_data:
+                    self.save_week_summary(week_folder_path, week_summary_data)
+
+            # If today is the 1st, generate monthly summary for last month
+            if today.day == 1:
+                # Get last day of previous month
+                first_day_this_month = today.replace(day=1)
+                last_day_prev_month = first_day_this_month - timedelta(days=1)
+                month_dates = self.get_month_dates(last_day_prev_month)
+                month_folder_path = self.get_folder_path(last_day_prev_month).parent
+                month_summary_data = self.generate_month_summary(
+                    month_folder_path, month_dates
+                )
+                if month_summary_data:
+                    self.save_month_summary(month_folder_path, month_summary_data)
+
             return daily_file
 
 
