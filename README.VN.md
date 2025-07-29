@@ -18,8 +18,7 @@ Hệ thống đảm bảo tính xác thực bằng cách:
 * **Tóm tắt hàng tuần**: Tự động tạo tóm tắt hàng tuần với thống kê chi tiết và biểu đồ
 * **Tóm tắt hàng tháng**: Tổng hợp dữ liệu hàng tháng với biểu đồ
 * **Trực quan hóa dữ liệu**: Biểu đồ tương tác nhúng vào file tóm tắt và công cụ trực quan hóa độc lập
-* **Đặc biệt Chủ nhật**: Vào Chủ nhật, lấy 7 ngày dữ liệu và tạo tóm tắt tuần
-* **GitHub Actions**: Tự động lấy dữ liệu hàng ngày và workflow import dữ liệu thủ công
+* **GitHub Actions**: Workflow tự động lấy dữ liệu hàng ngày và workflow import dữ liệu thủ công
 
 ## Cấu trúc thư mục
 
@@ -91,10 +90,10 @@ Repository này bao gồm hai GitHub Actions workflows:
 
 **Tính năng**:
 
-* Tự động lấy dữ liệu ngày hôm qua
-* Vào Chủ nhật, lấy 7 ngày và tạo tóm tắt tuần
-* Vào Chủ nhật cuối tháng, tạo tóm tắt tháng
-* Commit thay đổi vào repository với xác minh không thể giả mạo
+* Workflow này tự động lấy dữ liệu ngày hôm qua
+* Vào ngày đầu tuần mới, tự tạo báo cáo tổng hợp dữ liệu của tuần vừa qua
+* Vào ngày đầu tháng mới, tự tạo báo cáo tổng hợp dữ liệu của tháng vừa qua
+* Commit thay đổi vào repo ngay lập tức với những xác minh không thể giả mạo
 
 #### 2. Workflow Import Thủ Công (`wakatime-import.yml`)
 
@@ -109,8 +108,7 @@ Repository này bao gồm hai GitHub Actions workflows:
 **Tính năng**:
 
 * Import tối đa 400 ngày dữ liệu lịch sử
-* Tạo cấu trúc thư mục hoàn chỉnh
-* Tạo tất cả tóm tắt và trực quan hóa
+* Nhưng thật ra với free plan thì wakatime chỉ giữ lại log 7 ngày gần nhất thôi
 * Hoàn hảo cho thiết lập ban đầu hoặc khôi phục dữ liệu
 
 ### Trực quan hóa dữ liệu
@@ -123,7 +121,7 @@ File tóm tắt tuần và tháng (`.md`) giờ bao gồm:
 * **Biểu đồ tròn ngôn ngữ lập trình**: Phân bố các ngôn ngữ lập trình
 * **Biểu đồ tròn danh mục**: Phân bố các danh mục coding
 * **Biểu đồ tròn editor**: Phân bố các code editor được sử dụng
-* **Biểu đồ tròn hệ điều hành**: Phân bố sử dụng OS
+* **Biểu đồ tròn hệ điều hành**: Phân bố thời gian sử dụng OS
 * **Biểu đồ tròn máy tính**: Phân bố các máy tính được sử dụng
 * **Biểu đồ tròn project**: Phân bố các project đã làm việc
 
@@ -159,38 +157,6 @@ Hệ thống sử dụng nhiều nguồn bên ngoài để xác minh tính xác 
 5. **Network Evidence**: Metadata request/response
 
 Điều này khiến bất cứ ai cũng không thể tạo dữ liệu giả mà không kiểm soát tất cả các nguồn xác minh bên ngoài.
-
-## Tóm tắt hàng tuần
-
-Khi script chạy vào Chủ nhật, nó sẽ:
-
-1. Lấy dữ liệu cho tất cả 7 ngày trong tuần
-2. Tạo `week_N.json` với dữ liệu tổng hợp
-3. Tạo `week_N_summary.md` với phân tích chi tiết và biểu đồ
-
-### Nội dung tóm tắt tuần
-
-* Tổng thời gian coding trong tuần
-* Thời gian coding trung bình hàng ngày
-* Tổng thời gian theo danh mục, ngôn ngữ, project, editor, máy tính, OS
-* Phân tích hàng ngày cho mỗi ngày trong tuần
-* **Biểu đồ nhúng**: Biểu đồ cột cho thời gian coding hàng ngày, biểu đồ tròn cho phân bố
-
-## Tóm tắt hàng tháng
-
-Vào Chủ nhật cuối tháng, script cũng sẽ:
-
-1. Tổng hợp tất cả tóm tắt tuần trong tháng
-2. Tạo `MM_Month.json` với dữ liệu tháng
-3. Tạo `MM_Month_summary.md` với phân tích tháng và trực quan hóa
-
-### Nội dung tóm tắt tháng
-
-* Tổng thời gian coding trong tháng
-* Trung bình hàng tuần và hàng ngày
-* Tổng thời gian theo danh mục, ngôn ngữ, project, editor, máy tính, OS
-* Phân tích hàng tuần cho mỗi tuần trong tháng
-* **Biểu đồ nhúng**: Biểu đồ cột cho thời gian coding hàng tuần, biểu đồ tròn cho phân bố
 
 ## Quy tắc tạo thư mục
 
@@ -261,7 +227,7 @@ Thiết lập cron job để chạy hàng ngày:
 
 ## Đóng góp
 
-Hãy tự do gửi issues và pull request!! 🤗
+Mọi người thoải mái gửi issues và pull request nhé!! 🤗
 
 ## Giấy phép
 
