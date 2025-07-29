@@ -562,7 +562,7 @@ class WakaTimeImporter:
 
         print(f"\n[*] Import completed! Imported {len(imported_files)} files.")
 
-        # === Tạo weekly summary cho mọi tuần đã kết thúc ===
+        # === Tạo weekly summary cho mọi tuần đã kết thúc (không cần đủ 7 file daily) ===
         today = datetime.today().date()
         base_dir = Path(self.base_dir)
         for year_dir in base_dir.iterdir():
@@ -576,11 +576,10 @@ class WakaTimeImporter:
                         r"week_\d+", week_dir.name
                     ):
                         continue
-                    # Lấy ngày đầu tuần từ tên folder (dựa vào file .json đầu tiên)
+                    # Lấy ngày đầu tuần từ file .json đầu tiên
                     json_files = sorted(week_dir.glob("*.json"))
                     if not json_files:
                         continue
-                    # Lấy ngày đầu tuần từ file đầu tiên
                     first_json = json_files[0]
                     try:
                         week_start = datetime.strptime(
@@ -588,20 +587,10 @@ class WakaTimeImporter:
                         ).date()
                     except Exception:
                         continue
-                    # Ngày cuối tuần (Chủ nhật)
                     week_end = week_start + timedelta(days=6)
                     if week_end >= today:
-                        # Tuần này chưa kết thúc, bỏ qua
-                        continue
-                    # Đủ 7 file daily?
-                    daily_jsons = [
-                        f
-                        for f in json_files
-                        if re.match(r"\d{4}-\d{2}-\d{2}\.json", f.name)
-                    ]
-                    if len(daily_jsons) < 7:
-                        continue
-                    # Tạo summary cho tuần này
+                        continue  # Tuần này chưa kết thúc
+                    # Tạo summary cho tuần này (dù có bao nhiêu file daily)
                     week_dates = [week_start + timedelta(days=i) for i in range(7)]
                     week_summary_data = self.generate_week_summary(week_dir, week_dates)
                     if week_summary_data:
