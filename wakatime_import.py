@@ -561,25 +561,54 @@ class WakaTimeImporter:
 
         print(f"\n[*] Import completed! Imported {len(imported_files)} files.")
 
-        # Generate week summaries for all imported weeks
-        # print("\n[*] Generating week summaries...")
-        # for week_path_str in imported_weeks:
-        #     week_folder_path = Path(week_path_str)
-        #     if week_folder_path.exists():
-        #         # Get the week dates for this folder
-        #         # Find any file in the folder to determine the week
-        #         json_files = list(week_folder_path.glob("*.json"))
-        #         if json_files:
-        #             # Use the first file to determine the week
-        #             sample_file = json_files[0]
-        #             sample_date = datetime.strptime(sample_file.stem, "%Y-%m-%d").date()
-        #             week_dates = self.get_week_dates(sample_date)
-        #
-        #             week_summary_data = self.generate_week_summary(
-        #                 week_folder_path, week_dates
-        #             )
-        #             if week_summary_data:
-        #                 self.save_week_summary(week_folder_path, week_summary_data)
+        # === Tạo weekly summary cho mọi tuần đã kết thúc ===
+        from datetime import datetime, timedelta
+        from pathlib import Path
+        import re
+
+        today = datetime.today().date()
+        base_dir = Path(self.base_dir)
+        for year_dir in base_dir.iterdir():
+            if not year_dir.is_dir() or not year_dir.name.isdigit():
+                continue
+            for month_dir in year_dir.iterdir():
+                if not month_dir.is_dir():
+                    continue
+                for week_dir in month_dir.iterdir():
+                    if not week_dir.is_dir() or not re.match(
+                        r"week_\d+", week_dir.name
+                    ):
+                        continue
+                    # Lấy ngày đầu tuần từ tên folder (dựa vào file .json đầu tiên)
+                    json_files = sorted(week_dir.glob("*.json"))
+                    if not json_files:
+                        continue
+                    # Lấy ngày đầu tuần từ file đầu tiên
+                    first_json = json_files[0]
+                    try:
+                        week_start = datetime.strptime(
+                            first_json.stem, "%Y-%m-%d"
+                        ).date()
+                    except Exception:
+                        continue
+                    # Ngày cuối tuần (Chủ nhật)
+                    week_end = week_start + timedelta(days=6)
+                    if week_end >= today:
+                        # Tuần này chưa kết thúc, bỏ qua
+                        continue
+                    # Đủ 7 file daily?
+                    daily_jsons = [
+                        f
+                        for f in json_files
+                        if re.match(r"\d{4}-\d{2}-\d{2}\.json", f.name)
+                    ]
+                    if len(daily_jsons) < 7:
+                        continue
+                    # Tạo summary cho tuần này
+                    week_dates = [week_start + timedelta(days=i) for i in range(7)]
+                    week_summary_data = self.generate_week_summary(week_dir, week_dates)
+                    if week_summary_data:
+                        self.save_week_summary(week_dir, week_summary_data)
 
         print("\n[+] Import completed successfully!")
         print(f"[+] Total files imported: {len(imported_files)}")
