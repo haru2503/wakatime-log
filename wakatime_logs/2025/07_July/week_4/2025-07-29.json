@@ -2,46 +2,28 @@
   "wakatime_data": {
     "data": [
       {
-        "grand_total": {
-          "hours": 0,
-          "minutes": 27,
-          "total_seconds": 1628.81879,
-          "digital": "0:27",
-          "decimal": "0.45",
-          "text": "27 mins"
-        },
-        "range": {
-          "start": "2025-07-28T17:00:00Z",
-          "end": "2025-07-29T16:59:59Z",
-          "date": "2025-07-29",
-          "text": "Tue Jul 29th 2025",
-          "timezone": "Asia/Ho_Chi_Minh"
-        },
-        "projects": [
-          {
-            "name": "wakatime-log",
-            "total_seconds": 1628.81879,
-            "color": null,
-            "digital": "0:27:08",
-            "decimal": "0.45",
-            "text": "27 mins",
-            "hours": 0,
-            "minutes": 27,
-            "seconds": 8,
-            "percent": 100.0
-          }
-        ],
         "languages": [
           {
-            "name": "Python",
-            "total_seconds": 911.73654,
-            "digital": "0:15:11",
-            "decimal": "0.25",
-            "text": "15 mins",
+            "name": "Markdown",
+            "total_seconds": 1239.978699,
+            "digital": "0:20:39",
+            "decimal": "0.33",
+            "text": "20 mins",
             "hours": 0,
-            "minutes": 15,
-            "seconds": 11,
-            "percent": 55.98
+            "minutes": 20,
+            "seconds": 39,
+            "percent": 31.23
+          },
+          {
+            "name": "Python",
+            "total_seconds": 979.156815,
+            "digital": "0:16:19",
+            "decimal": "0.27",
+            "text": "16 mins",
+            "hours": 0,
+            "minutes": 16,
+            "seconds": 19,
+            "percent": 24.66
           },
           {
             "name": "YAML",
@@ -52,108 +34,225 @@
             "hours": 0,
             "minutes": 11,
             "seconds": 57,
-            "percent": 44.02
+            "percent": 18.06
+          },
+          {
+            "name": "JavaScript",
+            "total_seconds": 695.937863,
+            "digital": "0:11:35",
+            "decimal": "0.18",
+            "text": "11 mins",
+            "hours": 0,
+            "minutes": 11,
+            "seconds": 35,
+            "percent": 17.53
+          },
+          {
+            "name": "Other",
+            "total_seconds": 337.805193,
+            "digital": "0:05:37",
+            "decimal": "0.08",
+            "text": "5 mins",
+            "hours": 0,
+            "minutes": 5,
+            "seconds": 37,
+            "percent": 8.51
+          }
+        ],
+        "grand_total": {
+          "hours": 1,
+          "minutes": 6,
+          "total_seconds": 3969.96082,
+          "digital": "1:06",
+          "decimal": "1.10",
+          "text": "1 hr 6 mins",
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0
+        },
+        "editors": [
+          {
+            "name": "Cursor",
+            "total_seconds": 2903.136714,
+            "digital": "0:48:23",
+            "decimal": "0.80",
+            "text": "48 mins",
+            "hours": 0,
+            "minutes": 48,
+            "seconds": 23,
+            "percent": 73.13
+          },
+          {
+            "name": "VS Code",
+            "total_seconds": 1066.824106,
+            "digital": "0:17:46",
+            "decimal": "0.28",
+            "text": "17 mins",
+            "hours": 0,
+            "minutes": 17,
+            "seconds": 46,
+            "percent": 26.87
+          }
+        ],
+        "operating_systems": [
+          {
+            "name": "Linux",
+            "total_seconds": 3263.672352,
+            "digital": "0:54:23",
+            "decimal": "0.90",
+            "text": "54 mins",
+            "hours": 0,
+            "minutes": 54,
+            "seconds": 23,
+            "percent": 82.21
+          },
+          {
+            "name": "Windows",
+            "total_seconds": 706.288468,
+            "digital": "0:11:46",
+            "decimal": "0.18",
+            "text": "11 mins",
+            "hours": 0,
+            "minutes": 11,
+            "seconds": 46,
+            "percent": 17.79
+          }
+        ],
+        "categories": [
+          {
+            "name": "Coding",
+            "total_seconds": 2729.982121,
+            "digital": "0:45:29",
+            "decimal": "0.75",
+            "text": "45 mins",
+            "hours": 0,
+            "minutes": 45,
+            "seconds": 29,
+            "percent": 68.77
+          },
+          {
+            "name": "Writing Docs",
+            "total_seconds": 869.454852,
+            "digital": "0:14:29",
+            "decimal": "0.23",
+            "text": "14 mins",
+            "hours": 0,
+            "minutes": 14,
+            "seconds": 29,
+            "percent": 21.9
+          },
+          {
+            "name": "AI Coding",
+            "total_seconds": 370.523847,
+            "digital": "0:06:10",
+            "decimal": "0.10",
+            "text": "6 mins",
+            "hours": 0,
+            "minutes": 6,
+            "seconds": 10,
+            "percent": 9.33
           }
         ],
         "dependencies": [
           {
-            "name": "datetime",
-            "total_seconds": 911.73654,
-            "digital": "0:15:11",
-            "decimal": "0.25",
-            "text": "15 mins",
-            "hours": 0,
-            "minutes": 15,
-            "seconds": 11,
-            "percent": 10.74
-          },
-          {
-            "name": "json",
-            "total_seconds": 911.73654,
-            "digital": "0:15:11",
-            "decimal": "0.25",
-            "text": "15 mins",
-            "hours": 0,
-            "minutes": 15,
-            "seconds": 11,
-            "percent": 10.74
-          },
-          {
-            "name": "requests",
-            "total_seconds": 911.73654,
-            "digital": "0:15:11",
-            "decimal": "0.25",
-            "text": "15 mins",
-            "hours": 0,
-            "minutes": 15,
-            "seconds": 11,
-            "percent": 10.74
-          },
-          {
-            "name": "hashlib",
-            "total_seconds": 911.73654,
-            "digital": "0:15:11",
-            "decimal": "0.25",
-            "text": "15 mins",
-            "hours": 0,
-            "minutes": 15,
-            "seconds": 11,
-            "percent": 10.74
-          },
-          {
             "name": "pathlib",
-            "total_seconds": 911.73654,
-            "digital": "0:15:11",
-            "decimal": "0.25",
-            "text": "15 mins",
+            "total_seconds": 979.156815,
+            "digital": "0:16:19",
+            "decimal": "0.27",
+            "text": "16 mins",
             "hours": 0,
-            "minutes": 15,
-            "seconds": 11,
-            "percent": 10.74
-          },
-          {
-            "name": "time",
-            "total_seconds": 911.73654,
-            "digital": "0:15:11",
-            "decimal": "0.25",
-            "text": "15 mins",
-            "hours": 0,
-            "minutes": 15,
-            "seconds": 11,
-            "percent": 10.74
-          },
-          {
-            "name": "ntplib",
-            "total_seconds": 911.73654,
-            "digital": "0:15:11",
-            "decimal": "0.25",
-            "text": "15 mins",
-            "hours": 0,
-            "minutes": 15,
-            "seconds": 11,
-            "percent": 10.74
+            "minutes": 16,
+            "seconds": 19,
+            "percent": 10.76
           },
           {
             "name": "calendar",
-            "total_seconds": 911.73654,
-            "digital": "0:15:11",
-            "decimal": "0.25",
-            "text": "15 mins",
+            "total_seconds": 979.156815,
+            "digital": "0:16:19",
+            "decimal": "0.27",
+            "text": "16 mins",
             "hours": 0,
-            "minutes": 15,
-            "seconds": 11,
-            "percent": 10.74
+            "minutes": 16,
+            "seconds": 19,
+            "percent": 10.76
+          },
+          {
+            "name": "time",
+            "total_seconds": 979.156815,
+            "digital": "0:16:19",
+            "decimal": "0.27",
+            "text": "16 mins",
+            "hours": 0,
+            "minutes": 16,
+            "seconds": 19,
+            "percent": 10.76
           },
           {
             "name": "wakatime_charts",
-            "total_seconds": 911.73654,
-            "digital": "0:15:11",
-            "decimal": "0.25",
-            "text": "15 mins",
+            "total_seconds": 979.156815,
+            "digital": "0:16:19",
+            "decimal": "0.27",
+            "text": "16 mins",
             "hours": 0,
-            "minutes": 15,
-            "seconds": 11,
-            "percent": 10.74
+            "minutes": 16,
+            "seconds": 19,
+            "percent": 10.76
+          },
+          {
+            "name": "hashlib",
+            "total_seconds": 979.156815,
+            "digital": "0:16:19",
+            "decimal": "0.27",
+            "text": "16 mins",
+            "hours": 0,
+            "minutes": 16,
+            "seconds": 19,
+            "percent": 10.76
+          },
+          {
+            "name": "requests",
+            "total_seconds": 979.156815,
+            "digital": "0:16:19",
+            "decimal": "0.27",
+            "text": "16 mins",
+            "hours": 0,
+            "minutes": 16,
+            "seconds": 19,
+            "percent": 10.76
+          },
+          {
+            "name": "ntplib",
+            "total_seconds": 979.156815,
+            "digital": "0:16:19",
+            "decimal": "0.27",
+            "text": "16 mins",
+            "hours": 0,
+            "minutes": 16,
+            "seconds": 19,
+            "percent": 10.76
+          },
+          {
+            "name": "datetime",
+            "total_seconds": 979.156815,
+            "digital": "0:16:19",
+            "decimal": "0.27",
+            "text": "16 mins",
+            "hours": 0,
+            "minutes": 16,
+            "seconds": 19,
+            "percent": 10.76
+          },
+          {
+            "name": "json",
+            "total_seconds": 979.156815,
+            "digital": "0:16:19",
+            "decimal": "0.27",
+            "text": "16 mins",
+            "hours": 0,
+            "minutes": 16,
+            "seconds": 19,
+            "percent": 10.76
           },
           {
             "name": "re",
@@ -164,96 +263,145 @@
             "hours": 0,
             "minutes": 4,
             "seconds": 46,
-            "percent": 3.37
+            "percent": 3.15
           }
         ],
         "machines": [
           {
             "name": "haru",
-            "total_seconds": 1628.81879,
+            "total_seconds": 3969.96082,
             "machine_name_id": "102b80a9-1819-4809-9aeb-1e3cb4f0cdf5",
-            "digital": "0:27:08",
-            "decimal": "0.45",
-            "text": "27 mins",
-            "hours": 0,
-            "minutes": 27,
-            "seconds": 8,
+            "digital": "1:06:09",
+            "decimal": "1.10",
+            "text": "1 hr 6 mins",
+            "hours": 1,
+            "minutes": 6,
+            "seconds": 9,
             "percent": 100.0
           }
         ],
-        "editors": [
+        "projects": [
           {
-            "name": "Cursor",
-            "total_seconds": 1628.81879,
-            "digital": "0:27:08",
-            "decimal": "0.45",
-            "text": "27 mins",
+            "name": "wakatime-log",
+            "total_seconds": 2903.136714,
+            "ai_additions": 0,
+            "ai_deletions": 0,
+            "human_additions": 0,
+            "human_deletions": 0,
+            "digital": "0:48:23",
+            "decimal": "0.80",
+            "text": "48 mins",
             "hours": 0,
-            "minutes": 27,
-            "seconds": 8,
-            "percent": 100.0
+            "minutes": 48,
+            "seconds": 23,
+            "percent": 73.13
+          },
+          {
+            "name": "Unknown Project",
+            "total_seconds": 706.288468,
+            "ai_additions": 0,
+            "ai_deletions": 0,
+            "human_additions": 0,
+            "human_deletions": 0,
+            "digital": "0:11:46",
+            "decimal": "0.18",
+            "text": "11 mins",
+            "hours": 0,
+            "minutes": 11,
+            "seconds": 46,
+            "percent": 17.79
+          },
+          {
+            "name": "casino",
+            "total_seconds": 347.633017,
+            "ai_additions": 0,
+            "ai_deletions": 0,
+            "human_additions": 0,
+            "human_deletions": 0,
+            "digital": "0:05:47",
+            "decimal": "0.08",
+            "text": "5 mins",
+            "hours": 0,
+            "minutes": 5,
+            "seconds": 47,
+            "percent": 8.76
+          },
+          {
+            "name": "poker",
+            "total_seconds": 12.902621,
+            "ai_additions": 0,
+            "ai_deletions": 0,
+            "human_additions": 0,
+            "human_deletions": 0,
+            "digital": "0:00:12",
+            "decimal": "0.00",
+            "text": "12 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 12,
+            "percent": 0.33
+          },
+          {
+            "name": "blackjack",
+            "total_seconds": 0.0,
+            "ai_additions": 0,
+            "ai_deletions": 0,
+            "human_additions": 0,
+            "human_deletions": 0,
+            "digital": "0:00:00",
+            "decimal": "0.00",
+            "text": "0 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 0,
+            "percent": 0.0
           }
         ],
-        "operating_systems": [
-          {
-            "name": "Linux",
-            "total_seconds": 1628.81879,
-            "digital": "0:27:08",
-            "decimal": "0.45",
-            "text": "27 mins",
-            "hours": 0,
-            "minutes": 27,
-            "seconds": 8,
-            "percent": 100.0
-          }
-        ],
-        "categories": [
-          {
-            "name": "Coding",
-            "total_seconds": 1628.81879,
-            "digital": "0:27:08",
-            "decimal": "0.45",
-            "text": "27 mins",
-            "hours": 0,
-            "minutes": 27,
-            "seconds": 8,
-            "percent": 100.0
-          }
-        ]
+        "range": {
+          "start": "2025-07-28T17:00:00Z",
+          "end": "2025-07-29T16:59:59Z",
+          "date": "2025-07-29",
+          "text": "Tue Jul 29th 2025",
+          "timezone": "Asia/Ho_Chi_Minh"
+        },
+        "ai_additions": 0,
+        "ai_deletions": 0,
+        "human_additions": 0,
+        "human_deletions": 0
       }
     ],
     "start": "2025-07-28T17:00:00Z",
     "end": "2025-07-29T16:59:59Z",
     "cumulative_total": {
-      "seconds": 1628.81879,
-      "text": "27 mins",
-      "digital": "0:27",
-      "decimal": "0.45"
+      "seconds": 3969.96082,
+      "text": "1 hr 6 mins",
+      "digital": "1:06",
+      "decimal": "1.10"
     },
     "daily_average": {
       "holidays": 0,
       "days_minus_holidays": 1,
       "days_including_holidays": 1,
-      "seconds": 1629,
-      "seconds_including_other_language": 1629,
-      "text": "27 mins",
-      "text_including_other_language": "27 mins"
+      "seconds": 3632,
+      "seconds_including_other_language": 3970,
+      "text": "1 hr",
+      "text_including_other_language": "1 hr 6 mins"
     }
   },
   "authenticity_proof": {
-    "content_hash": "25e90ab10d18b332fa0ac1d33b80f2425e3bc091c75def4329f56e7e33ffb0cb",
+    "content_hash": "b93e39195cc76fc4e1ebc866564cc3fbd4635a83162703a26f3aa958367243b2",
     "external_timestamps": {
-      "data_hash": "25e90ab10d18b332fa0ac1d33b80f2425e3bc091c75def4329f56e7e33ffb0cb",
+      "data_hash": "b93e39195cc76fc4e1ebc866564cc3fbd4635a83162703a26f3aa958367243b2",
       "timestamps": {
-        "ntp_time": 1753782395.3020415,
+        "ntp_time": 1753844187.8220243,
         "ntp_server": "pool.ntp.org",
-        "github_server_time": "Tue, 29 Jul 2025 09:46:30 GMT"
+        "github_server_time": "Wed, 30 Jul 2025 02:56:20 GMT"
       },
       "verification_note": "These timestamps are from external sources and cannot be manipulated"
     },
     "network_evidence": {
-      "user_agent": "WakaTimeImporter/1.0",
-      "request_time": "2025-07-29T09:46:35.474996",
+      "user_agent": "TrustlessWakaTimeLogger/2.0",
+      "request_time": "2025-07-30T02:56:28.193811",
       "system_info": {
         "platform": "posix",
         "hostname": "unknown"
@@ -267,9 +415,9 @@
     "status_code": 200,
     "response_headers": {
       "Server": "nginx",
-      "Date": "Tue, 29 Jul 2025 09:46:35 GMT",
+      "Date": "Wed, 30 Jul 2025 02:56:27 GMT",
       "Content-Type": "application/json",
-      "Content-Length": "3729",
+      "Content-Length": "6180",
       "Connection": "keep-alive",
       "X-Content-Type-Options": "nosniff",
       "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
@@ -280,13 +428,13 @@
       "Cross-Origin-Opener-Policy": "same-origin",
       "Content-Security-Policy": "default-src 'self'; frame-ancestors 'self'; script-src 'self' 'unsafe-eval' https://www.google.com/ https://www.gstatic.com/; img-src 'self' data: https://cdn.loom.com/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://fonts.gstatic.com/; font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/; media-src 'self' https://*.amazonaws.com; frame-src 'self' https://www.google.com/ https://www.youtube.com/ https://www.loom.com/ player.vimeo.com; object-src 'self'; connect-src 'self' https://www.google.com/ https://avatar-cdn.atlassian.com;"
     },
-    "request_duration": 0.2698349952697754,
-    "response_size": 3729
+    "request_duration": 0.2397444248199463,
+    "response_size": 6180
   },
   "metadata": {
-    "version": "1.0",
+    "version": "2.0",
     "date_fetched": "2025-07-29",
-    "script_name": "WakaTimeImporter",
+    "script_name": "TrustlessWakaTimeLogger",
     "trustless_note": "This file contains multiple external verifications that make fabrication impossible"
   }
 }
