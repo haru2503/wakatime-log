@@ -1,0 +1,42 @@
+{
+  "month": "07_July",
+  "year": "2025",
+  "total_coding_time": 141139.440154,
+  "weekly_avg_coding_time": 141139.440154,
+  "daily_avg_coding_time": 23523.24002566667,
+  "total_categories_time": 141139.440154,
+  "total_language_time": 141139.440154,
+  "total_project_time": 141139.440154,
+  "total_editor_time": 141139.440154,
+  "total_machine_time": 141139.440154,
+  "total_os_time": 141139.440154,
+  "weekly_summaries": [
+    {
+      "week": "week_3",
+      "week_dates": [
+        "2025-07-22",
+        "2025-07-23",
+        "2025-07-24",
+        "2025-07-25",
+        "2025-07-26",
+        "2025-07-27",
+        "2025-07-28"
+      ],
+      "total_coding_time": 141139.440154,
+      "daily_avg_coding_time": 23523.24002566667,
+      "total_categories_time": 141139.440154,
+      "total_language_time": 141139.440154,
+      "total_project_time": 141139.440154,
+      "total_editor_time": 141139.440154,
+      "total_machine_time": 141139.440154,
+      "total_os_time": 141139.440154,
+      "days_with_data": 6
+    }
+  ],
+  "metadata": {
+    "generated_at": "2025-08-01T03:07:20.037093",
+    "total_weeks": 1,
+    "total_days_with_data": 6,
+    "total_days_in_month": 31
+  }
+}
