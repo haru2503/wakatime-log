@@ -1,0 +1,229 @@
+{
+  "wakatime_data": {
+    "data": [
+      {
+        "languages": [
+          {
+            "name": "Bash",
+            "total_seconds": 178.128971,
+            "digital": "0:02:58",
+            "decimal": "0.03",
+            "text": "2 mins",
+            "hours": 0,
+            "minutes": 2,
+            "seconds": 58,
+            "percent": 61.85
+          },
+          {
+            "name": "Python",
+            "total_seconds": 91.245301,
+            "digital": "0:01:31",
+            "decimal": "0.02",
+            "text": "1 min",
+            "hours": 0,
+            "minutes": 1,
+            "seconds": 31,
+            "percent": 31.68
+          },
+          {
+            "name": "Other",
+            "total_seconds": 18.610403,
+            "digital": "0:00:18",
+            "decimal": "0.00",
+            "text": "18 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 18,
+            "percent": 6.46
+          }
+        ],
+        "grand_total": {
+          "hours": 0,
+          "minutes": 4,
+          "total_seconds": 287.984675,
+          "digital": "0:04",
+          "decimal": "0.07",
+          "text": "4 mins",
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0
+        },
+        "editors": [
+          {
+            "name": "VS Code",
+            "total_seconds": 287.984675,
+            "digital": "0:04:47",
+            "decimal": "0.07",
+            "text": "4 mins",
+            "hours": 0,
+            "minutes": 4,
+            "seconds": 47,
+            "percent": 100.0
+          }
+        ],
+        "operating_systems": [
+          {
+            "name": "Windows",
+            "total_seconds": 287.984675,
+            "digital": "0:04:47",
+            "decimal": "0.07",
+            "text": "4 mins",
+            "hours": 0,
+            "minutes": 4,
+            "seconds": 47,
+            "percent": 100.0
+          },
+          {
+            "name": "Linux",
+            "total_seconds": 0.0,
+            "digital": "0:00:00",
+            "decimal": "0.00",
+            "text": "0 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 0,
+            "percent": 0.0
+          }
+        ],
+        "categories": [
+          {
+            "name": "Coding",
+            "total_seconds": 287.984675,
+            "digital": "0:04:47",
+            "decimal": "0.07",
+            "text": "4 mins",
+            "hours": 0,
+            "minutes": 4,
+            "seconds": 47,
+            "percent": 100.0
+          }
+        ],
+        "dependencies": [],
+        "machines": [
+          {
+            "name": "haru",
+            "total_seconds": 287.984675,
+            "machine_name_id": "102b80a9-1819-4809-9aeb-1e3cb4f0cdf5",
+            "digital": "0:04:47",
+            "decimal": "0.07",
+            "text": "4 mins",
+            "hours": 0,
+            "minutes": 4,
+            "seconds": 47,
+            "percent": 100.0
+          }
+        ],
+        "projects": [
+          {
+            "name": "Unknown Project",
+            "total_seconds": 287.984675,
+            "ai_additions": 0,
+            "ai_deletions": 0,
+            "human_additions": 0,
+            "human_deletions": 0,
+            "digital": "0:04:47",
+            "decimal": "0.07",
+            "text": "4 mins",
+            "hours": 0,
+            "minutes": 4,
+            "seconds": 47,
+            "percent": 100.0
+          },
+          {
+            "name": "casino",
+            "total_seconds": 0.0,
+            "ai_additions": 0,
+            "ai_deletions": 0,
+            "human_additions": 0,
+            "human_deletions": 0,
+            "digital": "0:00:00",
+            "decimal": "0.00",
+            "text": "0 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 0,
+            "percent": 0.0
+          }
+        ],
+        "range": {
+          "start": "2025-08-01T17:00:00Z",
+          "end": "2025-08-02T16:59:59Z",
+          "date": "2025-08-02",
+          "text": "Sat Aug 2nd 2025",
+          "timezone": "Asia/Ho_Chi_Minh"
+        },
+        "ai_additions": 0,
+        "ai_deletions": 0,
+        "human_additions": 0,
+        "human_deletions": 0
+      }
+    ],
+    "start": "2025-08-01T17:00:00Z",
+    "end": "2025-08-02T16:59:59Z",
+    "cumulative_total": {
+      "seconds": 287.984675,
+      "text": "4 mins",
+      "digital": "0:04",
+      "decimal": "0.07"
+    },
+    "daily_average": {
+      "holidays": 0,
+      "days_minus_holidays": 1,
+      "days_including_holidays": 1,
+      "seconds": 269,
+      "seconds_including_other_language": 288,
+      "text": "4 mins",
+      "text_including_other_language": "4 mins"
+    }
+  },
+  "authenticity_proof": {
+    "content_hash": "bff109031670c29fd14a66bae7a49467655e1b1bb82113efc4d23aca743669e8",
+    "external_timestamps": {
+      "data_hash": "bff109031670c29fd14a66bae7a49467655e1b1bb82113efc4d23aca743669e8",
+      "timestamps": {
+        "ntp_time": 1754190275.1992936,
+        "ntp_server": "pool.ntp.org",
+        "github_server_time": "Sun, 03 Aug 2025 03:04:22 GMT"
+      },
+      "verification_note": "These timestamps are from external sources and cannot be manipulated"
+    },
+    "network_evidence": {
+      "user_agent": "TrustlessWakaTimeLogger/2.0",
+      "request_time": "2025-08-03T03:04:35.292403",
+      "system_info": {
+        "platform": "posix",
+        "hostname": "unknown"
+      }
+    },
+    "authenticity_note": "This data cannot be fabricated due to external verifications"
+  },
+  "request_proof": {
+    "url": "https://wakatime.com/api/v1/users/current/summaries?start=2025-08-02&end=2025-08-02",
+    "method": "GET",
+    "status_code": 200,
+    "response_headers": {
+      "Server": "nginx",
+      "Date": "Sun, 03 Aug 2025 03:04:35 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "2824",
+      "Connection": "keep-alive",
+      "X-Content-Type-Options": "nosniff",
+      "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+      "X-XSS-Protection": "1; mode=block",
+      "Feature-Policy": "accelerometer 'none';autoplay 'self';camera 'none';fullscreen 'self';geolocation 'none';gyroscope 'none';magnetometer 'none';microphone 'none';midi 'none';payment 'self';picture-in-picture 'none';sync-xhr 'self';usb 'none';",
+      "Referrer-Policy": "strict-origin-when-cross-origin",
+      "X-Frame-Options": "SAMEORIGIN",
+      "Cross-Origin-Opener-Policy": "same-origin",
+      "Content-Security-Policy": "default-src 'self'; frame-ancestors 'self'; script-src 'self' 'unsafe-eval' https://www.google.com/ https://www.gstatic.com/; img-src 'self' data: https://cdn.loom.com/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://fonts.gstatic.com/; font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/; media-src 'self' https://*.amazonaws.com; frame-src 'self' https://www.google.com/ https://www.youtube.com/ https://www.loom.com/ player.vimeo.com; object-src 'self'; connect-src 'self' https://www.google.com/ https://avatar-cdn.atlassian.com;"
+    },
+    "request_duration": 0.4646029472351074,
+    "response_size": 2824
+  },
+  "metadata": {
+    "version": "2.0",
+    "date_fetched": "2025-08-02",
+    "script_name": "TrustlessWakaTimeLogger",
+    "trustless_note": "This file contains multiple external verifications that make fabrication impossible"
+  }
+}
