@@ -2,6 +2,59 @@
   "wakatime_data": {
     "data": [
       {
+        "grand_total": {
+          "hours": 1,
+          "minutes": 15,
+          "total_seconds": 4531.850393,
+          "digital": "1:15",
+          "decimal": "1.25",
+          "text": "1 hr 15 mins",
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0
+        },
+        "range": {
+          "start": "2025-07-29T17:00:00Z",
+          "end": "2025-07-30T16:59:59Z",
+          "date": "2025-07-30",
+          "text": "Wed Jul 30th 2025",
+          "timezone": "Asia/Ho_Chi_Minh"
+        },
+        "projects": [
+          {
+            "name": "poker",
+            "total_seconds": 4460.21514,
+            "ai_additions": 0,
+            "ai_deletions": 0,
+            "human_additions": 0,
+            "human_deletions": 0,
+            "color": null,
+            "digital": "1:14:20",
+            "decimal": "1.23",
+            "text": "1 hr 14 mins",
+            "hours": 1,
+            "minutes": 14,
+            "seconds": 20,
+            "percent": 98.42
+          },
+          {
+            "name": "casino",
+            "total_seconds": 71.635253,
+            "ai_additions": 0,
+            "ai_deletions": 0,
+            "human_additions": 0,
+            "human_deletions": 0,
+            "color": null,
+            "digital": "0:01:11",
+            "decimal": "0.02",
+            "text": "1 min",
+            "hours": 0,
+            "minutes": 1,
+            "seconds": 11,
+            "percent": 1.58
+          }
+        ],
         "languages": [
           {
             "name": "Python",
@@ -46,68 +99,6 @@
             "minutes": 0,
             "seconds": 0,
             "percent": 0.01
-          }
-        ],
-        "grand_total": {
-          "hours": 1,
-          "minutes": 15,
-          "total_seconds": 4531.850393,
-          "digital": "1:15",
-          "decimal": "1.25",
-          "text": "1 hr 15 mins",
-          "ai_additions": 0,
-          "ai_deletions": 0,
-          "human_additions": 0,
-          "human_deletions": 0
-        },
-        "editors": [
-          {
-            "name": "VS Code",
-            "total_seconds": 4531.850393,
-            "digital": "1:15:31",
-            "decimal": "1.25",
-            "text": "1 hr 15 mins",
-            "hours": 1,
-            "minutes": 15,
-            "seconds": 31,
-            "percent": 100.0
-          }
-        ],
-        "operating_systems": [
-          {
-            "name": "Linux",
-            "total_seconds": 4531.850393,
-            "digital": "1:15:31",
-            "decimal": "1.25",
-            "text": "1 hr 15 mins",
-            "hours": 1,
-            "minutes": 15,
-            "seconds": 31,
-            "percent": 100.0
-          }
-        ],
-        "categories": [
-          {
-            "name": "Coding",
-            "total_seconds": 4390.681023,
-            "digital": "1:13:10",
-            "decimal": "1.22",
-            "text": "1 hr 13 mins",
-            "hours": 1,
-            "minutes": 13,
-            "seconds": 10,
-            "percent": 96.88
-          },
-          {
-            "name": "AI Coding",
-            "total_seconds": 141.16937,
-            "digital": "0:02:21",
-            "decimal": "0.03",
-            "text": "2 mins",
-            "hours": 0,
-            "minutes": 2,
-            "seconds": 21,
-            "percent": 3.12
           }
         ],
         "dependencies": [
@@ -167,17 +158,6 @@
             "percent": 5.37
           },
           {
-            "name": "card",
-            "total_seconds": 916.668857,
-            "digital": "0:15:16",
-            "decimal": "0.25",
-            "text": "15 mins",
-            "hours": 0,
-            "minutes": 15,
-            "seconds": 16,
-            "percent": 5.37
-          },
-          {
             "name": "player",
             "total_seconds": 916.668857,
             "digital": "0:15:16",
@@ -189,15 +169,15 @@
             "percent": 5.37
           },
           {
-            "name": "ai",
-            "total_seconds": 601.50023,
-            "digital": "0:10:01",
-            "decimal": "0.17",
-            "text": "10 mins",
+            "name": "card",
+            "total_seconds": 916.668857,
+            "digital": "0:15:16",
+            "decimal": "0.25",
+            "text": "15 mins",
             "hours": 0,
-            "minutes": 10,
-            "seconds": 1,
-            "percent": 3.52
+            "minutes": 15,
+            "seconds": 16,
+            "percent": 5.37
           },
           {
             "name": "evaluator",
@@ -212,6 +192,17 @@
           },
           {
             "name": "game",
+            "total_seconds": 601.50023,
+            "digital": "0:10:01",
+            "decimal": "0.17",
+            "text": "10 mins",
+            "hours": 0,
+            "minutes": 10,
+            "seconds": 1,
+            "percent": 3.52
+          },
+          {
+            "name": "ai",
             "total_seconds": 601.50023,
             "digital": "0:10:01",
             "decimal": "0.17",
@@ -244,7 +235,7 @@
             "percent": 0.08
           },
           {
-            "name": "threading",
+            "name": "certifi",
             "total_seconds": 12.916493,
             "digital": "0:00:12",
             "decimal": "0.00",
@@ -255,7 +246,7 @@
             "percent": 0.08
           },
           {
-            "name": "urllib",
+            "name": "inspect",
             "total_seconds": 12.916493,
             "digital": "0:00:12",
             "decimal": "0.00",
@@ -266,7 +257,7 @@
             "percent": 0.08
           },
           {
-            "name": "json",
+            "name": "http",
             "total_seconds": 12.916493,
             "digital": "0:00:12",
             "decimal": "0.00",
@@ -277,29 +268,7 @@
             "percent": 0.08
           },
           {
-            "name": "time",
-            "total_seconds": 12.916493,
-            "digital": "0:00:12",
-            "decimal": "0.00",
-            "text": "12 secs",
-            "hours": 0,
-            "minutes": 0,
-            "seconds": 12,
-            "percent": 0.08
-          },
-          {
-            "name": "aiohttp",
-            "total_seconds": 12.916493,
-            "digital": "0:00:12",
-            "decimal": "0.00",
-            "text": "12 secs",
-            "hours": 0,
-            "minutes": 0,
-            "seconds": 12,
-            "percent": 0.08
-          },
-          {
-            "name": "websockets",
+            "name": "typing",
             "total_seconds": 12.916493,
             "digital": "0:00:12",
             "decimal": "0.00",
@@ -321,7 +290,7 @@
             "percent": 0.08
           },
           {
-            "name": "httpx",
+            "name": "aiohttp",
             "total_seconds": 12.916493,
             "digital": "0:00:12",
             "decimal": "0.00",
@@ -332,29 +301,7 @@
             "percent": 0.08
           },
           {
-            "name": "ssl",
-            "total_seconds": 12.916493,
-            "digital": "0:00:12",
-            "decimal": "0.00",
-            "text": "12 secs",
-            "hours": 0,
-            "minutes": 0,
-            "seconds": 12,
-            "percent": 0.08
-          },
-          {
-            "name": "certifi",
-            "total_seconds": 12.916493,
-            "digital": "0:00:12",
-            "decimal": "0.00",
-            "text": "12 secs",
-            "hours": 0,
-            "minutes": 0,
-            "seconds": 12,
-            "percent": 0.08
-          },
-          {
-            "name": "asyncio",
+            "name": "e",
             "total_seconds": 12.916493,
             "digital": "0:00:12",
             "decimal": "0.00",
@@ -376,7 +323,117 @@
             "percent": 0.08
           },
           {
+            "name": "threading",
+            "total_seconds": 12.916493,
+            "digital": "0:00:12",
+            "decimal": "0.00",
+            "text": "12 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 12,
+            "percent": 0.08
+          },
+          {
+            "name": "datetime",
+            "total_seconds": 12.916493,
+            "digital": "0:00:12",
+            "decimal": "0.00",
+            "text": "12 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 12,
+            "percent": 0.08
+          },
+          {
+            "name": "httpx",
+            "total_seconds": 12.916493,
+            "digital": "0:00:12",
+            "decimal": "0.00",
+            "text": "12 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 12,
+            "percent": 0.08
+          },
+          {
+            "name": "time",
+            "total_seconds": 12.916493,
+            "digital": "0:00:12",
+            "decimal": "0.00",
+            "text": "12 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 12,
+            "percent": 0.08
+          },
+          {
+            "name": "tenacity",
+            "total_seconds": 12.916493,
+            "digital": "0:00:12",
+            "decimal": "0.00",
+            "text": "12 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 12,
+            "percent": 0.08
+          },
+          {
+            "name": "pydantic",
+            "total_seconds": 12.916493,
+            "digital": "0:00:12",
+            "decimal": "0.00",
+            "text": "12 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 12,
+            "percent": 0.08
+          },
+          {
+            "name": "json",
+            "total_seconds": 12.916493,
+            "digital": "0:00:12",
+            "decimal": "0.00",
+            "text": "12 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 12,
+            "percent": 0.08
+          },
+          {
+            "name": "anyio",
+            "total_seconds": 12.916493,
+            "digital": "0:00:12",
+            "decimal": "0.00",
+            "text": "12 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 12,
+            "percent": 0.08
+          },
+          {
             "name": "io",
+            "total_seconds": 12.916493,
+            "digital": "0:00:12",
+            "decimal": "0.00",
+            "text": "12 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 12,
+            "percent": 0.08
+          },
+          {
+            "name": "asyncio",
+            "total_seconds": 12.916493,
+            "digital": "0:00:12",
+            "decimal": "0.00",
+            "text": "12 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 12,
+            "percent": 0.08
+          },
+          {
+            "name": "websockets",
             "total_seconds": 12.916493,
             "digital": "0:00:12",
             "decimal": "0.00",
@@ -409,7 +466,7 @@
             "percent": 0.08
           },
           {
-            "name": "e",
+            "name": "ssl",
             "total_seconds": 12.916493,
             "digital": "0:00:12",
             "decimal": "0.00",
@@ -420,73 +477,7 @@
             "percent": 0.08
           },
           {
-            "name": "typing",
-            "total_seconds": 12.916493,
-            "digital": "0:00:12",
-            "decimal": "0.00",
-            "text": "12 secs",
-            "hours": 0,
-            "minutes": 0,
-            "seconds": 12,
-            "percent": 0.08
-          },
-          {
-            "name": "pydantic",
-            "total_seconds": 12.916493,
-            "digital": "0:00:12",
-            "decimal": "0.00",
-            "text": "12 secs",
-            "hours": 0,
-            "minutes": 0,
-            "seconds": 12,
-            "percent": 0.08
-          },
-          {
-            "name": "anyio",
-            "total_seconds": 12.916493,
-            "digital": "0:00:12",
-            "decimal": "0.00",
-            "text": "12 secs",
-            "hours": 0,
-            "minutes": 0,
-            "seconds": 12,
-            "percent": 0.08
-          },
-          {
-            "name": "http",
-            "total_seconds": 12.916493,
-            "digital": "0:00:12",
-            "decimal": "0.00",
-            "text": "12 secs",
-            "hours": 0,
-            "minutes": 0,
-            "seconds": 12,
-            "percent": 0.08
-          },
-          {
-            "name": "inspect",
-            "total_seconds": 12.916493,
-            "digital": "0:00:12",
-            "decimal": "0.00",
-            "text": "12 secs",
-            "hours": 0,
-            "minutes": 0,
-            "seconds": 12,
-            "percent": 0.08
-          },
-          {
-            "name": "datetime",
-            "total_seconds": 12.916493,
-            "digital": "0:00:12",
-            "decimal": "0.00",
-            "text": "12 secs",
-            "hours": 0,
-            "minutes": 0,
-            "seconds": 12,
-            "percent": 0.08
-          },
-          {
-            "name": "tenacity",
+            "name": "urllib",
             "total_seconds": 12.916493,
             "digital": "0:00:12",
             "decimal": "0.00",
@@ -566,49 +557,56 @@
             "percent": 100.0
           }
         ],
-        "projects": [
+        "editors": [
           {
-            "name": "poker",
-            "total_seconds": 4460.21514,
-            "ai_additions": 0,
-            "ai_deletions": 0,
-            "human_additions": 0,
-            "human_deletions": 0,
-            "digital": "1:14:20",
-            "decimal": "1.23",
-            "text": "1 hr 14 mins",
+            "name": "VS Code",
+            "total_seconds": 4531.850393,
+            "digital": "1:15:31",
+            "decimal": "1.25",
+            "text": "1 hr 15 mins",
             "hours": 1,
-            "minutes": 14,
-            "seconds": 20,
-            "percent": 98.42
-          },
-          {
-            "name": "casino",
-            "total_seconds": 71.635253,
-            "ai_additions": 0,
-            "ai_deletions": 0,
-            "human_additions": 0,
-            "human_deletions": 0,
-            "digital": "0:01:11",
-            "decimal": "0.02",
-            "text": "1 min",
-            "hours": 0,
-            "minutes": 1,
-            "seconds": 11,
-            "percent": 1.58
+            "minutes": 15,
+            "seconds": 31,
+            "percent": 100.0
           }
         ],
-        "range": {
-          "start": "2025-07-29T17:00:00Z",
-          "end": "2025-07-30T16:59:59Z",
-          "date": "2025-07-30",
-          "text": "Wed Jul 30th 2025",
-          "timezone": "Asia/Ho_Chi_Minh"
-        },
-        "ai_additions": 0,
-        "ai_deletions": 0,
-        "human_additions": 0,
-        "human_deletions": 0
+        "operating_systems": [
+          {
+            "name": "Linux",
+            "total_seconds": 4531.850393,
+            "digital": "1:15:31",
+            "decimal": "1.25",
+            "text": "1 hr 15 mins",
+            "hours": 1,
+            "minutes": 15,
+            "seconds": 31,
+            "percent": 100.0
+          }
+        ],
+        "categories": [
+          {
+            "name": "Coding",
+            "total_seconds": 4390.681023,
+            "digital": "1:13:10",
+            "decimal": "1.22",
+            "text": "1 hr 13 mins",
+            "hours": 1,
+            "minutes": 13,
+            "seconds": 10,
+            "percent": 96.88
+          },
+          {
+            "name": "AI Coding",
+            "total_seconds": 141.16937,
+            "digital": "0:02:21",
+            "decimal": "0.03",
+            "text": "2 mins",
+            "hours": 0,
+            "minutes": 2,
+            "seconds": 21,
+            "percent": 3.12
+          }
+        ]
       }
     ],
     "start": "2025-07-29T17:00:00Z",
@@ -630,19 +628,19 @@
     }
   },
   "authenticity_proof": {
-    "content_hash": "9d7dcc65ab4463e5f359ea940276f213daf9b11075f1e824ab466bc95dd6aa75",
+    "content_hash": "b4fa5f41e71a77ef359e59927815845c36cd48c8ee288a9016a79153a30d9313",
     "external_timestamps": {
-      "data_hash": "9d7dcc65ab4463e5f359ea940276f213daf9b11075f1e824ab466bc95dd6aa75",
+      "data_hash": "b4fa5f41e71a77ef359e59927815845c36cd48c8ee288a9016a79153a30d9313",
       "timestamps": {
-        "ntp_time": 1753930551.8293152,
+        "ntp_time": 1754276801.3138537,
         "ntp_server": "pool.ntp.org",
-        "github_server_time": "Thu, 31 Jul 2025 02:55:47 GMT"
+        "github_server_time": "Mon, 04 Aug 2025 03:06:31 GMT"
       },
       "verification_note": "These timestamps are from external sources and cannot be manipulated"
     },
     "network_evidence": {
       "user_agent": "TrustlessWakaTimeLogger/2.0",
-      "request_time": "2025-07-31T02:55:52.239794",
+      "request_time": "2025-08-04T03:06:41.406053",
       "system_info": {
         "platform": "posix",
         "hostname": "unknown"
@@ -656,9 +654,9 @@
     "status_code": 200,
     "response_headers": {
       "Server": "nginx",
-      "Date": "Thu, 31 Jul 2025 02:55:51 GMT",
+      "Date": "Mon, 04 Aug 2025 03:06:41 GMT",
       "Content-Type": "application/json",
-      "Content-Length": "9743",
+      "Content-Length": "9691",
       "Connection": "keep-alive",
       "X-Content-Type-Options": "nosniff",
       "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
@@ -669,8 +667,8 @@
       "Cross-Origin-Opener-Policy": "same-origin",
       "Content-Security-Policy": "default-src 'self'; frame-ancestors 'self'; script-src 'self' 'unsafe-eval' https://www.google.com/ https://www.gstatic.com/; img-src 'self' data: https://cdn.loom.com/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://fonts.gstatic.com/; font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/; media-src 'self' https://*.amazonaws.com; frame-src 'self' https://www.google.com/ https://www.youtube.com/ https://www.loom.com/ player.vimeo.com; object-src 'self'; connect-src 'self' https://www.google.com/ https://avatar-cdn.atlassian.com;"
     },
-    "request_duration": 0.17620301246643066,
-    "response_size": 9743
+    "request_duration": 0.37431979179382324,
+    "response_size": 9691
   },
   "metadata": {
     "version": "2.0",

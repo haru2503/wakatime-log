@@ -2,6 +2,7 @@
   "wakatime_data": {
     "data": [
       {
+        "languages": [],
         "grand_total": {
           "hours": 0,
           "minutes": 0,
@@ -14,24 +15,27 @@
           "human_additions": 0,
           "human_deletions": 0
         },
-        "range": {
-          "start": "2025-07-30T17:00:00Z",
-          "end": "2025-07-31T16:59:59Z",
-          "date": "2025-07-31",
-          "text": "Thu Jul 31st 2025",
-          "timezone": "Asia/Ho_Chi_Minh"
-        },
-        "projects": [],
-        "languages": [],
-        "dependencies": [],
-        "machines": [],
         "editors": [],
         "operating_systems": [],
-        "categories": []
+        "categories": [],
+        "dependencies": [],
+        "machines": [],
+        "projects": [],
+        "range": {
+          "start": "2025-08-02T17:00:00Z",
+          "end": "2025-08-03T16:59:59Z",
+          "date": "2025-08-03",
+          "text": "Sun Aug 3rd 2025",
+          "timezone": "Asia/Ho_Chi_Minh"
+        },
+        "ai_additions": 0,
+        "ai_deletions": 0,
+        "human_additions": 0,
+        "human_deletions": 0
       }
     ],
-    "start": "2025-07-30T17:00:00Z",
-    "end": "2025-07-31T16:59:59Z",
+    "start": "2025-08-02T17:00:00Z",
+    "end": "2025-08-03T16:59:59Z",
     "cumulative_total": {
       "seconds": 0.0,
       "text": "0 secs",
@@ -49,19 +53,36 @@
     }
   },
   "authenticity_proof": {
-    "content_hash": "ad666aed1e5039f15a3ac430135c448deb2236c8c6a609e7091f700f18557642",
+    "content_hash": "ba597410d1a25042ac48b037c1ba497f1b1b90a138adf420ee954086c2c4a975",
     "external_timestamps": {
-      "data_hash": "ad666aed1e5039f15a3ac430135c448deb2236c8c6a609e7091f700f18557642",
+      "data_hash": "ba597410d1a25042ac48b037c1ba497f1b1b90a138adf420ee954086c2c4a975",
       "timestamps": {
-        "ntp_time": 1754276801.7189522,
+        "ntp_time": 1754276805.5505972,
         "ntp_server": "pool.ntp.org",
+        "external_time": {
+          "utc_offset": "+07:00",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "day_of_week": 1,
+          "day_of_year": 216,
+          "datetime": "2025-08-04T10:06:45.842522+07:00",
+          "utc_datetime": "2025-08-04T03:06:45.842522+00:00",
+          "unixtime": 1754276805,
+          "raw_offset": 25200,
+          "week_number": 32,
+          "dst": false,
+          "abbreviation": "+07",
+          "dst_offset": 0,
+          "dst_from": null,
+          "dst_until": null,
+          "client_ip": "48.214.54.98"
+        },
         "github_server_time": "Mon, 04 Aug 2025 03:06:41 GMT"
       },
       "verification_note": "These timestamps are from external sources and cannot be manipulated"
     },
     "network_evidence": {
       "user_agent": "TrustlessWakaTimeLogger/2.0",
-      "request_time": "2025-08-04T03:06:41.810401",
+      "request_time": "2025-08-04T03:06:45.878941",
       "system_info": {
         "platform": "posix",
         "hostname": "unknown"
@@ -70,14 +91,14 @@
     "authenticity_note": "This data cannot be fabricated due to external verifications"
   },
   "request_proof": {
-    "url": "https://wakatime.com/api/v1/users/current/summaries?start=2025-07-31&end=2025-07-31",
+    "url": "https://wakatime.com/api/v1/users/current/summaries?start=2025-08-03&end=2025-08-03",
     "method": "GET",
     "status_code": 200,
     "response_headers": {
       "Server": "nginx",
-      "Date": "Mon, 04 Aug 2025 03:06:41 GMT",
+      "Date": "Mon, 04 Aug 2025 03:06:45 GMT",
       "Content-Type": "application/json",
-      "Content-Length": "862",
+      "Content-Length": "943",
       "Connection": "keep-alive",
       "X-Content-Type-Options": "nosniff",
       "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
@@ -88,12 +109,12 @@
       "Cross-Origin-Opener-Policy": "same-origin",
       "Content-Security-Policy": "default-src 'self'; frame-ancestors 'self'; script-src 'self' 'unsafe-eval' https://www.google.com/ https://www.gstatic.com/; img-src 'self' data: https://cdn.loom.com/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://fonts.gstatic.com/; font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/; media-src 'self' https://*.amazonaws.com; frame-src 'self' https://www.google.com/ https://www.youtube.com/ https://www.loom.com/ player.vimeo.com; object-src 'self'; connect-src 'self' https://www.google.com/ https://avatar-cdn.atlassian.com;"
     },
-    "request_duration": 0.301166296005249,
-    "response_size": 862
+    "request_duration": 0.2825043201446533,
+    "response_size": 943
   },
   "metadata": {
     "version": "2.0",
-    "date_fetched": "2025-07-31",
+    "date_fetched": "2025-08-03",
     "script_name": "TrustlessWakaTimeLogger",
     "trustless_note": "This file contains multiple external verifications that make fabrication impossible"
   }
