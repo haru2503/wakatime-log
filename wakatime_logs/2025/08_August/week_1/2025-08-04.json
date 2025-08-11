@@ -2,7 +2,6 @@
   "wakatime_data": {
     "data": [
       {
-        "languages": [],
         "grand_total": {
           "hours": 0,
           "minutes": 0,
@@ -15,12 +14,6 @@
           "human_additions": 0,
           "human_deletions": 0
         },
-        "editors": [],
-        "operating_systems": [],
-        "categories": [],
-        "dependencies": [],
-        "machines": [],
-        "projects": [],
         "range": {
           "start": "2025-08-03T17:00:00Z",
           "end": "2025-08-04T16:59:59Z",
@@ -28,10 +21,13 @@
           "text": "Mon Aug 4th 2025",
           "timezone": "Asia/Ho_Chi_Minh"
         },
-        "ai_additions": 0,
-        "ai_deletions": 0,
-        "human_additions": 0,
-        "human_deletions": 0
+        "projects": [],
+        "languages": [],
+        "dependencies": [],
+        "machines": [],
+        "editors": [],
+        "operating_systems": [],
+        "categories": []
       }
     ],
     "start": "2025-08-03T17:00:00Z",
@@ -53,19 +49,19 @@
     }
   },
   "authenticity_proof": {
-    "content_hash": "24ac574d0178343bd9529eb06673e175083df9760d848cd4a72d9da31483476f",
+    "content_hash": "82d6ab76ae3377677a1261d980101cd78ceb589807526172e8e82339886eeb56",
     "external_timestamps": {
-      "data_hash": "24ac574d0178343bd9529eb06673e175083df9760d848cd4a72d9da31483476f",
+      "data_hash": "82d6ab76ae3377677a1261d980101cd78ceb589807526172e8e82339886eeb56",
       "timestamps": {
-        "ntp_time": 1754362758.7873921,
+        "ntp_time": 1754881004.7178512,
         "ntp_server": "pool.ntp.org",
-        "github_server_time": "Tue, 05 Aug 2025 02:59:17 GMT"
+        "github_server_time": "Mon, 11 Aug 2025 02:56:40 GMT"
       },
       "verification_note": "These timestamps are from external sources and cannot be manipulated"
     },
     "network_evidence": {
       "user_agent": "TrustlessWakaTimeLogger/2.0",
-      "request_time": "2025-08-05T02:59:19.150045",
+      "request_time": "2025-08-11T02:56:45.042660",
       "system_info": {
         "platform": "posix",
         "hostname": "unknown"
@@ -79,9 +75,9 @@
     "status_code": 200,
     "response_headers": {
       "Server": "nginx",
-      "Date": "Tue, 05 Aug 2025 02:59:18 GMT",
+      "Date": "Mon, 11 Aug 2025 02:56:44 GMT",
       "Content-Type": "application/json",
-      "Content-Length": "943",
+      "Content-Length": "861",
       "Connection": "keep-alive",
       "X-Content-Type-Options": "nosniff",
       "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
@@ -90,10 +86,10 @@
       "Referrer-Policy": "strict-origin-when-cross-origin",
       "X-Frame-Options": "SAMEORIGIN",
       "Cross-Origin-Opener-Policy": "same-origin",
-      "Content-Security-Policy": "default-src 'self'; frame-ancestors 'self'; script-src 'self' 'unsafe-eval' https://www.google.com/ https://www.gstatic.com/; img-src 'self' data: https://cdn.loom.com/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://fonts.gstatic.com/; font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/; media-src 'self' https://*.amazonaws.com; frame-src 'self' https://www.google.com/ https://www.youtube.com/ https://www.loom.com/ player.vimeo.com; object-src 'self'; connect-src 'self' https://www.google.com/ https://avatar-cdn.atlassian.com;"
+      "Content-Security-Policy": "default-src 'self'; frame-ancestors 'self'; script-src 'self' 'unsafe-eval' https://www.google.com/ https://www.gstatic.com/ https://*.siteassist.io; img-src 'self' data: https://cdn.loom.com/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.siteassist.io; font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.siteassist.io; media-src 'self' https://*.amazonaws.com; frame-src 'self' https://www.google.com/ https://www.youtube.com/ https://www.loom.com/ player.vimeo.com https://*.siteassist.io; object-src 'self'; connect-src 'self' https://www.google.com/ https://avatar-cdn.atlassian.com https://*.siteassist.io;"
     },
-    "request_duration": 0.16222310066223145,
-    "response_size": 943
+    "request_duration": 0.28483080863952637,
+    "response_size": 861
   },
   "metadata": {
     "version": "2.0",
