@@ -1,0 +1,90 @@
+{
+  "week_dates": [
+    "2025-08-11",
+    "2025-08-12",
+    "2025-08-13",
+    "2025-08-14",
+    "2025-08-15",
+    "2025-08-16",
+    "2025-08-17"
+  ],
+  "total_coding_time": 0.0,
+  "daily_avg_coding_time": 0.0,
+  "daily_summaries": [
+    {
+      "date": "2025-08-11",
+      "total_coding_time": 0.0,
+      "categories": [],
+      "languages": [],
+      "projects": [],
+      "editors": [],
+      "machines": [],
+      "operating_systems": []
+    },
+    {
+      "date": "2025-08-12",
+      "total_coding_time": 0.0,
+      "categories": [],
+      "languages": [],
+      "projects": [],
+      "editors": [],
+      "machines": [],
+      "operating_systems": []
+    },
+    {
+      "date": "2025-08-13",
+      "total_coding_time": 0.0,
+      "categories": [],
+      "languages": [],
+      "projects": [],
+      "editors": [],
+      "machines": [],
+      "operating_systems": []
+    },
+    {
+      "date": "2025-08-14",
+      "total_coding_time": 0.0,
+      "categories": [],
+      "languages": [],
+      "projects": [],
+      "editors": [],
+      "machines": [],
+      "operating_systems": []
+    },
+    {
+      "date": "2025-08-15",
+      "total_coding_time": 0.0,
+      "categories": [],
+      "languages": [],
+      "projects": [],
+      "editors": [],
+      "machines": [],
+      "operating_systems": []
+    },
+    {
+      "date": "2025-08-16",
+      "total_coding_time": 0.0,
+      "categories": [],
+      "languages": [],
+      "projects": [],
+      "editors": [],
+      "machines": [],
+      "operating_systems": []
+    },
+    {
+      "date": "2025-08-17",
+      "total_coding_time": 0.0,
+      "categories": [],
+      "languages": [],
+      "projects": [],
+      "editors": [],
+      "machines": [],
+      "operating_systems": []
+    }
+  ],
+  "metadata": {
+    "generated_at": "2025-08-18T02:53:00.725700",
+    "days_with_data": 7,
+    "total_days": 7
+  }
+}

@@ -2,7 +2,6 @@
   "wakatime_data": {
     "data": [
       {
-        "languages": [],
         "grand_total": {
           "hours": 0,
           "minutes": 0,
@@ -15,12 +14,6 @@
           "human_additions": 0,
           "human_deletions": 0
         },
-        "editors": [],
-        "operating_systems": [],
-        "categories": [],
-        "dependencies": [],
-        "machines": [],
-        "projects": [],
         "range": {
           "start": "2025-08-11T17:00:00Z",
           "end": "2025-08-12T16:59:59Z",
@@ -28,10 +21,13 @@
           "text": "Tue Aug 12th 2025",
           "timezone": "Asia/Ho_Chi_Minh"
         },
-        "ai_additions": 0,
-        "ai_deletions": 0,
-        "human_additions": 0,
-        "human_deletions": 0
+        "projects": [],
+        "languages": [],
+        "dependencies": [],
+        "machines": [],
+        "editors": [],
+        "operating_systems": [],
+        "categories": []
       }
     ],
     "start": "2025-08-11T17:00:00Z",
@@ -53,19 +49,36 @@
     }
   },
   "authenticity_proof": {
-    "content_hash": "67dd9f033067bd36fed759f5fde85dd578c338cb3cbdb93d9b1f17eb8915e4df",
+    "content_hash": "8c8da3d3f2755f3868ae00d57e753b2e9ae357c12256569e2b9af027727071b1",
     "external_timestamps": {
-      "data_hash": "67dd9f033067bd36fed759f5fde85dd578c338cb3cbdb93d9b1f17eb8915e4df",
+      "data_hash": "8c8da3d3f2755f3868ae00d57e753b2e9ae357c12256569e2b9af027727071b1",
       "timestamps": {
-        "ntp_time": 1755053028.3261247,
+        "ntp_time": 1755485576.7175431,
         "ntp_server": "pool.ntp.org",
-        "github_server_time": "Wed, 13 Aug 2025 02:43:48 GMT"
+        "external_time": {
+          "utc_offset": "+07:00",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "day_of_week": 1,
+          "day_of_year": 230,
+          "datetime": "2025-08-18T09:52:57.076097+07:00",
+          "utc_datetime": "2025-08-18T02:52:57.076097+00:00",
+          "unixtime": 1755485577,
+          "raw_offset": 25200,
+          "week_number": 34,
+          "dst": false,
+          "abbreviation": "+07",
+          "dst_offset": 0,
+          "dst_from": null,
+          "dst_until": null,
+          "client_ip": "48.214.54.52"
+        },
+        "github_server_time": "Mon, 18 Aug 2025 02:52:49 GMT"
       },
       "verification_note": "These timestamps are from external sources and cannot be manipulated"
     },
     "network_evidence": {
       "user_agent": "TrustlessWakaTimeLogger/2.0",
-      "request_time": "2025-08-13T02:43:48.692108",
+      "request_time": "2025-08-18T02:52:57.111833",
       "system_info": {
         "platform": "posix",
         "hostname": "unknown"
@@ -79,9 +92,9 @@
     "status_code": 200,
     "response_headers": {
       "Server": "nginx",
-      "Date": "Wed, 13 Aug 2025 02:43:48 GMT",
+      "Date": "Mon, 18 Aug 2025 02:52:56 GMT",
       "Content-Type": "application/json",
-      "Content-Length": "944",
+      "Content-Length": "862",
       "Connection": "keep-alive",
       "X-Content-Type-Options": "nosniff",
       "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
@@ -92,8 +105,8 @@
       "Cross-Origin-Opener-Policy": "same-origin",
       "Content-Security-Policy": "default-src 'self'; frame-ancestors 'self'; script-src 'self' 'unsafe-eval' https://www.google.com/ https://www.gstatic.com/ https://*.siteassist.io; img-src 'self' data: https://cdn.loom.com/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.siteassist.io; font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.siteassist.io; media-src 'self' https://*.amazonaws.com; frame-src 'self' https://www.google.com/ https://www.youtube.com/ https://www.loom.com/ player.vimeo.com https://*.siteassist.io; object-src 'self'; connect-src 'self' https://www.google.com/ https://avatar-cdn.atlassian.com https://*.siteassist.io;"
     },
-    "request_duration": 0.2764914035797119,
-    "response_size": 944
+    "request_duration": 0.28771352767944336,
+    "response_size": 862
   },
   "metadata": {
     "version": "2.0",

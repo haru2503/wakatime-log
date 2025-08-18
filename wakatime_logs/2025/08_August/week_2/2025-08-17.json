@@ -22,10 +22,10 @@
         "machines": [],
         "projects": [],
         "range": {
-          "start": "2025-08-15T17:00:00Z",
-          "end": "2025-08-16T16:59:59Z",
-          "date": "2025-08-16",
-          "text": "Sat Aug 16th 2025",
+          "start": "2025-08-16T17:00:00Z",
+          "end": "2025-08-17T16:59:59Z",
+          "date": "2025-08-17",
+          "text": "Sun Aug 17th 2025",
           "timezone": "Asia/Ho_Chi_Minh"
         },
         "ai_additions": 0,
@@ -34,8 +34,8 @@
         "human_deletions": 0
       }
     ],
-    "start": "2025-08-15T17:00:00Z",
-    "end": "2025-08-16T16:59:59Z",
+    "start": "2025-08-16T17:00:00Z",
+    "end": "2025-08-17T16:59:59Z",
     "cumulative_total": {
       "seconds": 0.0,
       "text": "0 secs",
@@ -53,36 +53,19 @@
     }
   },
   "authenticity_proof": {
-    "content_hash": "ed4ffa364c80a692fb0520e981056a1ae9d1b797b6d1b8d3c88e123fa69a6a5e",
+    "content_hash": "6b9df62201fdcefcf3c0f13f8985668144a1898308b5d20c65c3eac993241ae2",
     "external_timestamps": {
-      "data_hash": "ed4ffa364c80a692fb0520e981056a1ae9d1b797b6d1b8d3c88e123fa69a6a5e",
+      "data_hash": "6b9df62201fdcefcf3c0f13f8985668144a1898308b5d20c65c3eac993241ae2",
       "timestamps": {
-        "ntp_time": 1755485579.6322522,
+        "ntp_time": 1755485580.585064,
         "ntp_server": "pool.ntp.org",
-        "external_time": {
-          "utc_offset": "+07:00",
-          "timezone": "Asia/Ho_Chi_Minh",
-          "day_of_week": 1,
-          "day_of_year": 230,
-          "datetime": "2025-08-18T09:53:00.139060+07:00",
-          "utc_datetime": "2025-08-18T02:53:00.139060+00:00",
-          "unixtime": 1755485580,
-          "raw_offset": 25200,
-          "week_number": 34,
-          "dst": false,
-          "abbreviation": "+07",
-          "dst_offset": 0,
-          "dst_from": null,
-          "dst_until": null,
-          "client_ip": "48.214.54.52"
-        },
         "github_server_time": "Mon, 18 Aug 2025 02:52:59 GMT"
       },
       "verification_note": "These timestamps are from external sources and cannot be manipulated"
     },
     "network_evidence": {
       "user_agent": "TrustlessWakaTimeLogger/2.0",
-      "request_time": "2025-08-18T02:53:00.179563",
+      "request_time": "2025-08-18T02:53:00.724222",
       "system_info": {
         "platform": "posix",
         "hostname": "unknown"
@@ -91,12 +74,12 @@
     "authenticity_note": "This data cannot be fabricated due to external verifications"
   },
   "request_proof": {
-    "url": "https://wakatime.com/api/v1/users/current/summaries?start=2025-08-16&end=2025-08-16",
+    "url": "https://wakatime.com/api/v1/users/current/summaries?start=2025-08-17&end=2025-08-17",
     "method": "GET",
     "status_code": 200,
     "response_headers": {
       "Server": "nginx",
-      "Date": "Mon, 18 Aug 2025 02:52:59 GMT",
+      "Date": "Mon, 18 Aug 2025 02:53:00 GMT",
       "Content-Type": "application/json",
       "Content-Length": "944",
       "Connection": "keep-alive",
@@ -109,12 +92,12 @@
       "Cross-Origin-Opener-Policy": "same-origin",
       "Content-Security-Policy": "default-src 'self'; frame-ancestors 'self'; script-src 'self' 'unsafe-eval' https://www.google.com/ https://www.gstatic.com/ https://*.siteassist.io; img-src 'self' data: https://cdn.loom.com/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.siteassist.io; font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.siteassist.io; media-src 'self' https://*.amazonaws.com; frame-src 'self' https://www.google.com/ https://www.youtube.com/ https://www.loom.com/ player.vimeo.com https://*.siteassist.io; object-src 'self'; connect-src 'self' https://www.google.com/ https://avatar-cdn.atlassian.com https://*.siteassist.io;"
     },
-    "request_duration": 0.29717564582824707,
+    "request_duration": 0.30078673362731934,
     "response_size": 944
   },
   "metadata": {
     "version": "2.0",
-    "date_fetched": "2025-08-16",
+    "date_fetched": "2025-08-17",
     "script_name": "TrustlessWakaTimeLogger",
     "trustless_note": "This file contains multiple external verifications that make fabrication impossible"
   }
