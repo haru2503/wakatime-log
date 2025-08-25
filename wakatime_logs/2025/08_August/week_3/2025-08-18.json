@@ -2,7 +2,6 @@
   "wakatime_data": {
     "data": [
       {
-        "languages": [],
         "grand_total": {
           "hours": 0,
           "minutes": 0,
@@ -15,12 +14,6 @@
           "human_additions": 0,
           "human_deletions": 0
         },
-        "editors": [],
-        "operating_systems": [],
-        "categories": [],
-        "dependencies": [],
-        "machines": [],
-        "projects": [],
         "range": {
           "start": "2025-08-17T17:00:00Z",
           "end": "2025-08-18T16:59:59Z",
@@ -28,10 +21,13 @@
           "text": "Mon Aug 18th 2025",
           "timezone": "Asia/Ho_Chi_Minh"
         },
-        "ai_additions": 0,
-        "ai_deletions": 0,
-        "human_additions": 0,
-        "human_deletions": 0
+        "projects": [],
+        "languages": [],
+        "dependencies": [],
+        "machines": [],
+        "editors": [],
+        "operating_systems": [],
+        "categories": []
       }
     ],
     "start": "2025-08-17T17:00:00Z",
@@ -53,36 +49,36 @@
     }
   },
   "authenticity_proof": {
-    "content_hash": "292eab4466a810ee177b1a1333bdcce51eee922c0b8f5b8ac26aa5c98ea45cad",
+    "content_hash": "3913a00d5f2c49b9a528ebc17dc8b0adb8d925282abf5d179bb1c3aec688d99e",
     "external_timestamps": {
-      "data_hash": "292eab4466a810ee177b1a1333bdcce51eee922c0b8f5b8ac26aa5c98ea45cad",
+      "data_hash": "3913a00d5f2c49b9a528ebc17dc8b0adb8d925282abf5d179bb1c3aec688d99e",
       "timestamps": {
-        "ntp_time": 1755570407.3761826,
+        "ntp_time": 1756088970.4031868,
         "ntp_server": "pool.ntp.org",
         "external_time": {
           "utc_offset": "+07:00",
           "timezone": "Asia/Ho_Chi_Minh",
-          "day_of_week": 2,
-          "day_of_year": 231,
-          "datetime": "2025-08-19T09:26:47.526766+07:00",
-          "utc_datetime": "2025-08-19T02:26:47.526766+00:00",
-          "unixtime": 1755570407,
+          "day_of_week": 1,
+          "day_of_year": 237,
+          "datetime": "2025-08-25T09:29:30.740574+07:00",
+          "utc_datetime": "2025-08-25T02:29:30.740574+00:00",
+          "unixtime": 1756088970,
           "raw_offset": 25200,
-          "week_number": 34,
+          "week_number": 35,
           "dst": false,
           "abbreviation": "+07",
           "dst_offset": 0,
           "dst_from": null,
           "dst_until": null,
-          "client_ip": "52.173.237.209"
+          "client_ip": "135.237.130.183"
         },
-        "github_server_time": "Tue, 19 Aug 2025 02:26:39 GMT"
+        "github_server_time": "Mon, 25 Aug 2025 02:29:18 GMT"
       },
       "verification_note": "These timestamps are from external sources and cannot be manipulated"
     },
     "network_evidence": {
       "user_agent": "TrustlessWakaTimeLogger/2.0",
-      "request_time": "2025-08-19T02:26:47.630051",
+      "request_time": "2025-08-25T02:29:30.800474",
       "system_info": {
         "platform": "posix",
         "hostname": "unknown"
@@ -96,9 +92,9 @@
     "status_code": 200,
     "response_headers": {
       "Server": "nginx",
-      "Date": "Tue, 19 Aug 2025 02:26:47 GMT",
+      "Date": "Mon, 25 Aug 2025 02:29:30 GMT",
       "Content-Type": "application/json",
-      "Content-Length": "944",
+      "Content-Length": "862",
       "Connection": "keep-alive",
       "X-Content-Type-Options": "nosniff",
       "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
@@ -109,8 +105,8 @@
       "Cross-Origin-Opener-Policy": "same-origin",
       "Content-Security-Policy": "default-src 'self'; frame-ancestors 'self'; script-src 'self' 'unsafe-eval' https://www.google.com/ https://www.gstatic.com/ https://*.siteassist.io; img-src 'self' data: https://cdn.loom.com/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.siteassist.io; font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.siteassist.io; media-src 'self' https://*.amazonaws.com; frame-src 'self' https://www.google.com/ https://www.youtube.com/ https://www.loom.com/ player.vimeo.com https://*.siteassist.io; object-src 'self'; connect-src 'self' https://www.google.com/ https://avatar-cdn.atlassian.com https://*.siteassist.io;"
     },
-    "request_duration": 0.35544729232788086,
-    "response_size": 944
+    "request_duration": 0.6183488368988037,
+    "response_size": 862
   },
   "metadata": {
     "version": "2.0",

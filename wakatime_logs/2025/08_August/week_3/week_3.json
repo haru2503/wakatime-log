@@ -1,0 +1,279 @@
+{
+  "week_dates": [
+    "2025-08-18",
+    "2025-08-19",
+    "2025-08-20",
+    "2025-08-21",
+    "2025-08-22",
+    "2025-08-23",
+    "2025-08-24"
+  ],
+  "total_coding_time": 4815.665623,
+  "daily_avg_coding_time": 687.9522318571428,
+  "daily_summaries": [
+    {
+      "date": "2025-08-18",
+      "total_coding_time": 0.0,
+      "categories": [],
+      "languages": [],
+      "projects": [],
+      "editors": [],
+      "machines": [],
+      "operating_systems": []
+    },
+    {
+      "date": "2025-08-19",
+      "total_coding_time": 4337.314088,
+      "categories": [
+        {
+          "name": "Coding",
+          "total_seconds": 4337.314088,
+          "digital": "1:12:17",
+          "decimal": "1.20",
+          "text": "1 hr 12 mins",
+          "hours": 1,
+          "minutes": 12,
+          "seconds": 17,
+          "percent": 100.0
+        }
+      ],
+      "languages": [
+        {
+          "name": "SQL",
+          "total_seconds": 2918.436123,
+          "digital": "0:48:38",
+          "decimal": "0.80",
+          "text": "48 mins",
+          "hours": 0,
+          "minutes": 48,
+          "seconds": 38,
+          "percent": 67.29
+        },
+        {
+          "name": "Python",
+          "total_seconds": 852.766232,
+          "digital": "0:14:12",
+          "decimal": "0.23",
+          "text": "14 mins",
+          "hours": 0,
+          "minutes": 14,
+          "seconds": 12,
+          "percent": 19.66
+        },
+        {
+          "name": "Other",
+          "total_seconds": 566.111733,
+          "digital": "0:09:26",
+          "decimal": "0.15",
+          "text": "9 mins",
+          "hours": 0,
+          "minutes": 9,
+          "seconds": 26,
+          "percent": 13.05
+        }
+      ],
+      "projects": [
+        {
+          "name": "Music",
+          "total_seconds": 4337.314088,
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0,
+          "color": null,
+          "digital": "1:12:17",
+          "decimal": "1.20",
+          "text": "1 hr 12 mins",
+          "hours": 1,
+          "minutes": 12,
+          "seconds": 17,
+          "percent": 100.0
+        }
+      ],
+      "editors": [
+        {
+          "name": "VS Code",
+          "total_seconds": 4337.314088,
+          "digital": "1:12:17",
+          "decimal": "1.20",
+          "text": "1 hr 12 mins",
+          "hours": 1,
+          "minutes": 12,
+          "seconds": 17,
+          "percent": 100.0
+        }
+      ],
+      "machines": [
+        {
+          "name": "haru",
+          "total_seconds": 4337.314088,
+          "machine_name_id": "5a34c1a6-3f87-46bd-9ec7-f0cfb49b1bd0",
+          "digital": "1:12:17",
+          "decimal": "1.20",
+          "text": "1 hr 12 mins",
+          "hours": 1,
+          "minutes": 12,
+          "seconds": 17,
+          "percent": 100.0
+        }
+      ],
+      "operating_systems": [
+        {
+          "name": "Linux",
+          "total_seconds": 4337.314088,
+          "digital": "1:12:17",
+          "decimal": "1.20",
+          "text": "1 hr 12 mins",
+          "hours": 1,
+          "minutes": 12,
+          "seconds": 17,
+          "percent": 100.0
+        }
+      ]
+    },
+    {
+      "date": "2025-08-20",
+      "total_coding_time": 478.351535,
+      "categories": [
+        {
+          "name": "Coding",
+          "total_seconds": 478.351535,
+          "digital": "0:07:58",
+          "decimal": "0.12",
+          "text": "7 mins",
+          "hours": 0,
+          "minutes": 7,
+          "seconds": 58,
+          "percent": 100.0
+        }
+      ],
+      "languages": [
+        {
+          "name": "SQL",
+          "total_seconds": 411.989609,
+          "digital": "0:06:51",
+          "decimal": "0.10",
+          "text": "6 mins",
+          "hours": 0,
+          "minutes": 6,
+          "seconds": 51,
+          "percent": 86.13
+        },
+        {
+          "name": "Python",
+          "total_seconds": 66.361926,
+          "digital": "0:01:06",
+          "decimal": "0.02",
+          "text": "1 min",
+          "hours": 0,
+          "minutes": 1,
+          "seconds": 6,
+          "percent": 13.87
+        }
+      ],
+      "projects": [
+        {
+          "name": "Music",
+          "total_seconds": 478.351535,
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0,
+          "color": null,
+          "digital": "0:07:58",
+          "decimal": "0.12",
+          "text": "7 mins",
+          "hours": 0,
+          "minutes": 7,
+          "seconds": 58,
+          "percent": 100.0
+        }
+      ],
+      "editors": [
+        {
+          "name": "VS Code",
+          "total_seconds": 478.351535,
+          "digital": "0:07:58",
+          "decimal": "0.12",
+          "text": "7 mins",
+          "hours": 0,
+          "minutes": 7,
+          "seconds": 58,
+          "percent": 100.0
+        }
+      ],
+      "machines": [
+        {
+          "name": "haru",
+          "total_seconds": 478.351535,
+          "machine_name_id": "5a34c1a6-3f87-46bd-9ec7-f0cfb49b1bd0",
+          "digital": "0:07:58",
+          "decimal": "0.12",
+          "text": "7 mins",
+          "hours": 0,
+          "minutes": 7,
+          "seconds": 58,
+          "percent": 100.0
+        }
+      ],
+      "operating_systems": [
+        {
+          "name": "Linux",
+          "total_seconds": 478.351535,
+          "digital": "0:07:58",
+          "decimal": "0.12",
+          "text": "7 mins",
+          "hours": 0,
+          "minutes": 7,
+          "seconds": 58,
+          "percent": 100.0
+        }
+      ]
+    },
+    {
+      "date": "2025-08-21",
+      "total_coding_time": 0.0,
+      "categories": [],
+      "languages": [],
+      "projects": [],
+      "editors": [],
+      "machines": [],
+      "operating_systems": []
+    },
+    {
+      "date": "2025-08-22",
+      "total_coding_time": 0.0,
+      "categories": [],
+      "languages": [],
+      "projects": [],
+      "editors": [],
+      "machines": [],
+      "operating_systems": []
+    },
+    {
+      "date": "2025-08-23",
+      "total_coding_time": 0.0,
+      "categories": [],
+      "languages": [],
+      "projects": [],
+      "editors": [],
+      "machines": [],
+      "operating_systems": []
+    },
+    {
+      "date": "2025-08-24",
+      "total_coding_time": 0.0,
+      "categories": [],
+      "languages": [],
+      "projects": [],
+      "editors": [],
+      "machines": [],
+      "operating_systems": []
+    }
+  ],
+  "metadata": {
+    "generated_at": "2025-08-25T02:29:35.616363",
+    "days_with_data": 7,
+    "total_days": 7
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "month": "08_August",
+  "year": "2025",
+  "total_coding_time": 4815.665623,
+  "weekly_avg_coding_time": 1605.2218743333333,
+  "daily_avg_coding_time": 229.31741061904762,
+  "total_categories_time": 4815.665623,
+  "total_language_time": 4815.665623,
+  "total_project_time": 4815.665623,
+  "total_editor_time": 4815.665623,
+  "total_machine_time": 4815.665623,
+  "total_os_time": 4815.665623,
+  "weekly_summaries": [
+    {
+      "week": "week_1",
+      "week_dates": [
+        "2025-08-04",
+        "2025-08-05",
+        "2025-08-06",
+        "2025-08-07",
+        "2025-08-08",
+        "2025-08-09",
+        "2025-08-10"
+      ],
+      "total_coding_time": 0.0,
+      "daily_avg_coding_time": 0.0,
+      "total_categories_time": 0,
+      "total_language_time": 0,
+      "total_project_time": 0,
+      "total_editor_time": 0,
+      "total_machine_time": 0,
+      "total_os_time": 0,
+      "days_with_data": 7
+    },
+    {
+      "week": "week_2",
+      "week_dates": [
+        "2025-08-11",
+        "2025-08-12",
+        "2025-08-13",
+        "2025-08-14",
+        "2025-08-15",
+        "2025-08-16",
+        "2025-08-17"
+      ],
+      "total_coding_time": 0.0,
+      "daily_avg_coding_time": 0.0,
+      "total_categories_time": 0,
+      "total_language_time": 0,
+      "total_project_time": 0,
+      "total_editor_time": 0,
+      "total_machine_time": 0,
+      "total_os_time": 0,
+      "days_with_data": 7
+    },
+    {
+      "week": "week_3",
+      "week_dates": [
+        "2025-08-18",
+        "2025-08-19",
+        "2025-08-20",
+        "2025-08-21",
+        "2025-08-22",
+        "2025-08-23",
+        "2025-08-24"
+      ],
+      "total_coding_time": 4815.665623,
+      "daily_avg_coding_time": 687.9522318571428,
+      "total_categories_time": 4815.665623,
+      "total_language_time": 4815.665623,
+      "total_project_time": 4815.665623,
+      "total_editor_time": 4815.665623,
+      "total_machine_time": 4815.665623,
+      "total_os_time": 4815.665623,
+      "days_with_data": 7
+    }
+  ],
+  "metadata": {
+    "generated_at": "2025-08-25T02:29:41.805612",
+    "total_weeks": 3,
+    "total_days_with_data": 21,
+    "total_days_in_month": 31
+  }
+}

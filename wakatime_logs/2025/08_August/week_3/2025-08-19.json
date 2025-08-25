@@ -2,113 +2,18 @@
   "wakatime_data": {
     "data": [
       {
-        "languages": [
-          {
-            "name": "SQL",
-            "total_seconds": 506.387831,
-            "digital": "0:08:26",
-            "decimal": "0.13",
-            "text": "8 mins",
-            "hours": 0,
-            "minutes": 8,
-            "seconds": 26,
-            "percent": 53.52
-          },
-          {
-            "name": "Other",
-            "total_seconds": 439.693501,
-            "digital": "0:07:19",
-            "decimal": "0.12",
-            "text": "7 mins",
-            "hours": 0,
-            "minutes": 7,
-            "seconds": 19,
-            "percent": 46.48
-          }
-        ],
         "grand_total": {
-          "hours": 0,
-          "minutes": 15,
-          "total_seconds": 946.081332,
-          "digital": "0:15",
-          "decimal": "0.25",
-          "text": "15 mins",
+          "hours": 1,
+          "minutes": 12,
+          "total_seconds": 4337.314088,
+          "digital": "1:12",
+          "decimal": "1.20",
+          "text": "1 hr 12 mins",
           "ai_additions": 0,
           "ai_deletions": 0,
           "human_additions": 0,
           "human_deletions": 0
         },
-        "editors": [
-          {
-            "name": "VS Code",
-            "total_seconds": 946.081332,
-            "digital": "0:15:46",
-            "decimal": "0.25",
-            "text": "15 mins",
-            "hours": 0,
-            "minutes": 15,
-            "seconds": 46,
-            "percent": 100.0
-          }
-        ],
-        "operating_systems": [
-          {
-            "name": "Linux",
-            "total_seconds": 946.081332,
-            "digital": "0:15:46",
-            "decimal": "0.25",
-            "text": "15 mins",
-            "hours": 0,
-            "minutes": 15,
-            "seconds": 46,
-            "percent": 100.0
-          }
-        ],
-        "categories": [
-          {
-            "name": "Coding",
-            "total_seconds": 946.081332,
-            "digital": "0:15:46",
-            "decimal": "0.25",
-            "text": "15 mins",
-            "hours": 0,
-            "minutes": 15,
-            "seconds": 46,
-            "percent": 100.0
-          }
-        ],
-        "dependencies": [],
-        "machines": [
-          {
-            "name": "haru",
-            "total_seconds": 946.081332,
-            "machine_name_id": "5a34c1a6-3f87-46bd-9ec7-f0cfb49b1bd0",
-            "digital": "0:15:46",
-            "decimal": "0.25",
-            "text": "15 mins",
-            "hours": 0,
-            "minutes": 15,
-            "seconds": 46,
-            "percent": 100.0
-          }
-        ],
-        "projects": [
-          {
-            "name": "Music",
-            "total_seconds": 946.081332,
-            "ai_additions": 0,
-            "ai_deletions": 0,
-            "human_additions": 0,
-            "human_deletions": 0,
-            "digital": "0:15:46",
-            "decimal": "0.25",
-            "text": "15 mins",
-            "hours": 0,
-            "minutes": 15,
-            "seconds": 46,
-            "percent": 100.0
-          }
-        ],
         "range": {
           "start": "2025-08-18T17:00:00Z",
           "end": "2025-08-19T16:59:59Z",
@@ -116,44 +21,231 @@
           "text": "Tue Aug 19th 2025",
           "timezone": "Asia/Ho_Chi_Minh"
         },
-        "ai_additions": 0,
-        "ai_deletions": 0,
-        "human_additions": 0,
-        "human_deletions": 0
+        "projects": [
+          {
+            "name": "Music",
+            "total_seconds": 4337.314088,
+            "ai_additions": 0,
+            "ai_deletions": 0,
+            "human_additions": 0,
+            "human_deletions": 0,
+            "color": null,
+            "digital": "1:12:17",
+            "decimal": "1.20",
+            "text": "1 hr 12 mins",
+            "hours": 1,
+            "minutes": 12,
+            "seconds": 17,
+            "percent": 100.0
+          }
+        ],
+        "languages": [
+          {
+            "name": "SQL",
+            "total_seconds": 2918.436123,
+            "digital": "0:48:38",
+            "decimal": "0.80",
+            "text": "48 mins",
+            "hours": 0,
+            "minutes": 48,
+            "seconds": 38,
+            "percent": 67.29
+          },
+          {
+            "name": "Python",
+            "total_seconds": 852.766232,
+            "digital": "0:14:12",
+            "decimal": "0.23",
+            "text": "14 mins",
+            "hours": 0,
+            "minutes": 14,
+            "seconds": 12,
+            "percent": 19.66
+          },
+          {
+            "name": "Other",
+            "total_seconds": 566.111733,
+            "digital": "0:09:26",
+            "decimal": "0.15",
+            "text": "9 mins",
+            "hours": 0,
+            "minutes": 9,
+            "seconds": 26,
+            "percent": 13.05
+          }
+        ],
+        "dependencies": [
+          {
+            "name": "datetime",
+            "total_seconds": 851.141382,
+            "digital": "0:14:11",
+            "decimal": "0.23",
+            "text": "14 mins",
+            "hours": 0,
+            "minutes": 14,
+            "seconds": 11,
+            "percent": 16.67
+          },
+          {
+            "name": "dataclasses",
+            "total_seconds": 851.141382,
+            "digital": "0:14:11",
+            "decimal": "0.23",
+            "text": "14 mins",
+            "hours": 0,
+            "minutes": 14,
+            "seconds": 11,
+            "percent": 16.67
+          },
+          {
+            "name": "typing",
+            "total_seconds": 851.141382,
+            "digital": "0:14:11",
+            "decimal": "0.23",
+            "text": "14 mins",
+            "hours": 0,
+            "minutes": 14,
+            "seconds": 11,
+            "percent": 16.67
+          },
+          {
+            "name": "json",
+            "total_seconds": 851.141382,
+            "digital": "0:14:11",
+            "decimal": "0.23",
+            "text": "14 mins",
+            "hours": 0,
+            "minutes": 14,
+            "seconds": 11,
+            "percent": 16.67
+          },
+          {
+            "name": "mutagen",
+            "total_seconds": 851.141382,
+            "digital": "0:14:11",
+            "decimal": "0.23",
+            "text": "14 mins",
+            "hours": 0,
+            "minutes": 14,
+            "seconds": 11,
+            "percent": 16.67
+          },
+          {
+            "name": "sqlite3",
+            "total_seconds": 851.141382,
+            "digital": "0:14:11",
+            "decimal": "0.23",
+            "text": "14 mins",
+            "hours": 0,
+            "minutes": 14,
+            "seconds": 11,
+            "percent": 16.67
+          }
+        ],
+        "machines": [
+          {
+            "name": "haru",
+            "total_seconds": 4337.314088,
+            "machine_name_id": "5a34c1a6-3f87-46bd-9ec7-f0cfb49b1bd0",
+            "digital": "1:12:17",
+            "decimal": "1.20",
+            "text": "1 hr 12 mins",
+            "hours": 1,
+            "minutes": 12,
+            "seconds": 17,
+            "percent": 100.0
+          }
+        ],
+        "editors": [
+          {
+            "name": "VS Code",
+            "total_seconds": 4337.314088,
+            "digital": "1:12:17",
+            "decimal": "1.20",
+            "text": "1 hr 12 mins",
+            "hours": 1,
+            "minutes": 12,
+            "seconds": 17,
+            "percent": 100.0
+          }
+        ],
+        "operating_systems": [
+          {
+            "name": "Linux",
+            "total_seconds": 4337.314088,
+            "digital": "1:12:17",
+            "decimal": "1.20",
+            "text": "1 hr 12 mins",
+            "hours": 1,
+            "minutes": 12,
+            "seconds": 17,
+            "percent": 100.0
+          }
+        ],
+        "categories": [
+          {
+            "name": "Coding",
+            "total_seconds": 4337.314088,
+            "digital": "1:12:17",
+            "decimal": "1.20",
+            "text": "1 hr 12 mins",
+            "hours": 1,
+            "minutes": 12,
+            "seconds": 17,
+            "percent": 100.0
+          }
+        ]
       }
     ],
     "start": "2025-08-18T17:00:00Z",
     "end": "2025-08-19T16:59:59Z",
     "cumulative_total": {
-      "seconds": 946.081332,
-      "text": "15 mins",
-      "digital": "0:15",
-      "decimal": "0.25"
+      "seconds": 4337.314088,
+      "text": "1 hr 12 mins",
+      "digital": "1:12",
+      "decimal": "1.20"
     },
     "daily_average": {
       "holidays": 0,
       "days_minus_holidays": 1,
       "days_including_holidays": 1,
-      "seconds": 506,
-      "seconds_including_other_language": 946,
-      "text": "8 mins",
-      "text_including_other_language": "15 mins"
+      "seconds": 3771,
+      "seconds_including_other_language": 4337,
+      "text": "1 hr 2 mins",
+      "text_including_other_language": "1 hr 12 mins"
     }
   },
   "authenticity_proof": {
-    "content_hash": "cf7fca016e2b0d4b5d124158db3dbd40056efa3c59f2ad15c047f8307f0bb563",
+    "content_hash": "d9036c61efacdac979d8c4b2cce7a081b1a71d20ecb8a59db641df1e2138dff1",
     "external_timestamps": {
-      "data_hash": "cf7fca016e2b0d4b5d124158db3dbd40056efa3c59f2ad15c047f8307f0bb563",
+      "data_hash": "d9036c61efacdac979d8c4b2cce7a081b1a71d20ecb8a59db641df1e2138dff1",
       "timestamps": {
-        "ntp_time": 1755656686.712988,
+        "ntp_time": 1756088971.3246193,
         "ntp_server": "pool.ntp.org",
-        "github_server_time": "Wed, 20 Aug 2025 02:24:28 GMT"
+        "external_time": {
+          "utc_offset": "+07:00",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "day_of_week": 1,
+          "day_of_year": 237,
+          "datetime": "2025-08-25T09:29:31.551591+07:00",
+          "utc_datetime": "2025-08-25T02:29:31.551591+00:00",
+          "unixtime": 1756088971,
+          "raw_offset": 25200,
+          "week_number": 35,
+          "dst": false,
+          "abbreviation": "+07",
+          "dst_offset": 0,
+          "dst_from": null,
+          "dst_until": null,
+          "client_ip": "135.237.130.183"
+        },
+        "github_server_time": "Mon, 25 Aug 2025 02:29:30 GMT"
       },
       "verification_note": "These timestamps are from external sources and cannot be manipulated"
     },
     "network_evidence": {
       "user_agent": "TrustlessWakaTimeLogger/2.0",
-      "request_time": "2025-08-20T02:24:46.965175",
+      "request_time": "2025-08-25T02:29:31.609967",
       "system_info": {
         "platform": "posix",
         "hostname": "unknown"
@@ -167,9 +259,9 @@
     "status_code": 200,
     "response_headers": {
       "Server": "nginx",
-      "Date": "Wed, 20 Aug 2025 02:24:46 GMT",
+      "Date": "Mon, 25 Aug 2025 02:29:31 GMT",
       "Content-Type": "application/json",
-      "Content-Length": "2267",
+      "Content-Length": "3445",
       "Connection": "keep-alive",
       "X-Content-Type-Options": "nosniff",
       "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
@@ -180,8 +272,8 @@
       "Cross-Origin-Opener-Policy": "same-origin",
       "Content-Security-Policy": "default-src 'self'; frame-ancestors 'self'; script-src 'self' 'unsafe-eval' https://www.google.com/ https://www.gstatic.com/ https://*.siteassist.io; img-src 'self' data: https://cdn.loom.com/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.siteassist.io; font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.siteassist.io; media-src 'self' https://*.amazonaws.com; frame-src 'self' https://www.google.com/ https://www.youtube.com/ https://www.loom.com/ player.vimeo.com https://*.siteassist.io; object-src 'self'; connect-src 'self' https://www.google.com/ https://avatar-cdn.atlassian.com https://*.siteassist.io;"
     },
-    "request_duration": 0.42212939262390137,
-    "response_size": 2267
+    "request_duration": 0.38594865798950195,
+    "response_size": 3445
   },
   "metadata": {
     "version": "2.0",

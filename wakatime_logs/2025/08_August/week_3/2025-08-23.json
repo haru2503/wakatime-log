@@ -57,15 +57,32 @@
     "external_timestamps": {
       "data_hash": "1294db1b917b97ff665a2ac8ad8ab13eaf8d15027fc1059c99365d61df36cc43",
       "timestamps": {
-        "ntp_time": 1756003453.414215,
+        "ntp_time": 1756088974.547831,
         "ntp_server": "pool.ntp.org",
-        "github_server_time": "Sun, 24 Aug 2025 02:44:00 GMT"
+        "external_time": {
+          "utc_offset": "+07:00",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "day_of_week": 1,
+          "day_of_year": 237,
+          "datetime": "2025-08-25T09:29:34.918360+07:00",
+          "utc_datetime": "2025-08-25T02:29:34.918360+00:00",
+          "unixtime": 1756088974,
+          "raw_offset": 25200,
+          "week_number": 35,
+          "dst": false,
+          "abbreviation": "+07",
+          "dst_offset": 0,
+          "dst_from": null,
+          "dst_until": null,
+          "client_ip": "135.237.130.183"
+        },
+        "github_server_time": "Mon, 25 Aug 2025 02:29:30 GMT"
       },
       "verification_note": "These timestamps are from external sources and cannot be manipulated"
     },
     "network_evidence": {
       "user_agent": "TrustlessWakaTimeLogger/2.0",
-      "request_time": "2025-08-24T02:44:13.759808",
+      "request_time": "2025-08-25T02:29:34.976820",
       "system_info": {
         "platform": "posix",
         "hostname": "unknown"
@@ -79,7 +96,7 @@
     "status_code": 200,
     "response_headers": {
       "Server": "nginx",
-      "Date": "Sun, 24 Aug 2025 02:44:13 GMT",
+      "Date": "Mon, 25 Aug 2025 02:29:34 GMT",
       "Content-Type": "application/json",
       "Content-Length": "944",
       "Connection": "keep-alive",
@@ -92,7 +109,7 @@
       "Cross-Origin-Opener-Policy": "same-origin",
       "Content-Security-Policy": "default-src 'self'; frame-ancestors 'self'; script-src 'self' 'unsafe-eval' https://www.google.com/ https://www.gstatic.com/ https://*.siteassist.io; img-src 'self' data: https://cdn.loom.com/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.siteassist.io; font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.siteassist.io; media-src 'self' https://*.amazonaws.com; frame-src 'self' https://www.google.com/ https://www.youtube.com/ https://www.loom.com/ player.vimeo.com https://*.siteassist.io; object-src 'self'; connect-src 'self' https://www.google.com/ https://avatar-cdn.atlassian.com https://*.siteassist.io;"
     },
-    "request_duration": 0.08969974517822266,
+    "request_duration": 0.32033395767211914,
     "response_size": 944
   },
   "metadata": {

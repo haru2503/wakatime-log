@@ -2,6 +2,43 @@
   "wakatime_data": {
     "data": [
       {
+        "grand_total": {
+          "hours": 0,
+          "minutes": 7,
+          "total_seconds": 478.351535,
+          "digital": "0:07",
+          "decimal": "0.12",
+          "text": "7 mins",
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0
+        },
+        "range": {
+          "start": "2025-08-19T17:00:00Z",
+          "end": "2025-08-20T16:59:59Z",
+          "date": "2025-08-20",
+          "text": "Wed Aug 20th 2025",
+          "timezone": "Asia/Ho_Chi_Minh"
+        },
+        "projects": [
+          {
+            "name": "Music",
+            "total_seconds": 478.351535,
+            "ai_additions": 0,
+            "ai_deletions": 0,
+            "human_additions": 0,
+            "human_deletions": 0,
+            "color": null,
+            "digital": "0:07:58",
+            "decimal": "0.12",
+            "text": "7 mins",
+            "hours": 0,
+            "minutes": 7,
+            "seconds": 58,
+            "percent": 100.0
+          }
+        ],
         "languages": [
           {
             "name": "SQL",
@@ -26,60 +63,20 @@
             "percent": 13.87
           }
         ],
-        "grand_total": {
-          "hours": 0,
-          "minutes": 7,
-          "total_seconds": 478.351535,
-          "digital": "0:07",
-          "decimal": "0.12",
-          "text": "7 mins",
-          "ai_additions": 0,
-          "ai_deletions": 0,
-          "human_additions": 0,
-          "human_deletions": 0
-        },
-        "editors": [
-          {
-            "name": "VS Code",
-            "total_seconds": 478.351535,
-            "digital": "0:07:58",
-            "decimal": "0.12",
-            "text": "7 mins",
-            "hours": 0,
-            "minutes": 7,
-            "seconds": 58,
-            "percent": 100.0
-          }
-        ],
-        "operating_systems": [
-          {
-            "name": "Linux",
-            "total_seconds": 478.351535,
-            "digital": "0:07:58",
-            "decimal": "0.12",
-            "text": "7 mins",
-            "hours": 0,
-            "minutes": 7,
-            "seconds": 58,
-            "percent": 100.0
-          }
-        ],
-        "categories": [
-          {
-            "name": "Coding",
-            "total_seconds": 478.351535,
-            "digital": "0:07:58",
-            "decimal": "0.12",
-            "text": "7 mins",
-            "hours": 0,
-            "minutes": 7,
-            "seconds": 58,
-            "percent": 100.0
-          }
-        ],
         "dependencies": [
           {
             "name": "datetime",
+            "total_seconds": 66.361926,
+            "digital": "0:01:06",
+            "decimal": "0.02",
+            "text": "1 min",
+            "hours": 0,
+            "minutes": 1,
+            "seconds": 6,
+            "percent": 16.67
+          },
+          {
+            "name": "dataclasses",
             "total_seconds": 66.361926,
             "digital": "0:01:06",
             "decimal": "0.02",
@@ -102,17 +99,6 @@
           },
           {
             "name": "json",
-            "total_seconds": 66.361926,
-            "digital": "0:01:06",
-            "decimal": "0.02",
-            "text": "1 min",
-            "hours": 0,
-            "minutes": 1,
-            "seconds": 6,
-            "percent": 16.67
-          },
-          {
-            "name": "dataclasses",
             "total_seconds": 66.361926,
             "digital": "0:01:06",
             "decimal": "0.02",
@@ -159,14 +145,10 @@
             "percent": 100.0
           }
         ],
-        "projects": [
+        "editors": [
           {
-            "name": "Music",
+            "name": "VS Code",
             "total_seconds": 478.351535,
-            "ai_additions": 0,
-            "ai_deletions": 0,
-            "human_additions": 0,
-            "human_deletions": 0,
             "digital": "0:07:58",
             "decimal": "0.12",
             "text": "7 mins",
@@ -176,17 +158,32 @@
             "percent": 100.0
           }
         ],
-        "range": {
-          "start": "2025-08-19T17:00:00Z",
-          "end": "2025-08-20T16:59:59Z",
-          "date": "2025-08-20",
-          "text": "Wed Aug 20th 2025",
-          "timezone": "Asia/Ho_Chi_Minh"
-        },
-        "ai_additions": 0,
-        "ai_deletions": 0,
-        "human_additions": 0,
-        "human_deletions": 0
+        "operating_systems": [
+          {
+            "name": "Linux",
+            "total_seconds": 478.351535,
+            "digital": "0:07:58",
+            "decimal": "0.12",
+            "text": "7 mins",
+            "hours": 0,
+            "minutes": 7,
+            "seconds": 58,
+            "percent": 100.0
+          }
+        ],
+        "categories": [
+          {
+            "name": "Coding",
+            "total_seconds": 478.351535,
+            "digital": "0:07:58",
+            "decimal": "0.12",
+            "text": "7 mins",
+            "hours": 0,
+            "minutes": 7,
+            "seconds": 58,
+            "percent": 100.0
+          }
+        ]
       }
     ],
     "start": "2025-08-19T17:00:00Z",
@@ -208,36 +205,36 @@
     }
   },
   "authenticity_proof": {
-    "content_hash": "3bb3430c7d6984b8dd14cf35d5d7149040b356069327b2ceab7cf3d3cd663cd1",
+    "content_hash": "17cc687e5cbdc79d74785a5e5a57dd08a56bc6c42ae4689d1ae2ec1d29d6b954",
     "external_timestamps": {
-      "data_hash": "3bb3430c7d6984b8dd14cf35d5d7149040b356069327b2ceab7cf3d3cd663cd1",
+      "data_hash": "17cc687e5cbdc79d74785a5e5a57dd08a56bc6c42ae4689d1ae2ec1d29d6b954",
       "timestamps": {
-        "ntp_time": 1755743044.3091416,
+        "ntp_time": 1756088972.084177,
         "ntp_server": "pool.ntp.org",
         "external_time": {
           "utc_offset": "+07:00",
           "timezone": "Asia/Ho_Chi_Minh",
-          "day_of_week": 4,
-          "day_of_year": 233,
-          "datetime": "2025-08-21T09:24:04.656420+07:00",
-          "utc_datetime": "2025-08-21T02:24:04.656420+00:00",
-          "unixtime": 1755743044,
+          "day_of_week": 1,
+          "day_of_year": 237,
+          "datetime": "2025-08-25T09:29:32.274926+07:00",
+          "utc_datetime": "2025-08-25T02:29:32.274926+00:00",
+          "unixtime": 1756088972,
           "raw_offset": 25200,
-          "week_number": 34,
+          "week_number": 35,
           "dst": false,
           "abbreviation": "+07",
           "dst_offset": 0,
           "dst_from": null,
           "dst_until": null,
-          "client_ip": "20.161.28.177"
+          "client_ip": "135.237.130.183"
         },
-        "github_server_time": "Thu, 21 Aug 2025 02:23:59 GMT"
+        "github_server_time": "Mon, 25 Aug 2025 02:29:30 GMT"
       },
       "verification_note": "These timestamps are from external sources and cannot be manipulated"
     },
     "network_evidence": {
       "user_agent": "TrustlessWakaTimeLogger/2.0",
-      "request_time": "2025-08-21T02:24:04.713649",
+      "request_time": "2025-08-25T02:29:32.335112",
       "system_info": {
         "platform": "posix",
         "hostname": "unknown"
@@ -251,9 +248,9 @@
     "status_code": 200,
     "response_headers": {
       "Server": "nginx",
-      "Date": "Thu, 21 Aug 2025 02:24:04 GMT",
+      "Date": "Mon, 25 Aug 2025 02:29:31 GMT",
       "Content-Type": "application/json",
-      "Content-Length": "3240",
+      "Content-Length": "3173",
       "Connection": "keep-alive",
       "X-Content-Type-Options": "nosniff",
       "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
@@ -264,8 +261,8 @@
       "Cross-Origin-Opener-Policy": "same-origin",
       "Content-Security-Policy": "default-src 'self'; frame-ancestors 'self'; script-src 'self' 'unsafe-eval' https://www.google.com/ https://www.gstatic.com/ https://*.siteassist.io; img-src 'self' data: https://cdn.loom.com/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.siteassist.io; font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.siteassist.io; media-src 'self' https://*.amazonaws.com; frame-src 'self' https://www.google.com/ https://www.youtube.com/ https://www.loom.com/ player.vimeo.com https://*.siteassist.io; object-src 'self'; connect-src 'self' https://www.google.com/ https://avatar-cdn.atlassian.com https://*.siteassist.io;"
     },
-    "request_duration": 0.37743186950683594,
-    "response_size": 3240
+    "request_duration": 0.35066843032836914,
+    "response_size": 3173
   },
   "metadata": {
     "version": "2.0",
