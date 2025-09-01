@@ -180,32 +180,32 @@
     "external_timestamps": {
       "data_hash": "176e2d72b3e04a39f8852aef294b7f43053974c798e96908f1632db8631599a9",
       "timestamps": {
-        "ntp_time": 1756175155.0276513,
+        "ntp_time": 1756694828.6999745,
         "ntp_server": "pool.ntp.org",
         "external_time": {
           "utc_offset": "+07:00",
           "timezone": "Asia/Ho_Chi_Minh",
-          "day_of_week": 2,
-          "day_of_year": 238,
-          "datetime": "2025-08-26T09:25:55.640684+07:00",
-          "utc_datetime": "2025-08-26T02:25:55.640684+00:00",
-          "unixtime": 1756175155,
+          "day_of_week": 1,
+          "day_of_year": 244,
+          "datetime": "2025-09-01T09:47:09.034479+07:00",
+          "utc_datetime": "2025-09-01T02:47:09.034479+00:00",
+          "unixtime": 1756694829,
           "raw_offset": 25200,
-          "week_number": 35,
+          "week_number": 36,
           "dst": false,
           "abbreviation": "+07",
           "dst_offset": 0,
           "dst_from": null,
           "dst_until": null,
-          "client_ip": "172.174.166.198"
+          "client_ip": "145.132.101.187"
         },
-        "github_server_time": "Tue, 26 Aug 2025 02:25:55 GMT"
+        "github_server_time": "Mon, 01 Sep 2025 02:47:05 GMT"
       },
       "verification_note": "These timestamps are from external sources and cannot be manipulated"
     },
     "network_evidence": {
       "user_agent": "TrustlessWakaTimeLogger/2.0",
-      "request_time": "2025-08-26T02:25:55.709787",
+      "request_time": "2025-09-01T02:47:09.132720",
       "system_info": {
         "platform": "posix",
         "hostname": "unknown"
@@ -219,7 +219,7 @@
     "status_code": 200,
     "response_headers": {
       "Server": "nginx",
-      "Date": "Tue, 26 Aug 2025 02:25:54 GMT",
+      "Date": "Mon, 01 Sep 2025 02:47:08 GMT",
       "Content-Type": "application/json",
       "Content-Length": "2788",
       "Connection": "keep-alive",
@@ -232,7 +232,7 @@
       "Cross-Origin-Opener-Policy": "same-origin",
       "Content-Security-Policy": "default-src 'self'; frame-ancestors 'self'; script-src 'self' 'unsafe-eval' https://www.google.com/ https://www.gstatic.com/ https://*.siteassist.io; img-src 'self' data: https://cdn.loom.com/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.siteassist.io; font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.siteassist.io; media-src 'self' https://*.amazonaws.com; frame-src 'self' https://www.google.com/ https://www.youtube.com/ https://www.loom.com/ player.vimeo.com https://*.siteassist.io; object-src 'self'; connect-src 'self' https://www.google.com/ https://avatar-cdn.atlassian.com https://*.siteassist.io;"
     },
-    "request_duration": 0.9100997447967529,
+    "request_duration": 0.6480627059936523,
     "response_size": 2788
   },
   "metadata": {
