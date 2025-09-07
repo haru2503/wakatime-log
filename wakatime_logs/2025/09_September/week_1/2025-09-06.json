@@ -1,0 +1,248 @@
+{
+  "wakatime_data": {
+    "data": [
+      {
+        "languages": [
+          {
+            "name": "Python",
+            "total_seconds": 783.618833,
+            "digital": "0:13:03",
+            "decimal": "0.22",
+            "text": "13 mins",
+            "hours": 0,
+            "minutes": 13,
+            "seconds": 3,
+            "percent": 100.0
+          }
+        ],
+        "grand_total": {
+          "hours": 0,
+          "minutes": 13,
+          "total_seconds": 783.618833,
+          "digital": "0:13",
+          "decimal": "0.22",
+          "text": "13 mins",
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0
+        },
+        "editors": [
+          {
+            "name": "VS Code",
+            "total_seconds": 783.618833,
+            "digital": "0:13:03",
+            "decimal": "0.22",
+            "text": "13 mins",
+            "hours": 0,
+            "minutes": 13,
+            "seconds": 3,
+            "percent": 100.0
+          }
+        ],
+        "operating_systems": [
+          {
+            "name": "Linux",
+            "total_seconds": 783.618833,
+            "digital": "0:13:03",
+            "decimal": "0.22",
+            "text": "13 mins",
+            "hours": 0,
+            "minutes": 13,
+            "seconds": 3,
+            "percent": 100.0
+          }
+        ],
+        "categories": [
+          {
+            "name": "Coding",
+            "total_seconds": 783.618833,
+            "digital": "0:13:03",
+            "decimal": "0.22",
+            "text": "13 mins",
+            "hours": 0,
+            "minutes": 13,
+            "seconds": 3,
+            "percent": 100.0
+          }
+        ],
+        "dependencies": [
+          {
+            "name": "random",
+            "total_seconds": 783.618833,
+            "digital": "0:13:03",
+            "decimal": "0.22",
+            "text": "13 mins",
+            "hours": 0,
+            "minutes": 13,
+            "seconds": 3,
+            "percent": 16.67
+          },
+          {
+            "name": "math",
+            "total_seconds": 783.618833,
+            "digital": "0:13:03",
+            "decimal": "0.22",
+            "text": "13 mins",
+            "hours": 0,
+            "minutes": 13,
+            "seconds": 3,
+            "percent": 16.67
+          },
+          {
+            "name": "PIL",
+            "total_seconds": 783.618833,
+            "digital": "0:13:03",
+            "decimal": "0.22",
+            "text": "13 mins",
+            "hours": 0,
+            "minutes": 13,
+            "seconds": 3,
+            "percent": 16.67
+          },
+          {
+            "name": "uuid",
+            "total_seconds": 783.618833,
+            "digital": "0:13:03",
+            "decimal": "0.22",
+            "text": "13 mins",
+            "hours": 0,
+            "minutes": 13,
+            "seconds": 3,
+            "percent": 16.67
+          },
+          {
+            "name": "discord",
+            "total_seconds": 783.618833,
+            "digital": "0:13:03",
+            "decimal": "0.22",
+            "text": "13 mins",
+            "hours": 0,
+            "minutes": 13,
+            "seconds": 3,
+            "percent": 16.67
+          },
+          {
+            "name": "io",
+            "total_seconds": 783.618833,
+            "digital": "0:13:03",
+            "decimal": "0.22",
+            "text": "13 mins",
+            "hours": 0,
+            "minutes": 13,
+            "seconds": 3,
+            "percent": 16.67
+          }
+        ],
+        "machines": [
+          {
+            "name": "haru",
+            "total_seconds": 783.618833,
+            "machine_name_id": "2092c93d-64df-4158-9ebe-ec9b24907e94",
+            "digital": "0:13:03",
+            "decimal": "0.22",
+            "text": "13 mins",
+            "hours": 0,
+            "minutes": 13,
+            "seconds": 3,
+            "percent": 100.0
+          }
+        ],
+        "projects": [
+          {
+            "name": "lumia-bot",
+            "total_seconds": 783.618833,
+            "ai_additions": 0,
+            "ai_deletions": 0,
+            "human_additions": 0,
+            "human_deletions": 0,
+            "digital": "0:13:03",
+            "decimal": "0.22",
+            "text": "13 mins",
+            "hours": 0,
+            "minutes": 13,
+            "seconds": 3,
+            "percent": 100.0
+          }
+        ],
+        "range": {
+          "start": "2025-09-05T17:00:00Z",
+          "end": "2025-09-06T16:59:59Z",
+          "date": "2025-09-06",
+          "text": "Sat Sep 6th 2025",
+          "timezone": "Asia/Ho_Chi_Minh"
+        },
+        "ai_additions": 0,
+        "ai_deletions": 0,
+        "human_additions": 0,
+        "human_deletions": 0
+      }
+    ],
+    "start": "2025-09-05T17:00:00Z",
+    "end": "2025-09-06T16:59:59Z",
+    "cumulative_total": {
+      "seconds": 783.618833,
+      "text": "13 mins",
+      "digital": "0:13",
+      "decimal": "0.22"
+    },
+    "daily_average": {
+      "holidays": 0,
+      "days_minus_holidays": 1,
+      "days_including_holidays": 1,
+      "seconds": 784,
+      "seconds_including_other_language": 784,
+      "text": "13 mins",
+      "text_including_other_language": "13 mins"
+    }
+  },
+  "authenticity_proof": {
+    "content_hash": "bdb3165495db54ccf306f47dfb27b6be1c9d7b00f71f984522bbf64ad6a66b52",
+    "external_timestamps": {
+      "data_hash": "bdb3165495db54ccf306f47dfb27b6be1c9d7b00f71f984522bbf64ad6a66b52",
+      "timestamps": {
+        "ntp_time": 1757211698.1861496,
+        "ntp_server": "pool.ntp.org",
+        "github_server_time": "Sun, 07 Sep 2025 02:21:33 GMT"
+      },
+      "verification_note": "These timestamps are from external sources and cannot be manipulated"
+    },
+    "network_evidence": {
+      "user_agent": "TrustlessWakaTimeLogger/2.0",
+      "request_time": "2025-09-07T02:21:38.443231",
+      "system_info": {
+        "platform": "posix",
+        "hostname": "unknown"
+      }
+    },
+    "authenticity_note": "This data cannot be fabricated due to external verifications"
+  },
+  "request_proof": {
+    "url": "https://wakatime.com/api/v1/users/current/summaries?start=2025-09-06&end=2025-09-06",
+    "method": "GET",
+    "status_code": 200,
+    "response_headers": {
+      "Server": "nginx",
+      "Date": "Sun, 07 Sep 2025 02:21:38 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "3100",
+      "Connection": "keep-alive",
+      "X-Content-Type-Options": "nosniff",
+      "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+      "X-XSS-Protection": "1; mode=block",
+      "Feature-Policy": "accelerometer 'none';autoplay 'self';camera 'none';fullscreen 'self';geolocation 'none';gyroscope 'none';magnetometer 'none';microphone 'none';midi 'none';payment 'self';picture-in-picture 'none';sync-xhr 'self';usb 'none';",
+      "Referrer-Policy": "strict-origin-when-cross-origin",
+      "X-Frame-Options": "SAMEORIGIN",
+      "Cross-Origin-Opener-Policy": "same-origin",
+      "Content-Security-Policy": "default-src 'self'; frame-ancestors 'self'; script-src 'self' 'unsafe-eval' https://www.google.com/ https://www.gstatic.com/ https://*.siteassist.io https://cnrib24ur3hk4b49.public.blob.vercel-storage.com/; img-src 'self' data: https://cdn.loom.com/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.siteassist.io; font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.siteassist.io; media-src 'self' https://*.amazonaws.com; frame-src 'self' https://www.google.com/ https://www.youtube.com/ https://www.loom.com/ player.vimeo.com https://*.siteassist.io; object-src 'self'; connect-src 'self' https://www.google.com/ https://avatar-cdn.atlassian.com https://*.siteassist.io https://cnrib24ur3hk4b49.public.blob.vercel-storage.com/;"
+    },
+    "request_duration": 0.4477224349975586,
+    "response_size": 3100
+  },
+  "metadata": {
+    "version": "2.0",
+    "date_fetched": "2025-09-06",
+    "script_name": "TrustlessWakaTimeLogger",
+    "trustless_note": "This file contains multiple external verifications that make fabrication impossible"
+  }
+}
