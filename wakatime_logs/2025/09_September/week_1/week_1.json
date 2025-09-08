@@ -1,0 +1,757 @@
+{
+  "week_dates": [
+    "2025-09-01",
+    "2025-09-02",
+    "2025-09-03",
+    "2025-09-04",
+    "2025-09-05",
+    "2025-09-06",
+    "2025-09-07"
+  ],
+  "total_coding_time": 51277.385356000006,
+  "daily_avg_coding_time": 7325.340765142858,
+  "daily_summaries": [
+    {
+      "date": "2025-09-01",
+      "total_coding_time": 5526.073741,
+      "categories": [
+        {
+          "name": "Coding",
+          "total_seconds": 5526.073741,
+          "digital": "1:32:06",
+          "decimal": "1.53",
+          "text": "1 hr 32 mins",
+          "hours": 1,
+          "minutes": 32,
+          "seconds": 6,
+          "percent": 100.0
+        }
+      ],
+      "languages": [
+        {
+          "name": "Python",
+          "total_seconds": 5526.073741,
+          "digital": "1:32:06",
+          "decimal": "1.53",
+          "text": "1 hr 32 mins",
+          "hours": 1,
+          "minutes": 32,
+          "seconds": 6,
+          "percent": 100.0
+        }
+      ],
+      "projects": [
+        {
+          "name": "lumia-bot",
+          "total_seconds": 5526.073741,
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0,
+          "color": null,
+          "digital": "1:32:06",
+          "decimal": "1.53",
+          "text": "1 hr 32 mins",
+          "hours": 1,
+          "minutes": 32,
+          "seconds": 6,
+          "percent": 100.0
+        }
+      ],
+      "editors": [
+        {
+          "name": "VS Code",
+          "total_seconds": 5526.073741,
+          "digital": "1:32:06",
+          "decimal": "1.53",
+          "text": "1 hr 32 mins",
+          "hours": 1,
+          "minutes": 32,
+          "seconds": 6,
+          "percent": 100.0
+        }
+      ],
+      "machines": [
+        {
+          "name": "haru",
+          "total_seconds": 5526.073741,
+          "machine_name_id": "2092c93d-64df-4158-9ebe-ec9b24907e94",
+          "digital": "1:32:06",
+          "decimal": "1.53",
+          "text": "1 hr 32 mins",
+          "hours": 1,
+          "minutes": 32,
+          "seconds": 6,
+          "percent": 100.0
+        }
+      ],
+      "operating_systems": [
+        {
+          "name": "Linux",
+          "total_seconds": 5526.073741,
+          "digital": "1:32:06",
+          "decimal": "1.53",
+          "text": "1 hr 32 mins",
+          "hours": 1,
+          "minutes": 32,
+          "seconds": 6,
+          "percent": 100.0
+        }
+      ]
+    },
+    {
+      "date": "2025-09-02",
+      "total_coding_time": 6265.560365,
+      "categories": [
+        {
+          "name": "Coding",
+          "total_seconds": 6265.560365,
+          "digital": "1:44:25",
+          "decimal": "1.73",
+          "text": "1 hr 44 mins",
+          "hours": 1,
+          "minutes": 44,
+          "seconds": 25,
+          "percent": 100.0
+        }
+      ],
+      "languages": [
+        {
+          "name": "Python",
+          "total_seconds": 6063.010048,
+          "digital": "1:41:03",
+          "decimal": "1.68",
+          "text": "1 hr 41 mins",
+          "hours": 1,
+          "minutes": 41,
+          "seconds": 3,
+          "percent": 96.77
+        },
+        {
+          "name": "Other",
+          "total_seconds": 202.550317,
+          "digital": "0:03:22",
+          "decimal": "0.05",
+          "text": "3 mins",
+          "hours": 0,
+          "minutes": 3,
+          "seconds": 22,
+          "percent": 3.23
+        }
+      ],
+      "projects": [
+        {
+          "name": "lumia-bot",
+          "total_seconds": 4444.251387,
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0,
+          "color": null,
+          "digital": "1:14:04",
+          "decimal": "1.23",
+          "text": "1 hr 14 mins",
+          "hours": 1,
+          "minutes": 14,
+          "seconds": 4,
+          "percent": 70.93
+        },
+        {
+          "name": "discord_bot",
+          "total_seconds": 1400.651742,
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0,
+          "color": null,
+          "digital": "0:23:20",
+          "decimal": "0.38",
+          "text": "23 mins",
+          "hours": 0,
+          "minutes": 23,
+          "seconds": 20,
+          "percent": 22.35
+        },
+        {
+          "name": "poker",
+          "total_seconds": 420.657236,
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0,
+          "color": null,
+          "digital": "0:07:00",
+          "decimal": "0.12",
+          "text": "7 mins",
+          "hours": 0,
+          "minutes": 7,
+          "seconds": 0,
+          "percent": 6.71
+        }
+      ],
+      "editors": [
+        {
+          "name": "VS Code",
+          "total_seconds": 6265.560365,
+          "digital": "1:44:25",
+          "decimal": "1.73",
+          "text": "1 hr 44 mins",
+          "hours": 1,
+          "minutes": 44,
+          "seconds": 25,
+          "percent": 100.0
+        }
+      ],
+      "machines": [
+        {
+          "name": "haru",
+          "total_seconds": 6265.560365,
+          "machine_name_id": "2092c93d-64df-4158-9ebe-ec9b24907e94",
+          "digital": "1:44:25",
+          "decimal": "1.73",
+          "text": "1 hr 44 mins",
+          "hours": 1,
+          "minutes": 44,
+          "seconds": 25,
+          "percent": 100.0
+        }
+      ],
+      "operating_systems": [
+        {
+          "name": "Linux",
+          "total_seconds": 6265.560365,
+          "digital": "1:44:25",
+          "decimal": "1.73",
+          "text": "1 hr 44 mins",
+          "hours": 1,
+          "minutes": 44,
+          "seconds": 25,
+          "percent": 100.0
+        }
+      ]
+    },
+    {
+      "date": "2025-09-03",
+      "total_coding_time": 8260.447075,
+      "categories": [
+        {
+          "name": "Coding",
+          "total_seconds": 8260.447075,
+          "digital": "2:17:40",
+          "decimal": "2.28",
+          "text": "2 hrs 17 mins",
+          "hours": 2,
+          "minutes": 17,
+          "seconds": 40,
+          "percent": 100.0
+        }
+      ],
+      "languages": [
+        {
+          "name": "Python",
+          "total_seconds": 8084.237167,
+          "digital": "2:14:44",
+          "decimal": "2.23",
+          "text": "2 hrs 14 mins",
+          "hours": 2,
+          "minutes": 14,
+          "seconds": 44,
+          "percent": 97.87
+        },
+        {
+          "name": "Other",
+          "total_seconds": 176.209908,
+          "digital": "0:02:56",
+          "decimal": "0.03",
+          "text": "2 mins",
+          "hours": 0,
+          "minutes": 2,
+          "seconds": 56,
+          "percent": 2.13
+        }
+      ],
+      "projects": [
+        {
+          "name": "lumia-bot",
+          "total_seconds": 7398.249824,
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0,
+          "color": null,
+          "digital": "2:03:18",
+          "decimal": "2.05",
+          "text": "2 hrs 3 mins",
+          "hours": 2,
+          "minutes": 3,
+          "seconds": 18,
+          "percent": 89.56
+        },
+        {
+          "name": "discord_bot",
+          "total_seconds": 588.732086,
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0,
+          "color": null,
+          "digital": "0:09:48",
+          "decimal": "0.15",
+          "text": "9 mins",
+          "hours": 0,
+          "minutes": 9,
+          "seconds": 48,
+          "percent": 7.13
+        },
+        {
+          "name": "poker",
+          "total_seconds": 273.465165,
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0,
+          "color": null,
+          "digital": "0:04:33",
+          "decimal": "0.07",
+          "text": "4 mins",
+          "hours": 0,
+          "minutes": 4,
+          "seconds": 33,
+          "percent": 3.31
+        }
+      ],
+      "editors": [
+        {
+          "name": "VS Code",
+          "total_seconds": 8260.447075,
+          "digital": "2:17:40",
+          "decimal": "2.28",
+          "text": "2 hrs 17 mins",
+          "hours": 2,
+          "minutes": 17,
+          "seconds": 40,
+          "percent": 100.0
+        }
+      ],
+      "machines": [
+        {
+          "name": "haru",
+          "total_seconds": 8260.447075,
+          "machine_name_id": "2092c93d-64df-4158-9ebe-ec9b24907e94",
+          "digital": "2:17:40",
+          "decimal": "2.28",
+          "text": "2 hrs 17 mins",
+          "hours": 2,
+          "minutes": 17,
+          "seconds": 40,
+          "percent": 100.0
+        }
+      ],
+      "operating_systems": [
+        {
+          "name": "Linux",
+          "total_seconds": 8260.447075,
+          "digital": "2:17:40",
+          "decimal": "2.28",
+          "text": "2 hrs 17 mins",
+          "hours": 2,
+          "minutes": 17,
+          "seconds": 40,
+          "percent": 100.0
+        }
+      ]
+    },
+    {
+      "date": "2025-09-04",
+      "total_coding_time": 13376.691485,
+      "categories": [
+        {
+          "name": "Coding",
+          "total_seconds": 13376.691485,
+          "digital": "3:42:56",
+          "decimal": "3.70",
+          "text": "3 hrs 42 mins",
+          "hours": 3,
+          "minutes": 42,
+          "seconds": 56,
+          "percent": 100.0
+        }
+      ],
+      "languages": [
+        {
+          "name": "Python",
+          "total_seconds": 13376.691485,
+          "digital": "3:42:56",
+          "decimal": "3.70",
+          "text": "3 hrs 42 mins",
+          "hours": 3,
+          "minutes": 42,
+          "seconds": 56,
+          "percent": 100.0
+        }
+      ],
+      "projects": [
+        {
+          "name": "lumia-bot",
+          "total_seconds": 13376.691485,
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0,
+          "color": null,
+          "digital": "3:42:56",
+          "decimal": "3.70",
+          "text": "3 hrs 42 mins",
+          "hours": 3,
+          "minutes": 42,
+          "seconds": 56,
+          "percent": 100.0
+        }
+      ],
+      "editors": [
+        {
+          "name": "VS Code",
+          "total_seconds": 13376.691485,
+          "digital": "3:42:56",
+          "decimal": "3.70",
+          "text": "3 hrs 42 mins",
+          "hours": 3,
+          "minutes": 42,
+          "seconds": 56,
+          "percent": 100.0
+        }
+      ],
+      "machines": [
+        {
+          "name": "haru",
+          "total_seconds": 13376.691485,
+          "machine_name_id": "2092c93d-64df-4158-9ebe-ec9b24907e94",
+          "digital": "3:42:56",
+          "decimal": "3.70",
+          "text": "3 hrs 42 mins",
+          "hours": 3,
+          "minutes": 42,
+          "seconds": 56,
+          "percent": 100.0
+        }
+      ],
+      "operating_systems": [
+        {
+          "name": "Linux",
+          "total_seconds": 13376.691485,
+          "digital": "3:42:56",
+          "decimal": "3.70",
+          "text": "3 hrs 42 mins",
+          "hours": 3,
+          "minutes": 42,
+          "seconds": 56,
+          "percent": 100.0
+        }
+      ]
+    },
+    {
+      "date": "2025-09-05",
+      "total_coding_time": 7669.31126,
+      "categories": [
+        {
+          "name": "Coding",
+          "total_seconds": 7669.31126,
+          "digital": "2:07:49",
+          "decimal": "2.12",
+          "text": "2 hrs 7 mins",
+          "hours": 2,
+          "minutes": 7,
+          "seconds": 49,
+          "percent": 100.0
+        }
+      ],
+      "languages": [
+        {
+          "name": "Python",
+          "total_seconds": 6923.54021,
+          "digital": "1:55:23",
+          "decimal": "1.92",
+          "text": "1 hr 55 mins",
+          "hours": 1,
+          "minutes": 55,
+          "seconds": 23,
+          "percent": 90.28
+        },
+        {
+          "name": "Other",
+          "total_seconds": 734.147694,
+          "digital": "0:12:14",
+          "decimal": "0.20",
+          "text": "12 mins",
+          "hours": 0,
+          "minutes": 12,
+          "seconds": 14,
+          "percent": 9.57
+        },
+        {
+          "name": "Git Config",
+          "total_seconds": 11.623356,
+          "digital": "0:00:11",
+          "decimal": "0.00",
+          "text": "11 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 11,
+          "percent": 0.15
+        }
+      ],
+      "projects": [
+        {
+          "name": "lumia-bot",
+          "total_seconds": 7669.31126,
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0,
+          "color": null,
+          "digital": "2:07:49",
+          "decimal": "2.12",
+          "text": "2 hrs 7 mins",
+          "hours": 2,
+          "minutes": 7,
+          "seconds": 49,
+          "percent": 100.0
+        }
+      ],
+      "editors": [
+        {
+          "name": "VS Code",
+          "total_seconds": 7669.31126,
+          "digital": "2:07:49",
+          "decimal": "2.12",
+          "text": "2 hrs 7 mins",
+          "hours": 2,
+          "minutes": 7,
+          "seconds": 49,
+          "percent": 100.0
+        }
+      ],
+      "machines": [
+        {
+          "name": "haru",
+          "total_seconds": 7669.31126,
+          "machine_name_id": "2092c93d-64df-4158-9ebe-ec9b24907e94",
+          "digital": "2:07:49",
+          "decimal": "2.12",
+          "text": "2 hrs 7 mins",
+          "hours": 2,
+          "minutes": 7,
+          "seconds": 49,
+          "percent": 100.0
+        }
+      ],
+      "operating_systems": [
+        {
+          "name": "Linux",
+          "total_seconds": 7669.31126,
+          "digital": "2:07:49",
+          "decimal": "2.12",
+          "text": "2 hrs 7 mins",
+          "hours": 2,
+          "minutes": 7,
+          "seconds": 49,
+          "percent": 100.0
+        }
+      ]
+    },
+    {
+      "date": "2025-09-06",
+      "total_coding_time": 783.618833,
+      "categories": [
+        {
+          "name": "Coding",
+          "total_seconds": 783.618833,
+          "digital": "0:13:03",
+          "decimal": "0.22",
+          "text": "13 mins",
+          "hours": 0,
+          "minutes": 13,
+          "seconds": 3,
+          "percent": 100.0
+        }
+      ],
+      "languages": [
+        {
+          "name": "Python",
+          "total_seconds": 783.618833,
+          "digital": "0:13:03",
+          "decimal": "0.22",
+          "text": "13 mins",
+          "hours": 0,
+          "minutes": 13,
+          "seconds": 3,
+          "percent": 100.0
+        }
+      ],
+      "projects": [
+        {
+          "name": "lumia-bot",
+          "total_seconds": 783.618833,
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0,
+          "digital": "0:13:03",
+          "decimal": "0.22",
+          "text": "13 mins",
+          "hours": 0,
+          "minutes": 13,
+          "seconds": 3,
+          "percent": 100.0
+        }
+      ],
+      "editors": [
+        {
+          "name": "VS Code",
+          "total_seconds": 783.618833,
+          "digital": "0:13:03",
+          "decimal": "0.22",
+          "text": "13 mins",
+          "hours": 0,
+          "minutes": 13,
+          "seconds": 3,
+          "percent": 100.0
+        }
+      ],
+      "machines": [
+        {
+          "name": "haru",
+          "total_seconds": 783.618833,
+          "machine_name_id": "2092c93d-64df-4158-9ebe-ec9b24907e94",
+          "digital": "0:13:03",
+          "decimal": "0.22",
+          "text": "13 mins",
+          "hours": 0,
+          "minutes": 13,
+          "seconds": 3,
+          "percent": 100.0
+        }
+      ],
+      "operating_systems": [
+        {
+          "name": "Linux",
+          "total_seconds": 783.618833,
+          "digital": "0:13:03",
+          "decimal": "0.22",
+          "text": "13 mins",
+          "hours": 0,
+          "minutes": 13,
+          "seconds": 3,
+          "percent": 100.0
+        }
+      ]
+    },
+    {
+      "date": "2025-09-07",
+      "total_coding_time": 9395.682597,
+      "categories": [
+        {
+          "name": "Coding",
+          "total_seconds": 9395.682597,
+          "digital": "2:36:35",
+          "decimal": "2.60",
+          "text": "2 hrs 36 mins",
+          "hours": 2,
+          "minutes": 36,
+          "seconds": 35,
+          "percent": 100.0
+        }
+      ],
+      "languages": [
+        {
+          "name": "Python",
+          "total_seconds": 9395.682597,
+          "digital": "2:36:35",
+          "decimal": "2.60",
+          "text": "2 hrs 36 mins",
+          "hours": 2,
+          "minutes": 36,
+          "seconds": 35,
+          "percent": 100.0
+        }
+      ],
+      "projects": [
+        {
+          "name": "lumia-bot",
+          "total_seconds": 9395.682597,
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0,
+          "digital": "2:36:35",
+          "decimal": "2.60",
+          "text": "2 hrs 36 mins",
+          "hours": 2,
+          "minutes": 36,
+          "seconds": 35,
+          "percent": 100.0
+        },
+        {
+          "name": "poker",
+          "total_seconds": 0.0,
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0,
+          "digital": "0:00:00",
+          "decimal": "0.00",
+          "text": "0 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 0,
+          "percent": 0.0
+        }
+      ],
+      "editors": [
+        {
+          "name": "VS Code",
+          "total_seconds": 9395.682597,
+          "digital": "2:36:35",
+          "decimal": "2.60",
+          "text": "2 hrs 36 mins",
+          "hours": 2,
+          "minutes": 36,
+          "seconds": 35,
+          "percent": 100.0
+        }
+      ],
+      "machines": [
+        {
+          "name": "haru",
+          "total_seconds": 9395.682597,
+          "machine_name_id": "2092c93d-64df-4158-9ebe-ec9b24907e94",
+          "digital": "2:36:35",
+          "decimal": "2.60",
+          "text": "2 hrs 36 mins",
+          "hours": 2,
+          "minutes": 36,
+          "seconds": 35,
+          "percent": 100.0
+        }
+      ],
+      "operating_systems": [
+        {
+          "name": "Linux",
+          "total_seconds": 9395.682597,
+          "digital": "2:36:35",
+          "decimal": "2.60",
+          "text": "2 hrs 36 mins",
+          "hours": 2,
+          "minutes": 36,
+          "seconds": 35,
+          "percent": 100.0
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "generated_at": "2025-09-08T02:23:01.528934",
+    "days_with_data": 7,
+    "total_days": 7
+  }
+}
