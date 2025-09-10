@@ -1,0 +1,364 @@
+{
+  "wakatime_data": {
+    "data": [
+      {
+        "languages": [
+          {
+            "name": "Python",
+            "total_seconds": 7678.236518,
+            "digital": "2:07:58",
+            "decimal": "2.12",
+            "text": "2 hrs 7 mins",
+            "hours": 2,
+            "minutes": 7,
+            "seconds": 58,
+            "percent": 85.8
+          },
+          {
+            "name": "Other",
+            "total_seconds": 1270.769902,
+            "digital": "0:21:10",
+            "decimal": "0.35",
+            "text": "21 mins",
+            "hours": 0,
+            "minutes": 21,
+            "seconds": 10,
+            "percent": 14.2
+          }
+        ],
+        "grand_total": {
+          "hours": 2,
+          "minutes": 29,
+          "total_seconds": 8949.00642,
+          "digital": "2:29",
+          "decimal": "2.48",
+          "text": "2 hrs 29 mins",
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0
+        },
+        "editors": [
+          {
+            "name": "VS Code",
+            "total_seconds": 8949.00642,
+            "digital": "2:29:09",
+            "decimal": "2.48",
+            "text": "2 hrs 29 mins",
+            "hours": 2,
+            "minutes": 29,
+            "seconds": 9,
+            "percent": 100.0
+          }
+        ],
+        "operating_systems": [
+          {
+            "name": "Linux",
+            "total_seconds": 8949.00642,
+            "digital": "2:29:09",
+            "decimal": "2.48",
+            "text": "2 hrs 29 mins",
+            "hours": 2,
+            "minutes": 29,
+            "seconds": 9,
+            "percent": 100.0
+          }
+        ],
+        "categories": [
+          {
+            "name": "Coding",
+            "total_seconds": 8949.00642,
+            "digital": "2:29:09",
+            "decimal": "2.48",
+            "text": "2 hrs 29 mins",
+            "hours": 2,
+            "minutes": 29,
+            "seconds": 9,
+            "percent": 100.0
+          }
+        ],
+        "dependencies": [
+          {
+            "name": "discord",
+            "total_seconds": 7268.222573,
+            "digital": "2:01:08",
+            "decimal": "2.02",
+            "text": "2 hrs 1 min",
+            "hours": 2,
+            "minutes": 1,
+            "seconds": 8,
+            "percent": 23.91
+          },
+          {
+            "name": "random",
+            "total_seconds": 7268.222573,
+            "digital": "2:01:08",
+            "decimal": "2.02",
+            "text": "2 hrs 1 min",
+            "hours": 2,
+            "minutes": 1,
+            "seconds": 8,
+            "percent": 23.91
+          },
+          {
+            "name": "asyncio",
+            "total_seconds": 7223.780625,
+            "digital": "2:00:23",
+            "decimal": "2.00",
+            "text": "2 hrs",
+            "hours": 2,
+            "minutes": 0,
+            "seconds": 23,
+            "percent": 23.77
+          },
+          {
+            "name": "uuid",
+            "total_seconds": 6975.44863,
+            "digital": "1:56:15",
+            "decimal": "1.93",
+            "text": "1 hr 56 mins",
+            "hours": 1,
+            "minutes": 56,
+            "seconds": 15,
+            "percent": 22.95
+          },
+          {
+            "name": "io",
+            "total_seconds": 452.244702,
+            "digital": "0:07:32",
+            "decimal": "0.12",
+            "text": "7 mins",
+            "hours": 0,
+            "minutes": 7,
+            "seconds": 32,
+            "percent": 1.49
+          },
+          {
+            "name": "math",
+            "total_seconds": 452.244702,
+            "digital": "0:07:32",
+            "decimal": "0.12",
+            "text": "7 mins",
+            "hours": 0,
+            "minutes": 7,
+            "seconds": 32,
+            "percent": 1.49
+          },
+          {
+            "name": "PIL",
+            "total_seconds": 452.244702,
+            "digital": "0:07:32",
+            "decimal": "0.12",
+            "text": "7 mins",
+            "hours": 0,
+            "minutes": 7,
+            "seconds": 32,
+            "percent": 1.49
+          },
+          {
+            "name": "logging",
+            "total_seconds": 66.560981,
+            "digital": "0:01:06",
+            "decimal": "0.02",
+            "text": "1 min",
+            "hours": 0,
+            "minutes": 1,
+            "seconds": 6,
+            "percent": 0.22
+          },
+          {
+            "name": "sqlite3",
+            "total_seconds": 66.560981,
+            "digital": "0:01:06",
+            "decimal": "0.02",
+            "text": "1 min",
+            "hours": 0,
+            "minutes": 1,
+            "seconds": 6,
+            "percent": 0.22
+          },
+          {
+            "name": "games",
+            "total_seconds": 66.560981,
+            "digital": "0:01:06",
+            "decimal": "0.02",
+            "text": "1 min",
+            "hours": 0,
+            "minutes": 1,
+            "seconds": 6,
+            "percent": 0.22
+          },
+          {
+            "name": "dotenv",
+            "total_seconds": 66.560981,
+            "digital": "0:01:06",
+            "decimal": "0.02",
+            "text": "1 min",
+            "hours": 0,
+            "minutes": 1,
+            "seconds": 6,
+            "percent": 0.22
+          },
+          {
+            "name": "enum",
+            "total_seconds": 32.259514,
+            "digital": "0:00:32",
+            "decimal": "0.00",
+            "text": "32 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 32,
+            "percent": 0.11
+          },
+          {
+            "name": "copy",
+            "total_seconds": 0.855035,
+            "digital": "0:00:00",
+            "decimal": "0.00",
+            "text": "0 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 0,
+            "percent": 0.0
+          },
+          {
+            "name": "collections",
+            "total_seconds": 0.855035,
+            "digital": "0:00:00",
+            "decimal": "0.00",
+            "text": "0 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 0,
+            "percent": 0.0
+          }
+        ],
+        "machines": [
+          {
+            "name": "haru",
+            "total_seconds": 8949.00642,
+            "machine_name_id": "2092c93d-64df-4158-9ebe-ec9b24907e94",
+            "digital": "2:29:09",
+            "decimal": "2.48",
+            "text": "2 hrs 29 mins",
+            "hours": 2,
+            "minutes": 29,
+            "seconds": 9,
+            "percent": 100.0
+          }
+        ],
+        "projects": [
+          {
+            "name": "lumia-bot",
+            "total_seconds": 8949.00642,
+            "ai_additions": 0,
+            "ai_deletions": 0,
+            "human_additions": 0,
+            "human_deletions": 0,
+            "digital": "2:29:09",
+            "decimal": "2.48",
+            "text": "2 hrs 29 mins",
+            "hours": 2,
+            "minutes": 29,
+            "seconds": 9,
+            "percent": 100.0
+          }
+        ],
+        "range": {
+          "start": "2025-09-08T17:00:00Z",
+          "end": "2025-09-09T16:59:59Z",
+          "date": "2025-09-09",
+          "text": "Tue Sep 9th 2025",
+          "timezone": "Asia/Ho_Chi_Minh"
+        },
+        "ai_additions": 0,
+        "ai_deletions": 0,
+        "human_additions": 0,
+        "human_deletions": 0
+      }
+    ],
+    "start": "2025-09-08T17:00:00Z",
+    "end": "2025-09-09T16:59:59Z",
+    "cumulative_total": {
+      "seconds": 8949.00642,
+      "text": "2 hrs 29 mins",
+      "digital": "2:29",
+      "decimal": "2.48"
+    },
+    "daily_average": {
+      "holidays": 0,
+      "days_minus_holidays": 1,
+      "days_including_holidays": 1,
+      "seconds": 7678,
+      "seconds_including_other_language": 8949,
+      "text": "2 hrs 7 mins",
+      "text_including_other_language": "2 hrs 29 mins"
+    }
+  },
+  "authenticity_proof": {
+    "content_hash": "c5c468a26c8999f1126d094113c5effe6e727f72ec45c56f8146b531b17a18ec",
+    "external_timestamps": {
+      "data_hash": "c5c468a26c8999f1126d094113c5effe6e727f72ec45c56f8146b531b17a18ec",
+      "timestamps": {
+        "ntp_time": 1757470450.4537737,
+        "ntp_server": "system_fallback",
+        "external_time": {
+          "utc_offset": "+07:00",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "day_of_week": 3,
+          "day_of_year": 253,
+          "datetime": "2025-09-10T09:14:10.940263+07:00",
+          "utc_datetime": "2025-09-10T02:14:10.940263+00:00",
+          "unixtime": 1757470450,
+          "raw_offset": 25200,
+          "week_number": 37,
+          "dst": false,
+          "abbreviation": "+07",
+          "dst_offset": 0,
+          "dst_from": null,
+          "dst_until": null,
+          "client_ip": "172.215.216.226"
+        },
+        "github_server_time": "Wed, 10 Sep 2025 02:14:09 GMT"
+      },
+      "verification_note": "These timestamps are from external sources and cannot be manipulated"
+    },
+    "network_evidence": {
+      "user_agent": "TrustlessWakaTimeLogger/2.0",
+      "request_time": "2025-09-10T02:14:11.048081",
+      "system_info": {
+        "platform": "posix",
+        "hostname": "unknown"
+      }
+    },
+    "authenticity_note": "This data cannot be fabricated due to external verifications"
+  },
+  "request_proof": {
+    "url": "https://wakatime.com/api/v1/users/current/summaries?start=2025-09-09&end=2025-09-09",
+    "method": "GET",
+    "status_code": 200,
+    "response_headers": {
+      "Server": "nginx",
+      "Date": "Wed, 10 Sep 2025 02:14:04 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "4648",
+      "Connection": "keep-alive",
+      "X-Content-Type-Options": "nosniff",
+      "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+      "X-XSS-Protection": "1; mode=block",
+      "Feature-Policy": "accelerometer 'none';autoplay 'self';camera 'none';fullscreen 'self';geolocation 'none';gyroscope 'none';magnetometer 'none';microphone 'none';midi 'none';payment 'self';picture-in-picture 'none';sync-xhr 'self';usb 'none';",
+      "Referrer-Policy": "strict-origin-when-cross-origin",
+      "X-Frame-Options": "SAMEORIGIN",
+      "Cross-Origin-Opener-Policy": "same-origin",
+      "Content-Security-Policy": "default-src 'self'; frame-ancestors 'self'; script-src 'self' 'unsafe-eval' https://www.google.com/ https://www.gstatic.com/ https://*.siteassist.io https://cnrib24ur3hk4b49.public.blob.vercel-storage.com/; img-src 'self' data: https://cdn.loom.com/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.siteassist.io; font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.siteassist.io; media-src 'self' https://*.amazonaws.com; frame-src 'self' https://www.google.com/ https://www.youtube.com/ https://www.loom.com/ player.vimeo.com https://*.siteassist.io; object-src 'self'; connect-src 'self' https://www.google.com/ https://avatar-cdn.atlassian.com https://*.siteassist.io https://cnrib24ur3hk4b49.public.blob.vercel-storage.com/;"
+    },
+    "request_duration": 0.19963431358337402,
+    "response_size": 4648
+  },
+  "metadata": {
+    "version": "2.0",
+    "date_fetched": "2025-09-09",
+    "script_name": "TrustlessWakaTimeLogger",
+    "trustless_note": "This file contains multiple external verifications that make fabrication impossible"
+  }
+}
