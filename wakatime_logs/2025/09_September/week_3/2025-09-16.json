@@ -2,43 +2,6 @@
   "wakatime_data": {
     "data": [
       {
-        "grand_total": {
-          "hours": 0,
-          "minutes": 0,
-          "total_seconds": 0.0,
-          "digital": "0:00",
-          "decimal": "0.00",
-          "text": "0 secs",
-          "ai_additions": 0,
-          "ai_deletions": 0,
-          "human_additions": 0,
-          "human_deletions": 0
-        },
-        "range": {
-          "start": "2025-09-15T17:00:00Z",
-          "end": "2025-09-16T16:59:59Z",
-          "date": "2025-09-16",
-          "text": "Tue Sep 16th 2025",
-          "timezone": "Asia/Ho_Chi_Minh"
-        },
-        "projects": [
-          {
-            "name": "learning",
-            "total_seconds": 0.0,
-            "ai_additions": 0,
-            "ai_deletions": 0,
-            "human_additions": 0,
-            "human_deletions": 0,
-            "color": null,
-            "digital": "0:00:00",
-            "decimal": "0.00",
-            "text": "0 secs",
-            "hours": 0,
-            "minutes": 0,
-            "seconds": 0,
-            "percent": 0
-          }
-        ],
         "languages": [
           {
             "name": "Markdown",
@@ -52,21 +15,18 @@
             "percent": 0
           }
         ],
-        "dependencies": [],
-        "machines": [
-          {
-            "name": "haru",
-            "total_seconds": 0.0,
-            "machine_name_id": "c5ce9352-48b7-4e0e-afd4-fe8c5c777839",
-            "digital": "0:00:00",
-            "decimal": "0.00",
-            "text": "0 secs",
-            "hours": 0,
-            "minutes": 0,
-            "seconds": 0,
-            "percent": 0
-          }
-        ],
+        "grand_total": {
+          "hours": 0,
+          "minutes": 0,
+          "total_seconds": 0.0,
+          "digital": "0:00",
+          "decimal": "0.00",
+          "text": "0 secs",
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0
+        },
         "editors": [
           {
             "name": "VS Code",
@@ -105,7 +65,50 @@
             "seconds": 0,
             "percent": 0
           }
-        ]
+        ],
+        "dependencies": [],
+        "machines": [
+          {
+            "name": "haru",
+            "total_seconds": 0.0,
+            "machine_name_id": "c5ce9352-48b7-4e0e-afd4-fe8c5c777839",
+            "digital": "0:00:00",
+            "decimal": "0.00",
+            "text": "0 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 0,
+            "percent": 0
+          }
+        ],
+        "projects": [
+          {
+            "name": "learning",
+            "total_seconds": 0.0,
+            "ai_additions": 0,
+            "ai_deletions": 0,
+            "human_additions": 0,
+            "human_deletions": 0,
+            "digital": "0:00:00",
+            "decimal": "0.00",
+            "text": "0 secs",
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 0,
+            "percent": 0
+          }
+        ],
+        "range": {
+          "start": "2025-09-15T17:00:00Z",
+          "end": "2025-09-16T16:59:59Z",
+          "date": "2025-09-16",
+          "text": "Tue Sep 16th 2025",
+          "timezone": "Asia/Ho_Chi_Minh"
+        },
+        "ai_additions": 0,
+        "ai_deletions": 0,
+        "human_additions": 0,
+        "human_deletions": 0
       }
     ],
     "start": "2025-09-15T17:00:00Z",
@@ -127,36 +130,36 @@
     }
   },
   "authenticity_proof": {
-    "content_hash": "3c1c0510c7cfe85079aee944a43eb93394815a084f059fd123dc293f3859557c",
+    "content_hash": "cc1d4f2f397d79dc3f56b5875acf75395b9d1a2793fa181a484525afbc48a932",
     "external_timestamps": {
-      "data_hash": "3c1c0510c7cfe85079aee944a43eb93394815a084f059fd123dc293f3859557c",
+      "data_hash": "cc1d4f2f397d79dc3f56b5875acf75395b9d1a2793fa181a484525afbc48a932",
       "timestamps": {
-        "ntp_time": 1758075246.9728675,
+        "ntp_time": 1758507889.2520404,
         "ntp_server": "pool.ntp.org",
         "external_time": {
           "utc_offset": "+07:00",
           "timezone": "Asia/Ho_Chi_Minh",
-          "day_of_week": 3,
-          "day_of_year": 260,
-          "datetime": "2025-09-17T09:14:07.620827+07:00",
-          "utc_datetime": "2025-09-17T02:14:07.620827+00:00",
-          "unixtime": 1758075247,
+          "day_of_week": 1,
+          "day_of_year": 265,
+          "datetime": "2025-09-22T09:24:49.546211+07:00",
+          "utc_datetime": "2025-09-22T02:24:49.546211+00:00",
+          "unixtime": 1758507889,
           "raw_offset": 25200,
-          "week_number": 38,
+          "week_number": 39,
           "dst": false,
           "abbreviation": "+07",
           "dst_offset": 0,
           "dst_from": null,
           "dst_until": null,
-          "client_ip": "172.178.119.36"
+          "client_ip": "172.174.221.231"
         },
-        "github_server_time": "Wed, 17 Sep 2025 02:14:00 GMT"
+        "github_server_time": "Mon, 22 Sep 2025 02:24:45 GMT"
       },
       "verification_note": "These timestamps are from external sources and cannot be manipulated"
     },
     "network_evidence": {
       "user_agent": "TrustlessWakaTimeLogger/2.0",
-      "request_time": "2025-09-17T02:14:07.672105",
+      "request_time": "2025-09-22T02:24:49.591489",
       "system_info": {
         "platform": "posix",
         "hostname": "unknown"
@@ -170,9 +173,9 @@
     "status_code": 200,
     "response_headers": {
       "Server": "nginx",
-      "Date": "Wed, 17 Sep 2025 02:14:06 GMT",
+      "Date": "Mon, 22 Sep 2025 02:24:49 GMT",
       "Content-Type": "application/json",
-      "Content-Length": "1944",
+      "Content-Length": "2011",
       "Connection": "keep-alive",
       "X-Content-Type-Options": "nosniff",
       "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
@@ -183,8 +186,8 @@
       "Cross-Origin-Opener-Policy": "same-origin",
       "Content-Security-Policy": "default-src 'self'; frame-ancestors 'self'; script-src 'self' 'unsafe-eval' https://www.google.com/ https://www.gstatic.com/ https://*.siteassist.io https://cnrib24ur3hk4b49.public.blob.vercel-storage.com/; img-src 'self' data: https://cdn.loom.com/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.siteassist.io; font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.siteassist.io; media-src 'self' https://*.amazonaws.com; frame-src 'self' https://www.google.com/ https://www.youtube.com/ https://www.loom.com/ player.vimeo.com https://*.siteassist.io; object-src 'self'; connect-src 'self' https://www.google.com/ https://avatar-cdn.atlassian.com https://*.siteassist.io https://cnrib24ur3hk4b49.public.blob.vercel-storage.com/;"
     },
-    "request_duration": 0.46672511100769043,
-    "response_size": 1944
+    "request_duration": 0.33681583404541016,
+    "response_size": 2011
   },
   "metadata": {
     "version": "2.0",

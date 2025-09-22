@@ -2,6 +2,7 @@
   "wakatime_data": {
     "data": [
       {
+        "languages": [],
         "grand_total": {
           "hours": 0,
           "minutes": 0,
@@ -14,102 +15,27 @@
           "human_additions": 0,
           "human_deletions": 0
         },
+        "editors": [],
+        "operating_systems": [],
+        "categories": [],
+        "dependencies": [],
+        "machines": [],
+        "projects": [],
         "range": {
-          "start": "2025-09-14T17:00:00Z",
-          "end": "2025-09-15T16:59:59Z",
-          "date": "2025-09-15",
-          "text": "Mon Sep 15th 2025",
+          "start": "2025-09-20T17:00:00Z",
+          "end": "2025-09-21T16:59:59Z",
+          "date": "2025-09-21",
+          "text": "Sun Sep 21st 2025",
           "timezone": "Asia/Ho_Chi_Minh"
         },
-        "projects": [
-          {
-            "name": "learning",
-            "total_seconds": 0.0,
-            "ai_additions": 0,
-            "ai_deletions": 0,
-            "human_additions": 0,
-            "human_deletions": 0,
-            "color": null,
-            "digital": "0:00:00",
-            "decimal": "0.00",
-            "text": "0 secs",
-            "hours": 0,
-            "minutes": 0,
-            "seconds": 0,
-            "percent": 0
-          }
-        ],
-        "languages": [
-          {
-            "name": "Markdown",
-            "total_seconds": 0.0,
-            "digital": "0:00:00",
-            "decimal": "0.00",
-            "text": "0 secs",
-            "hours": 0,
-            "minutes": 0,
-            "seconds": 0,
-            "percent": 0
-          }
-        ],
-        "dependencies": [],
-        "machines": [
-          {
-            "name": "haru",
-            "total_seconds": 0.0,
-            "machine_name_id": "c5ce9352-48b7-4e0e-afd4-fe8c5c777839",
-            "digital": "0:00:00",
-            "decimal": "0.00",
-            "text": "0 secs",
-            "hours": 0,
-            "minutes": 0,
-            "seconds": 0,
-            "percent": 0
-          }
-        ],
-        "editors": [
-          {
-            "name": "VS Code",
-            "total_seconds": 0.0,
-            "digital": "0:00:00",
-            "decimal": "0.00",
-            "text": "0 secs",
-            "hours": 0,
-            "minutes": 0,
-            "seconds": 0,
-            "percent": 0
-          }
-        ],
-        "operating_systems": [
-          {
-            "name": "Linux",
-            "total_seconds": 0.0,
-            "digital": "0:00:00",
-            "decimal": "0.00",
-            "text": "0 secs",
-            "hours": 0,
-            "minutes": 0,
-            "seconds": 0,
-            "percent": 0
-          }
-        ],
-        "categories": [
-          {
-            "name": "Writing Docs",
-            "total_seconds": 0.0,
-            "digital": "0:00:00",
-            "decimal": "0.00",
-            "text": "0 secs",
-            "hours": 0,
-            "minutes": 0,
-            "seconds": 0,
-            "percent": 0
-          }
-        ]
+        "ai_additions": 0,
+        "ai_deletions": 0,
+        "human_additions": 0,
+        "human_deletions": 0
       }
     ],
-    "start": "2025-09-14T17:00:00Z",
-    "end": "2025-09-15T16:59:59Z",
+    "start": "2025-09-20T17:00:00Z",
+    "end": "2025-09-21T16:59:59Z",
     "cumulative_total": {
       "seconds": 0.0,
       "text": "0 secs",
@@ -127,11 +53,11 @@
     }
   },
   "authenticity_proof": {
-    "content_hash": "1a1792b97c54e72742a2fe5a1fc5b58de6658ebfa4ded98f35651806640065c2",
+    "content_hash": "ccda4c8b6c568b469cf9af5f24d0efc73cb84a874be095286b752446105b6c5a",
     "external_timestamps": {
-      "data_hash": "1a1792b97c54e72742a2fe5a1fc5b58de6658ebfa4ded98f35651806640065c2",
+      "data_hash": "ccda4c8b6c568b469cf9af5f24d0efc73cb84a874be095286b752446105b6c5a",
       "timestamps": {
-        "ntp_time": 1758507888.6388512,
+        "ntp_time": 1758507892.5951042,
         "ntp_server": "pool.ntp.org",
         "github_server_time": "Mon, 22 Sep 2025 02:24:45 GMT"
       },
@@ -139,7 +65,7 @@
     },
     "network_evidence": {
       "user_agent": "TrustlessWakaTimeLogger/2.0",
-      "request_time": "2025-09-22T02:24:48.882919",
+      "request_time": "2025-09-22T02:24:52.710085",
       "system_info": {
         "platform": "posix",
         "hostname": "unknown"
@@ -148,14 +74,14 @@
     "authenticity_note": "This data cannot be fabricated due to external verifications"
   },
   "request_proof": {
-    "url": "https://wakatime.com/api/v1/users/current/summaries?start=2025-09-15&end=2025-09-15",
+    "url": "https://wakatime.com/api/v1/users/current/summaries?start=2025-09-21&end=2025-09-21",
     "method": "GET",
     "status_code": 200,
     "response_headers": {
       "Server": "nginx",
-      "Date": "Mon, 22 Sep 2025 02:24:48 GMT",
+      "Date": "Mon, 22 Sep 2025 02:24:52 GMT",
       "Content-Type": "application/json",
-      "Content-Length": "1944",
+      "Content-Length": "944",
       "Connection": "keep-alive",
       "X-Content-Type-Options": "nosniff",
       "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
@@ -166,12 +92,12 @@
       "Cross-Origin-Opener-Policy": "same-origin",
       "Content-Security-Policy": "default-src 'self'; frame-ancestors 'self'; script-src 'self' 'unsafe-eval' https://www.google.com/ https://www.gstatic.com/ https://*.siteassist.io https://cnrib24ur3hk4b49.public.blob.vercel-storage.com/; img-src 'self' data: https://cdn.loom.com/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.siteassist.io; font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.siteassist.io; media-src 'self' https://*.amazonaws.com; frame-src 'self' https://www.google.com/ https://www.youtube.com/ https://www.loom.com/ player.vimeo.com https://*.siteassist.io; object-src 'self'; connect-src 'self' https://www.google.com/ https://avatar-cdn.atlassian.com https://*.siteassist.io https://cnrib24ur3hk4b49.public.blob.vercel-storage.com/;"
     },
-    "request_duration": 0.7204029560089111,
-    "response_size": 1944
+    "request_duration": 0.3362729549407959,
+    "response_size": 944
   },
   "metadata": {
     "version": "2.0",
-    "date_fetched": "2025-09-15",
+    "date_fetched": "2025-09-21",
     "script_name": "TrustlessWakaTimeLogger",
     "trustless_note": "This file contains multiple external verifications that make fabrication impossible"
   }

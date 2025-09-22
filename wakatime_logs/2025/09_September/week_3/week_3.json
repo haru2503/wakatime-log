@@ -1,0 +1,245 @@
+{
+  "week_dates": [
+    "2025-09-15",
+    "2025-09-16",
+    "2025-09-17",
+    "2025-09-18",
+    "2025-09-19",
+    "2025-09-20",
+    "2025-09-21"
+  ],
+  "total_coding_time": 0.0,
+  "daily_avg_coding_time": 0.0,
+  "daily_summaries": [
+    {
+      "date": "2025-09-15",
+      "total_coding_time": 0.0,
+      "categories": [
+        {
+          "name": "Writing Docs",
+          "total_seconds": 0.0,
+          "digital": "0:00:00",
+          "decimal": "0.00",
+          "text": "0 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 0,
+          "percent": 0
+        }
+      ],
+      "languages": [
+        {
+          "name": "Markdown",
+          "total_seconds": 0.0,
+          "digital": "0:00:00",
+          "decimal": "0.00",
+          "text": "0 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 0,
+          "percent": 0
+        }
+      ],
+      "projects": [
+        {
+          "name": "learning",
+          "total_seconds": 0.0,
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0,
+          "color": null,
+          "digital": "0:00:00",
+          "decimal": "0.00",
+          "text": "0 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 0,
+          "percent": 0
+        }
+      ],
+      "editors": [
+        {
+          "name": "VS Code",
+          "total_seconds": 0.0,
+          "digital": "0:00:00",
+          "decimal": "0.00",
+          "text": "0 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 0,
+          "percent": 0
+        }
+      ],
+      "machines": [
+        {
+          "name": "haru",
+          "total_seconds": 0.0,
+          "machine_name_id": "c5ce9352-48b7-4e0e-afd4-fe8c5c777839",
+          "digital": "0:00:00",
+          "decimal": "0.00",
+          "text": "0 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 0,
+          "percent": 0
+        }
+      ],
+      "operating_systems": [
+        {
+          "name": "Linux",
+          "total_seconds": 0.0,
+          "digital": "0:00:00",
+          "decimal": "0.00",
+          "text": "0 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "date": "2025-09-16",
+      "total_coding_time": 0.0,
+      "categories": [
+        {
+          "name": "Writing Docs",
+          "total_seconds": 0.0,
+          "digital": "0:00:00",
+          "decimal": "0.00",
+          "text": "0 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 0,
+          "percent": 0
+        }
+      ],
+      "languages": [
+        {
+          "name": "Markdown",
+          "total_seconds": 0.0,
+          "digital": "0:00:00",
+          "decimal": "0.00",
+          "text": "0 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 0,
+          "percent": 0
+        }
+      ],
+      "projects": [
+        {
+          "name": "learning",
+          "total_seconds": 0.0,
+          "ai_additions": 0,
+          "ai_deletions": 0,
+          "human_additions": 0,
+          "human_deletions": 0,
+          "digital": "0:00:00",
+          "decimal": "0.00",
+          "text": "0 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 0,
+          "percent": 0
+        }
+      ],
+      "editors": [
+        {
+          "name": "VS Code",
+          "total_seconds": 0.0,
+          "digital": "0:00:00",
+          "decimal": "0.00",
+          "text": "0 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 0,
+          "percent": 0
+        }
+      ],
+      "machines": [
+        {
+          "name": "haru",
+          "total_seconds": 0.0,
+          "machine_name_id": "c5ce9352-48b7-4e0e-afd4-fe8c5c777839",
+          "digital": "0:00:00",
+          "decimal": "0.00",
+          "text": "0 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 0,
+          "percent": 0
+        }
+      ],
+      "operating_systems": [
+        {
+          "name": "Linux",
+          "total_seconds": 0.0,
+          "digital": "0:00:00",
+          "decimal": "0.00",
+          "text": "0 secs",
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 0,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "date": "2025-09-17",
+      "total_coding_time": 0.0,
+      "categories": [],
+      "languages": [],
+      "projects": [],
+      "editors": [],
+      "machines": [],
+      "operating_systems": []
+    },
+    {
+      "date": "2025-09-18",
+      "total_coding_time": 0.0,
+      "categories": [],
+      "languages": [],
+      "projects": [],
+      "editors": [],
+      "machines": [],
+      "operating_systems": []
+    },
+    {
+      "date": "2025-09-19",
+      "total_coding_time": 0.0,
+      "categories": [],
+      "languages": [],
+      "projects": [],
+      "editors": [],
+      "machines": [],
+      "operating_systems": []
+    },
+    {
+      "date": "2025-09-20",
+      "total_coding_time": 0.0,
+      "categories": [],
+      "languages": [],
+      "projects": [],
+      "editors": [],
+      "machines": [],
+      "operating_systems": []
+    },
+    {
+      "date": "2025-09-21",
+      "total_coding_time": 0.0,
+      "categories": [],
+      "languages": [],
+      "projects": [],
+      "editors": [],
+      "machines": [],
+      "operating_systems": []
+    }
+  ],
+  "metadata": {
+    "generated_at": "2025-09-22T02:24:52.711194",
+    "days_with_data": 7,
+    "total_days": 7
+  }
+}

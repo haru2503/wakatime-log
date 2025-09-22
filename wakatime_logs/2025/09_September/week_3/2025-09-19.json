@@ -2,6 +2,7 @@
   "wakatime_data": {
     "data": [
       {
+        "languages": [],
         "grand_total": {
           "hours": 0,
           "minutes": 0,
@@ -14,6 +15,12 @@
           "human_additions": 0,
           "human_deletions": 0
         },
+        "editors": [],
+        "operating_systems": [],
+        "categories": [],
+        "dependencies": [],
+        "machines": [],
+        "projects": [],
         "range": {
           "start": "2025-09-18T17:00:00Z",
           "end": "2025-09-19T16:59:59Z",
@@ -21,13 +28,10 @@
           "text": "Fri Sep 19th 2025",
           "timezone": "Asia/Ho_Chi_Minh"
         },
-        "projects": [],
-        "languages": [],
-        "dependencies": [],
-        "machines": [],
-        "editors": [],
-        "operating_systems": [],
-        "categories": []
+        "ai_additions": 0,
+        "ai_deletions": 0,
+        "human_additions": 0,
+        "human_deletions": 0
       }
     ],
     "start": "2025-09-18T17:00:00Z",
@@ -49,19 +53,19 @@
     }
   },
   "authenticity_proof": {
-    "content_hash": "917085bce7aa4967b3a897ce2b26035cf508a9000b07a43fcf1d2ee25fc6db39",
+    "content_hash": "c32157382147e3a776a99f4f18328fc1312837a6dc45265f465c09a41a1215ab",
     "external_timestamps": {
-      "data_hash": "917085bce7aa4967b3a897ce2b26035cf508a9000b07a43fcf1d2ee25fc6db39",
+      "data_hash": "c32157382147e3a776a99f4f18328fc1312837a6dc45265f465c09a41a1215ab",
       "timestamps": {
-        "ntp_time": 1758334339.557642,
+        "ntp_time": 1758507891.1994686,
         "ntp_server": "pool.ntp.org",
-        "github_server_time": "Sat, 20 Sep 2025 02:12:04 GMT"
+        "github_server_time": "Mon, 22 Sep 2025 02:24:45 GMT"
       },
       "verification_note": "These timestamps are from external sources and cannot be manipulated"
     },
     "network_evidence": {
       "user_agent": "TrustlessWakaTimeLogger/2.0",
-      "request_time": "2025-09-20T02:12:19.966469",
+      "request_time": "2025-09-22T02:24:51.274818",
       "system_info": {
         "platform": "posix",
         "hostname": "unknown"
@@ -75,9 +79,9 @@
     "status_code": 200,
     "response_headers": {
       "Server": "nginx",
-      "Date": "Sat, 20 Sep 2025 02:12:19 GMT",
+      "Date": "Mon, 22 Sep 2025 02:24:51 GMT",
       "Content-Type": "application/json",
-      "Content-Length": "862",
+      "Content-Length": "944",
       "Connection": "keep-alive",
       "X-Content-Type-Options": "nosniff",
       "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
@@ -88,8 +92,8 @@
       "Cross-Origin-Opener-Policy": "same-origin",
       "Content-Security-Policy": "default-src 'self'; frame-ancestors 'self'; script-src 'self' 'unsafe-eval' https://www.google.com/ https://www.gstatic.com/ https://*.siteassist.io https://cnrib24ur3hk4b49.public.blob.vercel-storage.com/; img-src 'self' data: https://cdn.loom.com/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.siteassist.io; font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.siteassist.io; media-src 'self' https://*.amazonaws.com; frame-src 'self' https://www.google.com/ https://www.youtube.com/ https://www.loom.com/ player.vimeo.com https://*.siteassist.io; object-src 'self'; connect-src 'self' https://www.google.com/ https://avatar-cdn.atlassian.com https://*.siteassist.io https://cnrib24ur3hk4b49.public.blob.vercel-storage.com/;"
     },
-    "request_duration": 0.25667715072631836,
-    "response_size": 862
+    "request_duration": 0.3350555896759033,
+    "response_size": 944
   },
   "metadata": {
     "version": "2.0",
